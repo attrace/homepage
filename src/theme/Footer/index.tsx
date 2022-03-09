@@ -1,28 +1,22 @@
 import React, { FC } from "react";
-import clsx from "clsx";
-import Link from "@docusaurus/Link";
 
-import attrFooterLogo from "../../assets/images/attrFooterLogo.svg";
-import discord from "../../assets/icons/discord.svg";
-import telegram from "../../assets/icons/telegram.svg";
-import twitter from "../../assets/icons/twitter.svg";
-import github from "../../assets/icons/github.svg";
-import medium from "../../assets/icons/medium.svg";
-import sushiswap from "../../assets/icons/sushiswap.svg";
-import uniswap from "../../assets/icons/uniswap.svg";
-import bittrex from "../../assets/icons/bittrex.svg";
+import AttrFooterLogo from "@site/static/img/attrFooterLogo.svg";
+import Discord from "@site/static/img/icons/discord.svg";
+import Telegram from "@site/static/img/icons/telegram.svg";
+import Twitter from "@site/static/img/icons/twitter.svg";
+import Github from "@site/static/img/icons/github.svg";
+import Medium from "@site/static/img/icons/medium.svg";
+import Sushiswap from "@site/static/img/icons/sushiswap.svg";
+import Uniswap from "@site/static/img/icons/uniswap.svg";
+
 import styles from "./styles.module.css";
 
 const Footer: FC = () => (
   <div className={styles.wrapper}>
-    <div className={clsx(styles.upper)}>
+    <div className={styles.upper}>
       <div className={styles.upperLeft}>
-        <div className={clsx("flex-align-center", styles.footerLogo)}>
-          <img
-            src={require("@site/static/img/attrFooterLogo.svg").default}
-            alt="Attrace"
-            className={styles.logo}
-          />
+        <div className={styles.footerLogo}>
+          <AttrFooterLogo className={styles.logo} />
           <div className={styles.logoText}>
             <h4>Attrace Referral Network</h4>
             <p>
@@ -30,68 +24,70 @@ const Footer: FC = () => (
             </p>
           </div>
         </div>
-        <div className={clsx("flex-align-center", styles.socialIcons)}>
+        <div className={styles.socialIcons}>
           <a href="/#" target="_blank">
-            <img src={discord} alt="Discord" />
+            <Discord />
           </a>
           <a href="/#" target="_blank">
-            <img src={telegram} alt="Telegram" />
+            <Telegram />
           </a>
           <a href="/#" target="_blank">
-            <img src={twitter} alt="twitter" />
+            <Twitter />
           </a>
           <a href="/#" target="_blank">
-            <img src={github} alt="github" />
+            <Github />
           </a>
           <a href="/#" target="_blank">
-            <img src={medium} alt="medium" />
+            <Medium />
           </a>
         </div>
       </div>
       <div className={styles.upperRight}>
-        <div className={clsx("flex-column", styles.links)}>
+        <div className={styles.links}>
           <h6>$ATTR available on</h6>
           <div className={styles.externalLink}>
-            <img src={sushiswap} alt="Sushiswap" />
+            <Sushiswap />
             <a href="/#" target="_blank">
-              SushiSwap
+              Sushiswap
             </a>
           </div>
           <div className={styles.externalLink}>
-            <img src={uniswap} alt="Uniswap" />
+            <Uniswap />
             <a href="/#" target="_blank">
               Uniswap
             </a>
           </div>
           <div className={styles.externalLink}>
-            <img src={bittrex} alt="Bittrex" />
+            <img src={require("@site/static/img/icons/bittrex.png").default} />
             <a href="/#" target="_blank">
               Bittrex
             </a>
           </div>
         </div>
-        <div className={clsx("flex-column", styles.links)}>
+        <div className={styles.links}>
           <h6>project</h6>
           <div className={styles.link}>
-            <Link to="/#">Referral Network</Link>
+            <a href="/#" target="_blank">
+              Referral Network
+            </a>
           </div>
           <div className={styles.link}>
-            <Link to="/#">ATTR Token</Link>
+            <a href="#">ATTR Token</a>
           </div>
           <div className={styles.link}>
-            <Link to="/#">Developers</Link>
+            <a href="#">Developers</a>
           </div>
         </div>
-        <div className={clsx("flex-column", styles.links)}>
+        <div className={styles.links}>
           <h6>About</h6>
           <div className={styles.link}>
-            <Link to="/#">Blog</Link>
+            <a href="#">Blog</a>
           </div>
           <div className={styles.link}>
-            <Link to="/#">Team</Link>
+            <a href="#">Team</a>
           </div>
           <div className={styles.link}>
-            <Link to="/#">Governance</Link>
+            <a href="#">Governance</a>
           </div>
         </div>
       </div>
@@ -101,10 +97,10 @@ const Footer: FC = () => (
         &copy; 2022 - Attrace Referral Network
       </div>
       <div>
-        <Link to="/#" className={styles.privacyLink}>
+        <a href="#" className={styles.privacya}>
           Privacy Policy
-        </Link>
-        <Link to="/#">Code of Conduct</Link>
+        </a>
+        <a href="#">Code of Conduct</a>
       </div>
     </div>
   </div>

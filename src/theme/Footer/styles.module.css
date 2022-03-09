@@ -14,6 +14,7 @@
 }
 
 .footerLogo {
+  display: flex;
   margin-bottom: 40px;
 }
 
@@ -81,9 +82,17 @@
 .lower a {
   color: var(--white-07);
 }
+.lower a:first-child {
+  margin-right: 40px;
+}
 
 .privacyLink {
   margin-right: 40px;
+}
+
+.wrapper a:hover {
+  text-decoration: none;
+  color: var(--white);
 }
 
 @media (max-width: 768px) {

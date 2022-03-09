@@ -51,10 +51,6 @@ const config = {
         },
         items: [
           {
-            label: "Referral Farms",
-            href: "https://app.attrace.com/farms",
-          },
-          {
             type: "doc",
             docId: "intro",
             position: "left",
@@ -64,85 +60,6 @@ const config = {
       },
       footer: {
         style: "dark",
-        links: [
-          {
-            title: "Community",
-            items: [
-              {
-                label: "Discord",
-                href: "#",
-              },
-              {
-                label: "Telegram",
-                href: "#",
-              },
-              {
-                label: "Twitter",
-                href: "#",
-              },
-              {
-                label: "Github",
-                href: "#",
-              },
-              {
-                label: "Medium",
-                href: "#",
-              },
-            ],
-          },
-          {
-            title: "$ATTR available on",
-            items: [
-              {
-                label: "SushiSwap",
-                href: "#",
-              },
-              {
-                label: "Uniswap",
-                href: "#",
-              },
-              {
-                label: "Bittrex",
-                href: "#",
-              },
-            ],
-          },
-          {
-            title: "Project",
-            items: [
-              {
-                label: "Referral Network",
-                href: "#",
-              },
-              {
-                label: "ATTR Token",
-                href: "#",
-              },
-              {
-                label: "Developers",
-                href: "#",
-              },
-            ],
-          },
-          {
-            title: "About",
-            items: [
-              {
-                label: "Blog",
-                to: "/blog",
-              },
-              {
-                label: "Team",
-                href: "#",
-              },
-              {
-                label: "Governance",
-                href: "#",
-              },
-            ],
-          },
-        ],
-        copyright: `${new Date().getFullYear()} - Attrace Referral Network`,
       },
     }),
 };
