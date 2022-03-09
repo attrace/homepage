@@ -1,0 +1,39 @@
+.wrapper {
+  background-color: var(--header-background);
+  height: 64px;
+  padding: 12px 24px;
+  box-shadow: var(--box-shadow);
+}
+.logo {
+  margin-right: 67px;
+}
+.accountBtn {
+  background: transparent;
+  padding: 0;
+  border: 0;
+}
+.accountBtn img {
+  width: 38px;
+  height: 38px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+}
+.mobileMenuBtn {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobileMenuBtn {
+    display: block;
+    margin-left: 12px;
+  }
+  .wrapper {
+    position: relative;
+  }
+}
+
+@media (max-width: 420px) {
+  .logo {
+    margin-right: 30px;
+  }
+}

@@ -1,0 +1,113 @@
+.wrapper {
+  background-color: var(--dark-grey-003);
+  color: var(--white-07);
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.upper {
+  display: flex;
+  justify-content: space-between;
+  padding: 48px 58px;
+  border-bottom: 1px solid var(--dark-grey-11);
+  flex-wrap: wrap;
+}
+
+.footerLogo {
+  margin-bottom: 40px;
+}
+
+.logo {
+  margin-right: 16px;
+}
+
+.logoText h4 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 4px;
+  color: var(--white-08);
+}
+
+.socialIcons a {
+  margin-right: 20px;
+}
+
+.upperRight {
+  display: flex;
+}
+
+.links:not(:last-child) {
+  margin-right: 80px;
+}
+
+.links h6 {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: var(--white-08);
+  text-transform: capitalize;
+}
+
+.link {
+  margin-bottom: 8px;
+}
+
+.link a {
+  color: var(--white-07);
+}
+
+.externalLink {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.externalLink a {
+  margin-left: 6px;
+  color: var(--white-07);
+}
+
+.lower {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 58px;
+  flex-wrap: wrap;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.lower a {
+  color: var(--white-07);
+}
+
+.privacyLink {
+  margin-right: 40px;
+}
+
+@media (max-width: 768px) {
+  .upper {
+    flex-direction: column;
+    padding: 48px 24px;
+  }
+
+  .upperRight {
+    flex-direction: column;
+    margin-top: 40px;
+  }
+
+  .links:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .lower {
+    flex-direction: column;
+    padding: 20px 24px;
+  }
+
+  .copylight {
+    margin-bottom: 10px;
+  }
+}
