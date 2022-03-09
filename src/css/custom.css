@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
 /**
  * Any CSS included here will be global. The classic template
  * bundles Infima by default. Infima is a CSS framework designed to
@@ -6,29 +8,56 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
+  /* Primary */
+  --purple: #c77bf9;
+
+  /* Neutral */
+  --white: #ffffff;
+  --light-grey: #b8aec2;
+  --dark-grey-15: #36343f;
+  --dark-grey-13: #322f3a;
+  --dark-grey-11: #2d2a36;
+  --dark-grey-009: #282631;
+  --dark-grey-007: #24212d;
+  --dark-grey-005: #1f1c29;
+  --dark-grey-003: #1a1724;
+
+  /* White */
+  --white-06: rgb(255 255 255 / 60%);
+  --white-07: rgb(255 255 255 / 70%);
+  --white-08: rgb(255 255 255 / 80%);
+  --white-09: rgb(255 255 255 / 90%);
+
+  --background: #13101d;
+  --modal-overlay: rgba(11, 9, 16, 0.85);
+  --modal-border: rgba(255, 255, 255, 0.1);
+  --primary-btn: linear-gradient(86.19deg, #8836ff 0%, #b646ef 100%);
+
+  /* Gradients */
+  --primary-gradient: linear-gradient(86.19deg, #8836ff 0%, #b646ef 100%);
+  --secondary-gradient: linear-gradient(86.19deg, #be5bff 0.01%, #ff8982 100%);
+
+  /* Box shadow */
+  --box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.08);
+
+  --ifm-color-primary: var(--white);
+  --ifm-color-primary-dark: var(--purple);
+  --ifm-font-color-base: var(--white);
+  --ifm-toc-link-color: var(--white-06);
+  --ifm-menu-color: var(--white-06);
+  --ifm-code-background: rgb(51, 52, 55);
+  --ifm-code-font-size: 16px;
+  --ifm-font-family-base: "Inter";
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme="dark"] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-}
-
-body {
-  font-family: "Inter";
+  --ifm-font-color-base: var(--white);
+  --ifm-color-primary: var(--white);
+  --ifm-toc-link-color: var(--white-06);
+  --ifm-menu-color: var(--white-06);
+  --ifm-color-primary-dark: var(--purple);
+  --ifm-code-background: rgb(51, 52, 55);
 }
 
 .docusaurus-highlight-code-line {
@@ -42,6 +71,62 @@ body {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+/* navbar */
+.navbar {
+  /* colors */
+  --ifm-navbar-background-color: var(--dark-grey-003);
+  --ifm-navbar-link-color: var(--white-06);
+
+  height: 64px;
+  padding: 12px 24px;
+}
 .navbar__logo {
+  display: flex;
   height: auto;
+}
+.navbar__logo img {
+  display: initial;
+}
+.navbar__item {
+  padding: 0 20px;
+}
+.navbar__link svg {
+  display: none;
+}
+
+/* main-wrapper */
+.main-wrapper {
+  background: var(--background);
+  color: var(--white-09);
+}
+.docs-wrapper {
+  padding: 20px 0;
+}
+
+/* footer */
+.footer {
+  --ifm-footer-title-color: var(--white-08);
+  --ifm-footer-link-color: var(--white-07);
+
+  background: var(--dark-grey-003);
+  padding: 48px 0 0;
+  font-size: 14px;
+  color: var(--white-07);
+}
+.footer .container {
+  max-width: 100%;
+  padding: 0;
+}
+.footer__links {
+  max-width: var(--ifm-container-width);
+  padding: 0 var(--ifm-spacing-horizontal);
+  padding: 0 48px;
+  color: var(--white-07);
+  margin-bottom: 48px;
+}
+.footer__bottom {
+  border-top: 1px solid var(--dark-grey-11);
+  text-align: left;
+  font-size: 12px;
+  padding: 20px 48px;
 }

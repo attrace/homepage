@@ -1,21 +1,20 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require("prism-react-renderer/themes/github");
-const darkCodeTheme = require("prism-react-renderer/themes/dracula");
-
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "My Site",
-  tagline: "Dinosaurs are cool",
-  url: "https://your-docusaurus-test-site.com",
+  title: "Attrace",
+  tagline: "Attrace",
+  url: "https://attrace.com/",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
-  organizationName: "facebook", // Usually your GitHub org/user name.
-  projectName: "docusaurus", // Usually your repo name.
-
+  organizationName: "attrace", // Usually your GitHub org/user name.
+  projectName: "attrace/homepage", // Usually your repo name.
+  customFields: {
+    baseEditUrl: "https://github.com/attrace/homepage/edit/master/",
+  },
   presets: [
     [
       "classic",
@@ -23,15 +22,11 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
-          // Please change this to your repo.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+          editUrl: "https://github.com/attrace/homepage/edit/master/",
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+          editUrl: "https://github.com/attrace/homepage/edit/master/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -43,69 +38,111 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      colorMode: {
+        defaultMode: "dark",
+        disableSwitch: true,
+        respectPrefersColorScheme: false,
+      },
       navbar: {
+        style: "dark",
         logo: {
-          alt: "My Site Logo",
+          alt: "Attrace",
           src: "img/logo.svg",
         },
         items: [
           {
+            label: "Referral Farms",
+            href: "https://app.attrace.com/farms",
+          },
+          {
             type: "doc",
             docId: "intro",
             position: "left",
-            label: "Tutorial",
+            label: "Docs & Help",
           },
-          { to: "/blog", label: "Blog", position: "left" },
         ],
       },
       footer: {
         style: "dark",
         links: [
           {
-            title: "Docs",
-            items: [
-              {
-                label: "Tutorial",
-                to: "/docs/intro",
-              },
-            ],
-          },
-          {
             title: "Community",
             items: [
               {
-                label: "Stack Overflow",
-                href: "https://stackoverflow.com/questions/tagged/docusaurus",
+                label: "Discord",
+                href: "#",
               },
               {
-                label: "Discord",
-                href: "https://discordapp.com/invite/docusaurus",
+                label: "Telegram",
+                href: "#",
               },
               {
                 label: "Twitter",
-                href: "https://twitter.com/docusaurus",
+                href: "#",
+              },
+              {
+                label: "Github",
+                href: "#",
+              },
+              {
+                label: "Medium",
+                href: "#",
               },
             ],
           },
           {
-            title: "More",
+            title: "$ATTR available on",
+            items: [
+              {
+                label: "SushiSwap",
+                href: "#",
+              },
+              {
+                label: "Uniswap",
+                href: "#",
+              },
+              {
+                label: "Bittrex",
+                href: "#",
+              },
+            ],
+          },
+          {
+            title: "Project",
+            items: [
+              {
+                label: "Referral Network",
+                href: "#",
+              },
+              {
+                label: "ATTR Token",
+                href: "#",
+              },
+              {
+                label: "Developers",
+                href: "#",
+              },
+            ],
+          },
+          {
+            title: "About",
             items: [
               {
                 label: "Blog",
                 to: "/blog",
               },
               {
-                label: "GitHub",
-                href: "https://github.com/facebook/docusaurus",
+                label: "Team",
+                href: "#",
+              },
+              {
+                label: "Governance",
+                href: "#",
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
-      },
-      prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
+        copyright: `${new Date().getFullYear()} - Attrace Referral Network`,
       },
     }),
 };

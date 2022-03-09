@@ -1555,16 +1555,6 @@
     url-loader "^4.1.1"
     webpack "^5.69.1"
 
-"@fontsource/exo-2@^4.5.4":
-  version "4.5.4"
-  resolved "https://registry.yarnpkg.com/@fontsource/exo-2/-/exo-2-4.5.4.tgz#38e26996d677875b8dc9c8cac8f77a2774a0d294"
-  integrity sha512-L6MTi58CpEKTIySB3TIUDvPrOt6tUNhO1UaOhIzfKOO8s9IEEZaQK2LKvaWyHmC4/8T6THNrHXY+skFwa66sTw==
-
-"@fontsource/inter@^4.5.4":
-  version "4.5.4"
-  resolved "https://registry.yarnpkg.com/@fontsource/inter/-/inter-4.5.4.tgz#d6906fdaaf81242d975a1f9b6dedab7bfba77997"
-  integrity sha512-D0icTFpt9bWvB/OEXMztYf0bhUQZoDIYpsco5C7GVfxgKDRl8Jdn3N2aHHQqwjgRUUvRuyMv8HrRM8Hrt4U52w==
-
 "@hapi/hoek@^9.0.0":
   version "9.2.1"
   resolved "https://registry.yarnpkg.com/@hapi/hoek/-/hoek-9.2.1.tgz#9551142a1980503752536b5050fd99f4a7f13b17"
