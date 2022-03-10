@@ -26,19 +26,19 @@ const Footer: FC = () => (
           </div>
         </div>
         <div className={styles.socialIcons}>
-          <a href="/#" target="_blank">
+          <a href="https://discord.com/invite/WSX2RufvbV" target="_blank">
             <Discord />
           </a>
-          <a href="/#" target="_blank">
+          <a href="https://t.me/attrace" target="_blank">
             <Telegram />
           </a>
-          <a href="/#" target="_blank">
+          <a href="https://twitter.com/attracenetwork" target="_blank">
             <Twitter />
           </a>
-          <a href="/#" target="_blank">
+          <a href="https://github.com/attrace/" target="_blank">
             <Github />
           </a>
-          <a href="/#" target="_blank">
+          <a href="https://attrace.medium.com/" target="_blank">
             <Medium />
           </a>
         </div>
@@ -68,15 +68,22 @@ const Footer: FC = () => (
         <div className={styles.links}>
           <h6>project</h6>
           <div className={styles.link}>
-            <a href="/#" target="_blank">
+            <a href="https://attrace.network/" target="_blank">
               Referral Network
             </a>
           </div>
           <div className={styles.link}>
-            <a href="#">ATTR Token</a>
+            <a
+              href="https://attrace.network/community/attr-token/"
+              target="_blank"
+            >
+              ATTR Token
+            </a>
           </div>
           <div className={styles.link}>
-            <a href="#">Developers</a>
+            <a href="https://attrace.network/developers/" target="_blank">
+              Developers
+            </a>
           </div>
         </div>
         <div className={styles.links}>
@@ -85,10 +92,17 @@ const Footer: FC = () => (
             <Link to="/blog">Blog</Link>
           </div>
           <div className={styles.link}>
-            <a href="#">Team</a>
+            <a href="https://attraceteam.com/" target="_blank">
+              Team
+            </a>
           </div>
           <div className={styles.link}>
-            <a href="#">Governance</a>
+            <a
+              href="https://attrace.network/community/attr-token/#governance"
+              target="_blank"
+            >
+              Governance
+            </a>
           </div>
         </div>
       </div>
@@ -98,10 +112,16 @@ const Footer: FC = () => (
         &copy; 2022 - Attrace Referral Network
       </div>
       <div>
-        <a href="#" className={styles.privacya}>
+        <a
+          href="https://attrace.network/privacy-policy/"
+          target="_blank"
+          className={styles.privacya}
+        >
           Privacy Policy
         </a>
-        <a href="#">Code of Conduct</a>
+        <a href="https://attrace.network/code-of-conduct/" target="_blank">
+          Code of Conduct
+        </a>
       </div>
     </div>
   </div>

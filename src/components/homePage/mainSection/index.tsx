@@ -26,7 +26,10 @@ export default function MainSection(): JSX.Element {
           <div className={styles.name}>Referral Genesis</div>
           <div>
             Created by{" "}
-            <a href="#" target="_blank">
+            <a
+              href={`https://etherscan.io/address/0x26bc596D39c5D45C855901b6995e0842E37Ae57a`}
+              target="_blank"
+            >
               {truncateString("0x26bc596D39c5D45C855901b6995e0842E37Ae57a")}
             </a>
           </div>
