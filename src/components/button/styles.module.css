@@ -1,0 +1,26 @@
+.primary {
+  display: flex;
+  align-items: center;
+  border: 0;
+  border-radius: 6px;
+  background: var(--primary-btn);
+  color: var(--white);
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 24px;
+  padding: 8px 20px;
+  font-family: "Inter";
+  cursor: pointer;
+}
+
+.primary svg {
+  margin-right: 10px;
+}
+
+.secondary {
+  background: linear-gradient(to right, var(--background), var(--background))
+      padding-box,
+    var(--primary-gradient) border-box;
+  border: 1px solid transparent;
+  color: var(--white-09);
+}

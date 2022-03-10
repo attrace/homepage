@@ -29,6 +29,12 @@
   line-height: 32px;
   margin-bottom: 40px;
 }
+.actions {
+  display: flex;
+}
+.actions button:first-child {
+  margin-right: 20px;
+}
 
 .referral {
   height: 480px;
@@ -93,6 +99,12 @@
   background: #a35cd4;
   opacity: 0.12;
   filter: blur(200px);
+}
+
+@media (max-width: 1080px) {
+  .actions {
+    margin-bottom: 32px;
+  }
 }
 
 @media (max-width: 560px) {

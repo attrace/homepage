@@ -3,6 +3,8 @@ import React from "react";
 
 import truncateString from "../../../utils/truncateString";
 
+import Button from "../../button";
+
 import styles from "./index.module.css";
 
 export default function MainSection(): JSX.Element {
@@ -16,6 +18,14 @@ export default function MainSection(): JSX.Element {
           Unlock the value of ‘word of mouth’ marketing in web3. Recommend
           crypto or NFT and earn rewards from referral farms.{" "}
         </p>
+        <div className={styles.actions}>
+          <a href="#" target="_blank">
+            <Button>Enter App</Button>
+          </a>
+          <a href="#" target="_blank">
+            <Button variant="secondary">Learn More</Button>
+          </a>
+        </div>
       </div>
       <div className={styles.referral}>
         <div className={clsx(styles.filter, styles.filter1)} />

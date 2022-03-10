@@ -10,6 +10,11 @@ import MaskLogo from "@site/static/img/partners/mask.svg";
 import DappRadarLogo from "@site/static/img/partners/dappRadar.svg";
 import DeribitLogo from "@site/static/img/partners/deribit.svg";
 import ImpossibleFinLogo from "@site/static/img/partners/impossibleFinance.svg";
+import ExternalLinkIcon from "@site/static/img/icons/externalLink.svg";
+import Chart1Icon from "@site/static/img/icons/chart1.svg";
+import Chart2Icon from "@site/static/img/icons/chart2.svg";
+import Chart3Icon from "@site/static/img/icons/chart3.svg";
+import ArrowRightIcon from "@site/static/img/icons/arrowRight.svg";
 import styles from "./index.module.css";
 
 export default function Home(): JSX.Element {
@@ -23,16 +28,109 @@ export default function Home(): JSX.Element {
         <MainSection />
         <TokensAPR />
         <div className={clsx("container", styles.section)}>
-          <h2 className={styles.sectionTitle}>
+          <div className={styles.sectionTitle}>
             Join the Ecosystem with
             <span> Referral Farming</span>
-          </h2>
+          </div>
+          <div className={styles.cards}>
+            <div className={styles.statsCard}>
+              <div className={clsx(styles.filter, styles.filter1)} />
+              <div className={styles.value}>12,034</div>
+              <span className={styles.text}>
+                Users who joined referral farming
+              </span>
+            </div>
+            <div className={styles.statsCard}>
+              <div className={clsx(styles.filter, styles.filter2)} />
+              <div className={styles.value}>1,523</div>
+              <span className={styles.text}>
+                NFT & crypto projects eligible for farming rewards
+              </span>
+            </div>
+            <div className={styles.statsCard}>
+              <div className={clsx(styles.filter, styles.filter3)} />
+              <div className={styles.value}>
+                $3.2M
+                <a href="#" target="_blank">
+                  <ExternalLinkIcon />
+                </a>
+              </div>
+              <span className={styles.text}>
+                Total value locked in referral farms
+              </span>
+            </div>
+            <div className={styles.statsCard}>
+              <div className={clsx(styles.filter, styles.filter4)} />
+              <div className={styles.value}>
+                $2.5M
+                <a href="#" target="_blank">
+                  <ExternalLinkIcon />
+                </a>
+              </div>
+              <span className={styles.text}>
+                Total value of $ATTR in staked with Oracles
+              </span>
+            </div>
+          </div>
         </div>
         <div className={clsx("container", styles.section, styles.earnSection)}>
           <h2 className={styles.sectionTitle}>
             Earn rewards with
             <span> Referral Protocol</span>
           </h2>
+          <div className={styles.cards}>
+            <div className={styles.rewardCard}>
+              <div className={styles.filter} />
+              <div
+                className={styles.icon}
+                style={{ backgroundColor: "rgba(199, 123, 249, 0.15)" }}
+              >
+                <Chart1Icon />
+              </div>
+              <div className={styles.title}>Referral Farming</div>
+              <div className={styles.text}>
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form.
+              </div>
+              <a>
+                Join Referral Farms <ArrowRightIcon />
+              </a>
+            </div>
+            <div className={styles.rewardCard}>
+              <div
+                className={styles.icon}
+                style={{ backgroundColor: "rgba(83, 146, 255, 0.1)" }}
+              >
+                <Chart2Icon />
+              </div>
+              <div className={styles.filter} />
+              <div className={styles.title}>Oracle Staking</div>
+              <div className={styles.text}>
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form.
+              </div>
+              <a>
+                Stake $ATTR <ArrowRightIcon />
+              </a>
+            </div>
+            <div className={clsx(styles.rewardCard, styles.rewardCard3)}>
+              <div
+                className={styles.icon}
+                style={{ backgroundColor: "rgba(233, 89, 236, 0.1)" }}
+              >
+                <Chart3Icon />
+              </div>
+              <div className={styles.filter} />
+              <div className={styles.title}>Liquidity Mining</div>
+              <div className={styles.text}>
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form.
+              </div>
+              <a>
+                Provide Liquidity <ArrowRightIcon />
+              </a>
+            </div>
+          </div>
         </div>
         <div
           className={clsx("container", styles.section, styles.partnersSection)}
