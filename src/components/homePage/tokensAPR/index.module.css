@@ -1,0 +1,21 @@
+.wrapper {
+  width: 100%;
+  margin-top: 100px;
+  height: 37px;
+  background: var(--dark-grey-5);
+  display: flex;
+  align-items: center;
+  flex-flow: wrap;
+  overflow: hidden;
+}
+.item {
+  border-right: 1px solid var(--dark-grey-15);
+  padding: 0 16px;
+  max-width: 170px;
+  font-size: 0.75rem;
+  margin: 7px 0;
+}
+.item span {
+  font-size: 0.875rem;
+  font-weight: 500;
+}

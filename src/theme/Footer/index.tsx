@@ -1,4 +1,5 @@
 import React, { FC } from "react";
+import Link from "@docusaurus/Link";
 
 import AttrFooterLogo from "@site/static/img/attrFooterLogo.svg";
 import Discord from "@site/static/img/icons/discord.svg";
@@ -81,7 +82,7 @@ const Footer: FC = () => (
         <div className={styles.links}>
           <h6>About</h6>
           <div className={styles.link}>
-            <a href="#">Blog</a>
+            <Link to="/blog">Blog</Link>
           </div>
           <div className={styles.link}>
             <a href="#">Team</a>

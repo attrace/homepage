@@ -1,0 +1,108 @@
+.wrapper {
+  padding-top: 86px;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: wrap;
+}
+
+.actionBlock {
+  max-width: 628px;
+}
+.actionBlock h1 {
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 4rem;
+  line-height: 72px;
+  letter-spacing: -0.6px;
+  margin-bottom: 25px;
+  margin-top: 45px;
+  color: var(--white-09);
+}
+.actionBlock h1 span {
+  background: var(--secondary-gradient);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.actionBlock p {
+  font-size: 1.25rem;
+  line-height: 32px;
+  margin-bottom: 40px;
+}
+
+.referral {
+  height: 480px;
+  width: 412px;
+  background: var(--dark-grey-7);
+  border-radius: 10px;
+  padding: 6px 6px 0 6px;
+  position: relative;
+}
+.referral .img {
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  background: rgb(228 206 250 / 60%);
+  border-radius: 8px 8px 4px 4px;
+}
+.referral .data {
+  padding: 12px 16px;
+  font-size: 0.875rem;
+  position: relative;
+}
+.referral .name {
+  color: var(--white-09);
+  font-family: "Exo 2";
+  font-size: 1rem;
+  font-weight: 600;
+}
+.referral .data a {
+  color: var(--white-08);
+  font-weight: 600;
+}
+.referral .data a:hover {
+  text-decoration: none;
+  color: var(--white);
+}
+.filter {
+  position: absolute;
+}
+.filter1 {
+  width: 268px;
+  height: 268px;
+  left: 53px;
+  top: -35px;
+  background: #ffcad0;
+  opacity: 0.15;
+  filter: blur(200px);
+}
+.filter2 {
+  width: 281px;
+  height: 281px;
+  right: -130px;
+  top: 86px;
+  background: #269ef5;
+  opacity: 0.1;
+  filter: blur(120px);
+}
+.filter3 {
+  width: 277px;
+  height: 277px;
+  left: -38px;
+  bottom: -47px;
+  background: #a35cd4;
+  opacity: 0.12;
+  filter: blur(200px);
+}
+
+@media (max-width: 560px) {
+  .referral {
+    overflow: hidden;
+    max-width: 412px;
+    width: 100%;
+  }
+  .referral .img {
+    max-width: 400px;
+    width: 100%;
+  }
+}

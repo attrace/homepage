@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@600&display=swap");
 
 /**
  * Any CSS included here will be global. The classic template
@@ -17,10 +18,10 @@
   --dark-grey-15: #36343f;
   --dark-grey-13: #322f3a;
   --dark-grey-11: #2d2a36;
-  --dark-grey-009: #282631;
-  --dark-grey-007: #24212d;
-  --dark-grey-005: #1f1c29;
-  --dark-grey-003: #1a1724;
+  --dark-grey-9: #282631;
+  --dark-grey-7: #24212d;
+  --dark-grey-5: #1f1c29;
+  --dark-grey-3: #1a1724;
 
   /* White */
   --white-06: rgb(255 255 255 / 60%);
@@ -46,8 +47,10 @@
   --ifm-toc-link-color: var(--white-06);
   --ifm-menu-color: var(--white-06);
   --ifm-code-background: rgb(51, 52, 55);
-  --ifm-code-font-size: 16px;
+  --ifm-code-font-size: 1rem;
   --ifm-font-family-base: "Inter";
+  --ifm-container-width-xl: 1260px;
+  --ifm-container-width: 1260px;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -74,7 +77,7 @@
 /* navbar */
 .navbar {
   /* colors */
-  --ifm-navbar-background-color: var(--dark-grey-003);
+  --ifm-navbar-background-color: var(--dark-grey-3);
   --ifm-navbar-link-color: var(--white-06);
 
   height: 64px;
@@ -100,36 +103,13 @@
 /* main-wrapper */
 .main-wrapper {
   background: var(--background);
-  color: var(--white-09);
+  color: var(--white-07);
 }
+.main-wrapper a:hover {
+  text-decoration: none;
+  color: var(--white);
+}
+
 .docs-wrapper {
   padding: 20px 0;
-}
-
-/* footer */
-.footer {
-  --ifm-footer-title-color: var(--white-08);
-  --ifm-footer-link-color: var(--white-07);
-
-  background: var(--dark-grey-003);
-  padding: 48px 0 0;
-  font-size: 14px;
-  color: var(--white-07);
-}
-.footer .container {
-  max-width: 100%;
-  padding: 0;
-}
-.footer__links {
-  max-width: var(--ifm-container-width);
-  padding: 0 var(--ifm-spacing-horizontal);
-  padding: 0 48px;
-  color: var(--white-07);
-  margin-bottom: 48px;
-}
-.footer__bottom {
-  border-top: 1px solid var(--dark-grey-11);
-  text-align: left;
-  font-size: 12px;
-  padding: 20px 48px;
 }

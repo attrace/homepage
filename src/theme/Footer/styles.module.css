@@ -1,7 +1,7 @@
 .wrapper {
-  background-color: var(--dark-grey-003);
+  background-color: var(--dark-grey-3);
   color: var(--white-07);
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 22px;
 }
 
@@ -24,7 +24,7 @@
 
 .logoText h4 {
   font-weight: 600;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 28px;
   margin-bottom: 4px;
   color: var(--white-08);
@@ -43,7 +43,7 @@
 }
 
 .links h6 {
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 22px;
   font-weight: 600;
   margin-bottom: 12px;
@@ -75,7 +75,7 @@
   justify-content: space-between;
   padding: 20px 58px;
   flex-wrap: wrap;
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 20px;
 }
 
