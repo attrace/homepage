@@ -3,7 +3,7 @@
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Attrace - Referral Protocol for Web3 Assets",
+  title: "Attrace",
   tagline: "Referral Protocol for Web3 Assets",
   url: "https://attrace.com/",
   baseUrl: "/",
