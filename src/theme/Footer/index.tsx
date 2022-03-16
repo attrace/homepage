@@ -65,46 +65,6 @@ const Footer: FC = () => (
             </a>
           </div>
         </div>
-        {/* <div className={styles.links}>
-          <h6>project</h6>
-          <div className={styles.link}>
-            <a href="https://attrace.network/" target="_blank">
-              Referral Network
-            </a>
-          </div>
-          <div className={styles.link}>
-            <a
-              href="https://attrace.network/community/attr-token/"
-              target="_blank"
-            >
-              ATTR Token
-            </a>
-          </div>
-          <div className={styles.link}>
-            <a href="https://attrace.network/developers/" target="_blank">
-              Developers
-            </a>
-          </div>
-        </div>
-        <div className={styles.links}>
-          <h6>About</h6>
-          <div className={styles.link}>
-            <Link to="/blog">Blog</Link>
-          </div>
-          <div className={styles.link}>
-            <a href="https://attraceteam.com/" target="_blank">
-              Team
-            </a>
-          </div>
-          <div className={styles.link}>
-            <a
-              href="https://attrace.network/community/attr-token/#governance"
-              target="_blank"
-            >
-              Governance
-            </a>
-          </div>
-        </div> */}
       </div>
     </div>
     <div className={styles.lower}>
