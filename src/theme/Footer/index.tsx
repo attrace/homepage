@@ -112,15 +112,12 @@ const Footer: FC = () => (
         &copy; 2022 - Attrace Referral Network
       </div>
       <div>
-        <a
-          href="/about/legal/privacy-policy/"
-          className={styles.privacya}
-        >
+        <Link to="/about/legal/privacy-policy/"  className={styles.privacya}>
           Privacy Policy
-        </a>
-        <a href="/about/legal/code-of-conduct/">
+        </Link>
+        <Link to="/about/legal/code-of-conduct/">
           Code of Conduct
-        </a>
+        </Link>
       </div>
     </div>
   </div>
