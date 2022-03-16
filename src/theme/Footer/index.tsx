@@ -65,7 +65,7 @@ const Footer: FC = () => (
             </a>
           </div>
         </div>
-        <div className={styles.links}>
+        {/* <div className={styles.links}>
           <h6>project</h6>
           <div className={styles.link}>
             <a href="https://attrace.network/" target="_blank">
@@ -104,7 +104,7 @@ const Footer: FC = () => (
               Governance
             </a>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
     <div className={styles.lower}>
@@ -113,13 +113,12 @@ const Footer: FC = () => (
       </div>
       <div>
         <a
-          href="https://attrace.network/privacy-policy/"
-          target="_blank"
+          href="/about/legal/privacy-policy/"
           className={styles.privacya}
         >
           Privacy Policy
         </a>
-        <a href="https://attrace.network/code-of-conduct/" target="_blank">
+        <a href="/about/legal/code-of-conduct/">
           Code of Conduct
         </a>
       </div>
