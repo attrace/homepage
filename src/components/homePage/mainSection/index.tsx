@@ -12,7 +12,7 @@ export default function MainSection(): JSX.Element {
     <div className={clsx("container", styles.wrapper)}>
       <div className={styles.actionBlock}>
         <h1>
-          <span>Referral Protocol</span> for <br />
+          <span>Referral</span> <span>Protocol</span> for <br />
           Web3 Assets
         </h1>
         <p>
