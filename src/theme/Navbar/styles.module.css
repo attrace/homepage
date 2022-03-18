@@ -15,6 +15,10 @@ Hide toggle in small viewports
 .enterAppBtn:hover {
   text-decoration: none;
 }
+
+.logo {
+  margin-right: 20px;
+}
 @media (max-width: 996px) {
   .toggle {
     display: none;
