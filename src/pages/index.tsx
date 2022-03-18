@@ -145,7 +145,7 @@ export default function Home(): JSX.Element {
           <div className={styles.partnersLogos}>
             <MaskLogo />
             <img
-              src={require("@site/static/img/partners/dappRadar.png").default}
+              src={require("@site/static/img/partners/dappradar.png").default}
             />
             <img src={require("@site/static/img/partners/amasa.png").default} />
             <DeribitLogo />
