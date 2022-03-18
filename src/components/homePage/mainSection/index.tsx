@@ -12,7 +12,8 @@ export default function MainSection(): JSX.Element {
     <div className={clsx("container", styles.wrapper)}>
       <div className={styles.actionBlock}>
         <h1>
-          <span>Referral Protocol</span> for Web3 Assets
+          <span>Referral Protocol</span> for <br />
+          Web3 Assets
         </h1>
         <p>
           Unlock the value of ‘word of mouth’ marketing in web3. Recommend

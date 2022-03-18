@@ -7,7 +7,6 @@ import MainSection from "../components/homePage/mainSection";
 import TokensAPR from "../components/homePage/tokensAPR";
 
 import MaskLogo from "@site/static/img/partners/mask.svg";
-import DappRadarLogo from "@site/static/img/partners/dappRadar.svg";
 import DeribitLogo from "@site/static/img/partners/deribit.svg";
 import ImpossibleFinLogo from "@site/static/img/partners/impossibleFinance.svg";
 import ExternalLinkIcon from "@site/static/img/icons/externalLink.svg";
@@ -30,7 +29,9 @@ export default function Home(): JSX.Element {
         <div className={clsx("container", styles.section)}>
           <div className={styles.sectionTitle}>
             Join the Ecosystem with
-            <span> Referral Farming</span>
+            <span> Referral</span>
+            <br />
+            <span> Farming</span>
           </div>
           <div className={styles.cards}>
             <div className={styles.statsCard}>
@@ -137,11 +138,15 @@ export default function Home(): JSX.Element {
         >
           <h2 className={styles.sectionTitle}>
             Partners who joined
-            <span> Referral Ecosystem</span>
+            <span> Referral </span>
+            <br />
+            <span> Ecosystem</span>
           </h2>
           <div className={styles.partnersLogos}>
             <MaskLogo />
-            <DappRadarLogo />
+            <img
+              src={require("@site/static/img/partners/dappRadar.png").default}
+            />
             <img src={require("@site/static/img/partners/amasa.png").default} />
             <DeribitLogo />
             <ImpossibleFinLogo />

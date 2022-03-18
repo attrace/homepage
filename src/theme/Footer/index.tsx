@@ -48,19 +48,28 @@ const Footer: FC = () => (
           <h6>$ATTR available on</h6>
           <div className={styles.externalLink}>
             <Sushiswap />
-            <a href="/#" target="_blank">
+            <a
+              href="https://app.sushi.com/swap?inputCurrency=ETH&outputCurrency=0x44e2dec86b9f0e0266e9aa66e10323a2bd69cf9a"
+              target="_blank"
+            >
               Sushiswap
             </a>
           </div>
           <div className={styles.externalLink}>
             <Uniswap />
-            <a href="/#" target="_blank">
+            <a
+              href="https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0x44e2dec86b9f0e0266e9aa66e10323a2bd69cf9a&chain=rinkeby"
+              target="_blank"
+            >
               Uniswap
             </a>
           </div>
           <div className={styles.externalLink}>
             <img src={require("@site/static/img/icons/bittrex.png").default} />
-            <a href="/#" target="_blank">
+            <a
+              href="https://global.bittrex.com/Market/Index?MarketName=USDT-ATTR"
+              target="_blank"
+            >
               Bittrex
             </a>
           </div>
@@ -72,12 +81,10 @@ const Footer: FC = () => (
         &copy; 2022 - Attrace Referral Network
       </div>
       <div>
-        <Link to="/about/legal/privacy-policy/"  className={styles.privacya}>
+        <Link to="/about/legal/privacy-policy/" className={styles.privacya}>
           Privacy Policy
         </Link>
-        <Link to="/about/legal/code-of-conduct/">
-          Code of Conduct
-        </Link>
+        <Link to="/about/legal/code-of-conduct/">Code of Conduct</Link>
       </div>
     </div>
   </div>
