@@ -4,10 +4,6 @@
   justify-content: space-between;
   flex-flow: wrap;
 }
-
-.actionBlock {
-  max-width: 628px;
-}
 .actionBlock h1 {
   font-family: "Exo 2";
   font-style: normal;
@@ -28,6 +24,7 @@
   font-size: 1.25rem;
   line-height: 32px;
   margin-bottom: 40px;
+  max-width: 628px;
 }
 .actions {
   display: flex;
