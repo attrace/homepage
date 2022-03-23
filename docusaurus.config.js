@@ -73,9 +73,15 @@ const config = {
             position: "left" 
           },
           { 
-            to: "/guides", 
-            activeBasePath: 'guides',
-            label: "Guides", 
+            to: "/about/referral-farming", 
+            activeBasePath: '/about/referral-farming',
+            label: "Referral Farming", 
+            position: "left" 
+          },       
+          { 
+            to: "/about/oracles", 
+            activeBasePath: '/about/oracles',
+            label: "Oracles", 
             position: "left" 
           },       
           { 
