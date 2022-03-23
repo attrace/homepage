@@ -17,7 +17,7 @@ const config = {
   },
   presets: [
     [
-      '@docusaurus/preset-classic',
+      "@docusaurus/preset-classic",
       {
         docs: false,
         blog: false,
@@ -28,10 +28,10 @@ const config = {
         //     'https://github.com/facebook/docusaurus/edit/develop/website/blog/',
         // },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
       },
-    ]    
+    ],
     // [
     //   "classic",
     //   /** @type {import('@docusaurus/preset-classic').Options} */
@@ -39,7 +39,7 @@ const config = {
     //     docs: {
     //       sidebarPath: require.resolve("./sidebars.js"),
     //       editUrl: "https://github.com/attrace/homepage/edit/master/",
-    //     },       
+    //     },
     //     blog: {
     //       showReadingTime: true,
     //       editUrl: "https://github.com/attrace/homepage/edit/master/",
@@ -61,16 +61,24 @@ const config = {
       },
       navbar: {
         style: "dark",
-        logo: {
-          alt: "Attrace",
-          src: "img/logo.svg",
-        },
         items: [
-          { 
-            to: "/about", 
-            activeBasePath: 'about',
-            label: "About", 
-            position: "left" 
+          {
+            to: "/about",
+            activeBasePath: "about",
+            label: "About",
+            position: "left",
+          },
+          {
+            to: "/guides",
+            activeBasePath: "guides",
+            label: "Guides",
+            position: "left",
+          },
+          {
+            to: "/updates",
+            activeBasePath: "updates",
+            label: "Updates",
+            position: "left",
           },
           { 
             to: "/about/referral-farming", 
@@ -96,44 +104,43 @@ const config = {
         style: "dark",
       },
     }),
-    plugins: [
-
-      [
-        '@docusaurus/plugin-content-docs',
-        {
-          id: 'about',
-          path: 'about',
-          routeBasePath: 'about',
-          editUrl: 'https://github.com/attrace/docs/edit/master/',
-          includeCurrentVersion: true,
-          lastVersion: 'current',
-          sidebarPath: require.resolve('./sidebars.about.js'),
-        },
-      ],
-      [
-        '@docusaurus/plugin-content-docs',
-        {
-          id: 'guides',
-          path: 'guides',
-          routeBasePath: 'guides',
-          editUrl: 'https://github.com/attrace/docs/edit/master/',
-          includeCurrentVersion: true,
-          lastVersion: 'current',
-          sidebarPath: require.resolve('./sidebars.guides.js'),
-        },
-      ],
-      [
-        '@docusaurus/plugin-content-blog',
-        {
-          id: 'updates',
-          path: 'updates',
-          showReadingTime: true,
-          routeBasePath: 'updates',
-          include: ['*.md', '*.mdx'],
-          editUrl: 'https://github.com/attrace/docs/edit/master/',
-        },
-      ],
-    ]  
+  plugins: [
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "about",
+        path: "about",
+        routeBasePath: "about",
+        editUrl: "https://github.com/attrace/docs/edit/master/",
+        includeCurrentVersion: true,
+        lastVersion: "current",
+        sidebarPath: require.resolve("./sidebars.about.js"),
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "guides",
+        path: "guides",
+        routeBasePath: "guides",
+        editUrl: "https://github.com/attrace/docs/edit/master/",
+        includeCurrentVersion: true,
+        lastVersion: "current",
+        sidebarPath: require.resolve("./sidebars.guides.js"),
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-blog",
+      {
+        id: "updates",
+        path: "updates",
+        showReadingTime: true,
+        routeBasePath: "updates",
+        include: ["*.md", "*.mdx"],
+        editUrl: "https://github.com/attrace/docs/edit/master/",
+      },
+    ],
+  ],
 };
 
 module.exports = config;

@@ -21,9 +21,9 @@ import {
 } from "@docusaurus/theme-common";
 import { useActivePlugin } from "@docusaurus/plugin-content-docs/client";
 import NavbarItem from "@theme/NavbarItem";
-import Logo from "@theme/Logo";
 import IconMenu from "@theme/IconMenu";
 import IconClose from "@theme/IconClose";
+import Logo from "@site/static/img/logo.svg";
 
 import Button from "../../components/button";
 
@@ -154,11 +154,7 @@ function NavbarMobileSidebar({ sidebarShown, toggleSidebar }) {
   return (
     <div className="navbar-sidebar">
       <div className="navbar-sidebar__brand">
-        <Logo
-          className="navbar__brand"
-          imageClassName="navbar__logo"
-          titleClassName="navbar__title"
-        />
+        <Logo className={styles.logo} />
         {!colorModeToggle.disabled && (
           <ColorModeToggle
             className={styles.navbarSidebarToggle}
@@ -249,11 +245,7 @@ export default function Navbar() {
               <IconMenu />
             </button>
           )}
-          <Logo
-            className="navbar__brand"
-            imageClassName="navbar__logo"
-            titleClassName="navbar__title"
-          />
+          <Logo className={styles.logo} />
           {leftItems.map((item, i) => (
             <NavbarItem {...item} key={i} />
           ))}
