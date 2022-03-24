@@ -85,7 +85,7 @@ const AreaChart = () => {
     ];
 
     /// load range=B1:H31
-    am5.net.load("https://docs.google.com/spreadsheets/d/1U4sJOs7nZKaMn7Jnp7TWTH3Sd-Gp9VviYmxnghY87MI/gviz/tq?tqx=out:json&tq&gid=0&range=B1:M31&headers=1").then(function (result) {
+    am5.net.load("https://docs.google.com/spreadsheets/d/1U4sJOs7nZKaMn7Jnp7TWTH3Sd-Gp9VviYmxnghY87MI/gviz/tq?tqx=out:json&tq&gid=0&range=B1:M59&headers=1").then(function (result) {
       // slice off google stuff
       const json = am5.JSONParser.parse(result.response.substring(47).slice(0, -2));
       const cols = json.table.cols;
