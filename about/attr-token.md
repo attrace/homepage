@@ -4,6 +4,7 @@ id: attr-token
 ---
 
 import AreaChart from '@site/src/components/tokenCharts/areaChart';
+import PieChart from '@site/src/components/tokenCharts/pieChart';
 
 $ATTR is a native token of Attrace Referral Network. It is a utility and governance token, which gives token holders a right to participate in the network, govern the network and earn token rewards by staking.
 
@@ -23,8 +24,15 @@ $ATTR is a native token of Attrace Referral Network. It is a utility and governa
 
 
 ### Distribution
+
+The token is distributed accross a number of segments with the purpose of enabling development, organic growth and promotion. Please find more information in this Medium blog post.
+
+<PieChart/>
+
+
 #### Expected $ATTR Token Distribution in 30 Months
 <AreaChart/>
+
 
 
 
