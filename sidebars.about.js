@@ -1,18 +1,18 @@
 module.exports = {
     about: [
       'vision',
-      {
-        type: 'category',
-        label: 'Concept',
-        items: [
-          'concept/referral-farming',
-          'concept/referral-oracles',
-        ]
-      },
+      'referral-farming',
+      'oracles',
       'roadmap',
+      'attr-token',
       'tokenomics',
       'rewards',
-      //'team',
+      {
+        type: 'link',
+        label: 'Attrace Team', // The link label
+        href: 'https://attraceteam.com', // The external URL
+      },
+
       {
         type: 'category',
         label: 'Legal',

@@ -80,6 +80,24 @@ const config = {
             label: "Updates",
             position: "left",
           },
+          { 
+            to: "/about/referral-farming", 
+            activeBasePath: '/about/referral-farming',
+            label: "Referral Farming", 
+            position: "left" 
+          },       
+          { 
+            to: "/about/oracles", 
+            activeBasePath: '/about/oracles',
+            label: "Oracles", 
+            position: "left" 
+          },       
+          { 
+            to: "/updates", 
+            activeBasePath: 'updates',
+            label: "Updates", 
+            position: "left" 
+          },       
         ],
       },
       footer: {
