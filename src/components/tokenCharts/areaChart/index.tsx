@@ -72,15 +72,20 @@ const AreaChart = () => {
     const headers = [
       "date",
       "team",
-      "pre-sale",
-      "remaining",
-      "conversion",
-      "airdrop",
-      "marketing"
+      "advisors",
+      "private-round-1",
+      "remaining-funding",
+      "staking",
+      "referral-farm",
+      "referral-achievements",
+      "public-round-ido",
+      "public-round-ecosystem",
+      "classic-contributors",
+      "private-round-2",
     ];
 
     /// load range=B1:H31
-    am5.net.load("https://docs.google.com/spreadsheets/d/1U4sJOs7nZKaMn7Jnp7TWTH3Sd-Gp9VviYmxnghY87MI/gviz/tq?tqx=out:json&tq&gid=0&range=B1:H31&headers=1").then(function (result) {
+    am5.net.load("https://docs.google.com/spreadsheets/d/1U4sJOs7nZKaMn7Jnp7TWTH3Sd-Gp9VviYmxnghY87MI/gviz/tq?tqx=out:json&tq&gid=0&range=B1:M31&headers=1").then(function (result) {
       // slice off google stuff
       const json = am5.JSONParser.parse(result.response.substring(47).slice(0, -2));
       const cols = json.table.cols;
@@ -102,6 +107,10 @@ const AreaChart = () => {
       // https://www.amcharts.com/docs/v5/charts/xy-chart/series/
 
       function createSeries(name, field) {
+        let tooltip = am5.Tooltip.new(root, {
+          pointerOrientation: "horizontal",
+          labelText: "[fontSize: 9px]{name}\n{categoryX}: {valueY}[/]"
+        });
         var series = chart.series.push(am5xy.LineSeries.new(root, {
           name: name,
           xAxis: xAxis,
@@ -109,10 +118,7 @@ const AreaChart = () => {
           stacked: true,
           valueYField: field,
           categoryXField: "date",
-          tooltip: am5.Tooltip.new(root, {
-            pointerOrientation: "horizontal",
-            labelText: "[bold]{name}[/]\n{categoryX}: {valueY}"
-          })
+          tooltip: tooltip
         }));
 
 
@@ -170,7 +176,7 @@ const AreaChart = () => {
 
 
   return (
-    <div id="chartdiv" style={{ width: "100%", height: "600px" }}></div>
+    <div id="chartdiv" style={{ width: "100%", height: "700px" }}></div>
   );
 
 }
