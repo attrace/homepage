@@ -4,7 +4,6 @@ description: Attrace Product Update
 authors:
   - nikola
 tags: [product]
-image: https://i.imgur.com/mErPwqL.png
 hide_table_of_contents: false
 ---
 
