@@ -8,7 +8,7 @@ import am5themes_dark from "@amcharts/amcharts5/themes/Dark";
 
 const AreaChart = () => {
   useLayoutEffect(() => {
-    let root = am5.Root.new("chartdiv");
+    let root = am5.Root.new("areachartdiv");
 
     root.setThemes([
       am5themes_dark.new(root)
@@ -176,7 +176,7 @@ const AreaChart = () => {
 
 
   return (
-    <div id="chartdiv" style={{ width: "100%", height: "700px" }}></div>
+    <div id="areachartdiv" style={{ width: "100%", height: "700px" }}></div>
   );
 
 }
