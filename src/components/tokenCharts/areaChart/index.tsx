@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, useLayoutEffect } from "react";
 
 import * as am5 from "@amcharts/amcharts5";
 import * as am5xy from "@amcharts/amcharts5/xy";
@@ -6,10 +6,9 @@ import am5themes_dark from "@amcharts/amcharts5/themes/Dark";
 
 
 
-class AreaChart extends Component {
-  private root;
-  componentDidMount() {
-    const root = am5.Root.new("chartdiv");
+const AreaChart = () => {
+  useLayoutEffect(() => {
+    let root = am5.Root.new("chartdiv");
 
     root.setThemes([
       am5themes_dark.new(root)
@@ -162,20 +161,18 @@ class AreaChart extends Component {
     });
 
     //set root
-    this.root = root;
-  }
-
-  componentWillUnmount() {
-    if (this.root) {
-      this.root.dispose();
+    root.current = root;
+    return () => {
+      root.dispose();
     }
-  }
+  }, []);
 
-  render() {
-    return (
-      <div id="chartdiv" style={{ width: "100%", height: "600px" }}></div>
-    );
-  }
+
+
+  return (
+    <div id="chartdiv" style={{ width: "100%", height: "600px" }}></div>
+  );
+
 }
 
 export default AreaChart;
