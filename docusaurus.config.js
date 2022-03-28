@@ -68,18 +68,6 @@ const config = {
             label: "About",
             position: "left",
           },
-          {
-            to: "/guides",
-            activeBasePath: "guides",
-            label: "Guides",
-            position: "left",
-          },
-          {
-            to: "/updates",
-            activeBasePath: "updates",
-            label: "Updates",
-            position: "left",
-          },
           { 
             to: "/about/referral-farming", 
             activeBasePath: '/about/referral-farming',
