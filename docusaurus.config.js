@@ -21,34 +21,11 @@ const config = {
       {
         docs: false,
         blog: false,
-        // blog: {
-        //   showReadingTime: true,
-        //   // Please change this to your repo.
-        //   editUrl:
-        //     'https://github.com/facebook/docusaurus/edit/develop/website/blog/',
-        // },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
       },
     ],
-    // [
-    //   "classic",
-    //   /** @type {import('@docusaurus/preset-classic').Options} */
-    //   ({
-    //     docs: {
-    //       sidebarPath: require.resolve("./sidebars.js"),
-    //       editUrl: "https://github.com/attrace/homepage/edit/master/",
-    //     },
-    //     blog: {
-    //       showReadingTime: true,
-    //       editUrl: "https://github.com/attrace/homepage/edit/master/",
-    //     },
-    //     theme: {
-    //       customCss: require.resolve("./src/css/custom.css"),
-    //     },
-    //   }),
-    // ],
   ],
 
   themeConfig:
@@ -68,24 +45,24 @@ const config = {
             label: "About",
             position: "left",
           },
-          { 
-            to: "/about/referral-farming", 
+          {
+            to: "/about/referral-farming",
             activeBasePath: '/about/referral-farming',
-            label: "Referral Farming", 
-            position: "left" 
-          },       
-          { 
-            to: "/about/oracles", 
+            label: "Referral Farming",
+            position: "left"
+          },
+          {
+            to: "/about/oracles",
             activeBasePath: '/about/oracles',
-            label: "Oracles", 
-            position: "left" 
-          },       
-          { 
-            to: "/updates", 
+            label: "Oracles",
+            position: "left"
+          },
+          {
+            to: "/updates",
             activeBasePath: 'updates',
-            label: "Updates", 
-            position: "left" 
-          },       
+            label: "Updates",
+            position: "left"
+          },
         ],
       },
       footer: {
@@ -128,6 +105,19 @@ const config = {
         editUrl: "https://github.com/attrace/homepage/edit/testnet/",
       },
     ],
+  ],
+  scripts: [
+    
+    {
+      src:
+        '/js/loadtags.js',
+      async: false,
+    },
+    {
+      src:
+        'https://improve.attrace.com/server/ust.min.js?v=4.3.2',
+      async: true,
+    },
   ],
 };
 

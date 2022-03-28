@@ -29,9 +29,30 @@ The token is distributed accross a number of segments with the purpose of enabli
 
 <PieChart/>
 
+### $ATTR Token forecast
 
-#### Expected $ATTR Token Distribution in 30 Months
+Expected $ATTR Token Distribution in 30 Months
 <AreaChart/>
+
+
+### Vesting
+
+Vesting rules below apply to the different wallets and holders.
+
+| Pool Name                   | Token Amount     | Pool Share       |      Vesting     |
+| --------------------------- | ---------------- | ---------------- | ---------------- |
+| Ecosystem Adoption          |	100,000,000      | 10.00%           | 3 months locked - 12 months vesting <br/>  *(transfer-out date)*                  |
+| Private Round One           |	122,970,588      | 12.30%           |  6 months locked - 12 months vesting                |
+| Attrace Classic Contributors (2018) |	125,175,117 |	12.52% | 12 months vesting  |
+| Team Allocation |	180,000,000	| 18.00% | 6 months locked - 24 months vesting |
+| Staking|	100,000,000	 | 10.00% | Traction Based - vesting to be determined |
+| Attrace Referral Farm |	100,000,000 |	10.00% | Traction Based - vesting to be determined |
+| Referrals & Achievements |	50,000,000 |	5.00% | Traction Based - vesting to be determined |
+| Advisors | 40,000,000 |	4.00% |  6 months locked - 24 months vesting |
+| Private Round Two |	67,800,000 |	6.78% | 12 months vesting |
+| Public Round (IDO) | 15,000,000 | 1.50% | n/a |
+| Remaining Funding	| 99,054,295 | 9.91% | n/a |
+
 
 
 
