@@ -25,6 +25,18 @@ const PieChart = () => {
       })
     );
 
+    root.container.children.push(am5.Label.new(root, {
+      text: "ATTR distribution\nacross the network's\n participants",
+      fontSize: 16,
+      fontWeight: "500",
+      textAlign: "center",
+      x: am5.percent(34),
+      y: am5.percent(45),
+      //centerX: am5.percent(50),
+      paddingTop: 0,
+      paddingBottom: 0
+    }));
+
     am5.net.load("https://docs.google.com/spreadsheets/d/1U4sJOs7nZKaMn7Jnp7TWTH3Sd-Gp9VviYmxnghY87MI/gviz/tq?tqx=out:json&tq&gid=0&range=V16:X27&headers=1").then(function (result) {
       // slice off google stuff
       const json = am5.JSONParser.parse(result.response.substring(47).slice(0, -2));
@@ -40,10 +52,9 @@ const PieChart = () => {
         };
         data[rowIndex] = element;
       });
-      console.log(data);
+      
 
-      //
-
+      
 
       // Create series
       let series = chart.series.push(
@@ -66,6 +77,11 @@ const PieChart = () => {
       }));
 
       legend.labels.template.setAll({
+        fontSize: 12,
+        fontWeight: "300"
+      });
+
+      legend.valueLabels.template.setAll({
         fontSize: 12,
         fontWeight: "300"
       });
