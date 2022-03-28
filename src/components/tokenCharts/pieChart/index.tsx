@@ -45,7 +45,6 @@ const PieChart = () => {
       // normalise data
       const data = [];
       rows.forEach(function (row, rowIndex) {
-        console.log(row);
         var element = {
           name: row.c[0].v,
           percentage: row.c[1].v,
