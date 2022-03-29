@@ -46,7 +46,7 @@ Vesting rules below apply to the different wallets and holders.
 | Attrace Classic Contributors (2018) |	125,175,117 |	12.52% | 12 months vesting  |
 | Team Allocation |	180,000,000	| 18.00% | 6 months locked - 24 months vesting |
 | Staking|	100,000,000	 | 10.00% | Traction Based - vesting to be determined |
-| Attrace Referral Farm |	100,000,000 |	10.00% | Traction Based - vesting to be determined |
+| Attrace Referral Farm |	100,000,000 |	10.00% | 12 months vesting <br/>  *(transfer-out date)* |
 | Referrals & Achievements |	50,000,000 |	5.00% | Traction Based - vesting to be determined |
 | Advisors | 40,000,000 |	4.00% |  6 months locked - 24 months vesting |
 | Private Round Two |	67,800,000 |	6.78% | 12 months vesting |
