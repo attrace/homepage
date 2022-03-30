@@ -7,6 +7,7 @@ module.exports = {
       'attr-token',
       'tokenomics',
       'rewards',
+      'glossary',
       {
         type: 'link',
         label: 'Attrace Team', // The link label
