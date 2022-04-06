@@ -11,6 +11,8 @@ In 2022 a major product update has been rolled out, the concept of Referral Farm
 
 The second update was introcucing the concept of Referral Farming.
 
+![](/about/oracles/farm-overview.svg)
+
 ## What is Referral Farming
 Referral Farming works in a similar way to Farming on a DEX, where yield farming-like rewards will be distributed for successful referrals (instead of providing liquidity). 
 The concept of farming is that a project dedicates a daily budget to promote its tokenised asset. As an example, when a new crypto currency is launched, it could dedicate a daily budget to promote this token. The moment a promoter is joining this farm, and succesfully onboarded a buyer for this token, the daily budget is devided over these two players.
@@ -34,6 +36,7 @@ As an example, imagine $MASK creates a sponsored farn with 1000 $MASK daily rewa
 Note that, when more promoters and referred buyers join this farm, the daily rewards will be devided between these players. In order words, early adopters of a new farm will have the highest yield.
 ### Attrace Referral Farm
 Promoters earn farming-like returns in $ATTR for promoting any crypto or NFT project; this will also trigger community growth. This can be done on top of the Sponsored Referral Farm. 
+
 As an example, Attrace could support the launch of a new token (and in future NFT collection). With every position increase, or NFT buy, an additional reward can be configured in the ATTR token (or potentially other tokens that would like that setup such support).
 
 
