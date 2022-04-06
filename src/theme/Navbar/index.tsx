@@ -19,6 +19,7 @@ import {
   useWindowSize,
   useColorMode,
 } from "@docusaurus/theme-common";
+
 import { useActivePlugin } from "@docusaurus/plugin-content-docs/client";
 import NavbarItem from "@theme/NavbarItem";
 import IconMenu from "@theme/IconMenu";
@@ -158,7 +159,7 @@ function NavbarMobileSidebar({ sidebarShown, toggleSidebar }) {
         {!colorModeToggle.disabled && (
           <ColorModeToggle
             className={styles.navbarSidebarToggle}
-            checked={colorModeToggle.isDarkTheme}
+            value ={useColorMode().colorMode}
             onChange={colorModeToggle.toggle}
           />
         )}
@@ -260,7 +261,7 @@ export default function Navbar() {
           {!colorModeToggle.disabled && (
             <ColorModeToggle
               className={styles.toggle}
-              checked={colorModeToggle.isDarkTheme}
+              value ={useColorMode().colorMode}
               onChange={colorModeToggle.toggle}
             />
           )}
