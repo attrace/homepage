@@ -78,10 +78,10 @@ const Footer: FC = () => (
     </div>
     <div className={styles.lower}>
       <div className={styles.copylight}>
-        &copy; 2022 - Attrace Referral Network
+        &copy; {new Date().getFullYear()} - Attrace Referral Network
       </div>
       <div>
-        <Link to="/about/legal/privacy-policy/" className={styles.privacya}>
+        <Link to="/about/legal/privacy-policy/" className={styles.privacyLink}>
           Privacy Policy
         </Link>
         <Link to="/about/legal/code-of-conduct/">Code of Conduct</Link>
