@@ -109,7 +109,7 @@
 }
 
 .theme-doc-markdown ul li a {
-  background: url("/static/img/icons/external_link_icon.svg") right no-repeat;
+  background: url('/static/img/icons/external_link_icon.svg') right no-repeat;
   padding-right: 23px;
   text-decoration: underline;
 }
