@@ -12,14 +12,19 @@ In 2022 a major product update has been rolled out, the concept of Referral Farm
 The second update was introcucing the concept of Referral Farming.
 
 ## What is Referral Farming
-Referral Farming works in a similar way to Farming on a DEX, where yield farming-like rewards will be distributed for successful referrals (instead of providing liquidity). The upside of this is that it will create the same incentives as with Farming (or Staking): The first participant gets the highest yield/commission, which will then go down with more value being contributed. 
+Referral Farming works in a similar way to Farming on a DEX, where yield farming-like rewards will be distributed for successful referrals (instead of providing liquidity). 
+The concept of farming is that a project dedicates a daily budget to promote its tokenised asset. As an example, when a new crypto currency is launched, it could dedicate a daily budget to promote this token. The moment a promoter is joining this farm, and succesfully onboarded a buyer for this token, the daily budget is devided over these two players.
 
-The Attrace team believes this will have a large impact on Promoter adoption of the Attrace protocol as it has been a proven model for DEXs; it simply has never been done before for referral payouts. Currently, there are two Referral Farm types supported.
+This creates the urgency to to start promoting a newly created farm ASAP, as the rewards will be higher if you are an early adopter of the project. The first participant gets the highest yield/commission, which will then go down with more value being contributed. 
+
+The Attrace team believes this will have a large impact on Promoter adoption of the Attrace protocol as it has been a proven model for DEXs; it simply has never been done before for referral payouts. 
+
+Currently, there are two Referral Farm types supported.
 
 
 ### Sponsored Referral Farm
-Created by Projects, where Promoters earn farming-like returns in the Project native crypto. 
-#### Example
+Sponsored referral farms are farms created by projects in which they the daily reward is setup in the native promoted token. In other words, the promoters earn farming-like returns in the Project native crypto. 
+
 As an example, imagine $MASK creates a sponsored farn with 1000 $MASK daily rewards. 
 - A promoter creates a link of this farm, and shares it on its Twitter.
 - One of its Twitter followers, follows the link, signs it. With this signature, a so called 'Proof of Recommendation' is stored within the Attrace Oracles
@@ -28,6 +33,9 @@ As an example, imagine $MASK creates a sponsored farn with 1000 $MASK daily rewa
 
 Note that, when more promoters and referred buyers join this farm, the daily rewards will be devided between these players. In order words, early adopters of a new farm will have the highest yield.
 ### Attrace Referral Farm
-Promoters earn farming-like returns in $ATTR for promoting any crypto or NFT project; this will also trigger community growth.
+Promoters earn farming-like returns in $ATTR for promoting any crypto or NFT project; this will also trigger community growth. This can be done on top of the Sponsored Referral Farm. 
+As an example, Attrace could support the launch of a new token (and in future NFT collection). With every position increase, or NFT buy, an additional reward can be configured in the ATTR token (or potentially other tokens that would like that setup such support).
+
+
 
 
