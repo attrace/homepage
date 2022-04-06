@@ -96,6 +96,7 @@
 .main-wrapper {
   background: var(--background);
   color: var(--white-07);
+  padding: 20px 0;
 }
 
 .main-wrapper a:hover {
@@ -107,12 +108,8 @@
   cursor: pointer;
 }
 
-.docs-wrapper {
-  padding: 20px 0;
-}
-
 .theme-doc-markdown ul li a {
-  background: url('/static/img/icons/external_link_icon.svg') right no-repeat;
+  background: url("/static/img/icons/external_link_icon.svg") right no-repeat;
   padding-right: 23px;
   text-decoration: underline;
 }

@@ -6,8 +6,12 @@
  */
 
 /*
-Hide toggle in small viewports
+Hide color mode toggle in small viewports
  */
+
+.logo {
+  margin-right: 20px;
+}
 .enterAppBtn {
   display: block;
   margin-left: auto;
@@ -16,23 +20,8 @@ Hide toggle in small viewports
   text-decoration: none;
 }
 
-.logo {
-  margin-right: 20px;
-}
 @media (max-width: 996px) {
-  .toggle {
+  .colorModeToggle {
     display: none;
   }
-}
-
-.navbarHideable {
-  transition: transform var(--ifm-transition-fast) ease;
-}
-
-.navbarHidden {
-  transform: translate3d(0, calc(-100% - 2px), 0);
-}
-
-.navbarSidebarToggle {
-  margin-right: 1rem;
 }
