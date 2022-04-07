@@ -1,5 +1,6 @@
 module.exports = {
     about: [
+      'about',
       'vision',
       'referral-farming',
       'oracles',

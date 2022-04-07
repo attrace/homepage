@@ -1,5 +1,6 @@
 ---
-title: 'Glossary'
+title: Glossary
+id: glossary
 ---
 ### Buy to Farm 
 Buy a token via ref link to join referral farm and earn farming rewards per value of tokens purchased
