@@ -1,6 +1,6 @@
 ---
 title: Vision
-slug: '/'
+id: vision
 ---
 
 We believe that “word-of-mouth” marketing drives an enormous value towards web3 projects and ecosystems. Furthermore, it tremendously helps the space grow by fueling mainstream adoption. Very often, those who are active in the space spread the word about the projects and tokens they believe in, or even recommend them to their friends, family or communities. 

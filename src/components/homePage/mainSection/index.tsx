@@ -32,7 +32,9 @@ export default function MainSection(): JSX.Element {
         <div className={clsx(styles.filter, styles.filter1)} />
         <div className={clsx(styles.filter, styles.filter2)} />
         <div className={clsx(styles.filter, styles.filter3)} />
-        <div className={styles.img}></div>
+        <div className={styles.img}>
+          <img src="/img/attrace-nft.jpg"></img>
+        </div>
         <div className={styles.data}>
           <div className={styles.name}>Referral Genesis</div>
           <div>

@@ -53,7 +53,7 @@ export default function NavbarContent() {
       left={
         <>
           {!mobileSidebar.disabled && <NavbarMobileSidebarToggle />}
-          <Logo className={styles.logo}/>
+          <a href="/" ><Logo className={styles.logo}/></a>
           <NavbarItems items={leftItems} />
         </>
       }
