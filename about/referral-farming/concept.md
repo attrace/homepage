@@ -1,14 +1,9 @@
 ---
 title: Referral Farming
-sidebar_label: Referral Farming
+sidebar_label: Concept
+description: Deep dive into concept and flow of Referral Farming
 ---
 
-# Referral farming
-In 2021, Attrace went live with its revised proposition, a methodology for referrals in anticipation of web3. The world’s first referrals for web3 showed traction and adoption, especially on the Project / Crypto Creator side, where performance has been significantly better than anticipated.
-
-In 2022 a major product update has been rolled out, the concept of Referral Farming. The key objective of this update was to obtain more traction on the Promoter side, as most Projects are looking for 3rd party Promoters. The first big update was to allow anyone to promote — or recommend — a crypto or NFT project without a Project bounty required up front. This allows anyone to promote — or recommend — a crypto or NFT project they believe in, at all times, without a Project bounty required up front. This will remove any remaining user friction and thus solving the “chicken and egg” problem. After the product update, anyone can become a promoter of any project they believe in and earn at all times $ATTR.
-
-The second update was introcucing the concept of Referral Farming.
 ## What is Referral Farming
 Referral Farming works in a similar way to Farming on a DEX, where yield farming-like rewards will be distributed for successful referrals (instead of providing liquidity). 
 The concept of farming is that a project dedicates a daily budget to promote its tokenised asset. As an example, when a new crypto currency is launched, it could dedicate a daily budget to promote this token. The moment a promoter is joining this farm, and succesfully onboarded a buyer for this token, the daily budget is devided over these two players.
@@ -22,7 +17,7 @@ The farming flow involves three players:
 
 The flow below explains in 5 steps how a farm is setup between the players
 
-![](/about/oracles/farm-overview.svg)
+![](/about/referral-farming/farm-overview.svg)
 
 1. Create Farm
 1. Refer to Farm
@@ -35,9 +30,6 @@ The flow below explains in 5 steps how a farm is setup between the players
 The first participant gets the highest yield/commission, which will then go down with more value being contributed. This creates the urgency to to start promoting a newly created farm ASAP, as the rewards will be higher if you are an early adopter of the project. 
 
 The Attrace team believes this will have a large impact on Promoter adoption of the Attrace protocol as it has been a proven model for DEXs; it simply has never been done before for referral payouts. 
-
-
-
 
 Currently, there are two Referral Farm types supported.
 
@@ -57,6 +49,17 @@ Promoters earn farming-like returns in $ATTR for promoting any crypto or NFT pro
 
 As an example, Attrace could support the launch of a new token (and in future NFT collection). With every position increase, or NFT buy, an additional reward can be configured in the ATTR token (or potentially other tokens that would like that setup such support).
 
+## Roles and Actors
+
+| Role           | Name        | Description       | Value Proposition | Token Role     |
+| -------------- |------------ | ----------------- | ----------------- | -------------- |
+| Builders       | Attrace Team | Developing referral protocol (smart contracts, oracles, tokenomics) + dapp | Deliver trustless Referral protocol | Incentivised with ATTR token allocation | 
+|                | Promoters (large crypto or NFT websites) | Utilizing SDK to integrate with referral protocol (provide cashback offers to their users or visitors) | Monetise traffic they send to Tokens, Dapps, DEXs or Marketplaces + increase user engagement | Earn sponsored tokens + earn ATTR tokens |
+|                | Protocol, Dapp, marketplaces or DEXs | Utilizing SDK to integrate with referral protocol (bring referral feature to their users) | Increase the number of users/volume via referrals + increase the existing user engagement | Provide incentive in their native tokens including 5% worth of protocol fee in ATTR |  
+| Promoters      | Crypto user, influencer or website | A user, influencer or website which promotes a token to their friends, followers or visitors  | Earn Referral Farm Rewards and become Attrace stakeholder | Earn sponsored tokens from sponsored referral farms + earn ATTR tokens from Attrace Referral farms |
+| Projects | Attrace (Attrace Referral Farm) | Provides an incentive to promote a token and drive traffic towards their Protocol, Dapp, marketplaces or DEXs | Increase the number of users or volume via referrals | 100m ATTR over 2.5 years (10% of total token allocation) |
+| | Protocol, Dapp, marketplaces or DEXs (Sponsored Referral Farms) | | | Provide incentive in their native tokens including |
+| Participants | Buyer or Customer | Participant who bought tokens with attrace Promoter's link | Discover new projects, earn rewards and become Attrace stakeholder | Earn sponsored tokens from sponsored referral farms + earn ATTR tokens from Attrace Referral farms |
 
 
 
