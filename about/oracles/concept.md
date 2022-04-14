@@ -1,6 +1,7 @@
 ---
 title: Oracles
 sidebar_label: Oracles
+slug: '/oracles'
 ---
 
 The concept of Referral Oracles

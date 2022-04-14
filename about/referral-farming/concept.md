@@ -2,6 +2,7 @@
 title: Referral Farming
 sidebar_label: Concept
 description: Deep dive into concept and flow of Referral Farming
+slug: '/referral-farming'
 ---
 
 ## What is Referral Farming
