@@ -28,49 +28,26 @@ export default function Home(): JSX.Element {
         <TokensAPR />
         <div className={clsx("container", styles.section)}>
           <div className={styles.sectionTitle}>
-            Join the Ecosystem with
-            <span> Referral</span>
-            <br />
-            <span> Farming</span>
+            Start{'\u00a0'}
+            <span>Referral Farming</span>
           </div>
-          <div className={styles.cards}>
-            <div className={styles.statsCard}>
-              <div className={clsx(styles.filter, styles.filter1)} />
-              <div className={styles.value}>12,034</div>
-              <span className={styles.text}>
-                Users who joined referral farming
-              </span>
-            </div>
-            <div className={styles.statsCard}>
-              <div className={clsx(styles.filter, styles.filter2)} />
-              <div className={styles.value}>1,523</div>
-              <span className={styles.text}>
-                NFT & crypto projects eligible for farming rewards
-              </span>
-            </div>
-            <div className={styles.statsCard}>
-              <div className={clsx(styles.filter, styles.filter3)} />
-              <div className={styles.value}>
-                $3.2M
-                <a href="#" target="_blank">
-                  <ExternalLinkIcon />
-                </a>
+          <div className={styles.farmingRow}>
+            <div className={styles.farmingRowLeft}>
+              <div>
+                Referral farming incentivises referrals for the purchase of crypto tokens or NFTs by rewarding both promoter and buyer.<br /><br />
+                Use Attrace link when recommending any crypto or NFT project and earn farming rewards!
               </div>
-              <span className={styles.text}>
-                Total value locked in referral farms
-              </span>
             </div>
-            <div className={styles.statsCard}>
-              <div className={clsx(styles.filter, styles.filter4)} />
-              <div className={styles.value}>
-                $2.5M
-                <a href="#" target="_blank">
-                  <ExternalLinkIcon />
-                </a>
+            <div className={styles.farmingRowRight}>
+              <div className={styles.cards}>
+                <div className={styles.statsCard}>
+                  <div className={clsx(styles.filter, styles.filter1)} />
+                  <div className={styles.value}>12,034</div>
+                  <span className={styles.text}>
+                    Users who joined referral farming
+                  </span>
+                </div>
               </div>
-              <span className={styles.text}>
-                Total value of $ATTR in staked with Oracles
-              </span>
             </div>
           </div>
         </div>
