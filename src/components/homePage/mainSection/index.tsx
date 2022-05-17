@@ -5,7 +5,7 @@ import truncateString from "../../../utils/truncateString";
 
 import Button from "../../button";
 
-import ArrowDown from "@site/static/img/icons/arrowDown.svg";
+import ArrowDownIcon from "@site/static/img/icons/arrowDown.svg";
 import External from "@site/static/img/icons/external.svg";
 import styles from "./index.module.css";
 
@@ -28,7 +28,7 @@ export default function MainSection(): JSX.Element {
           <a href="#" target="_blank">
             <Button variant="secondary">
               Learn More
-              <ArrowDown />
+              <ArrowDownIcon />
             </Button>
           </a>
         </div>

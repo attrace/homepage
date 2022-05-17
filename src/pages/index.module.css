@@ -44,6 +44,11 @@
   opacity: 0.7;
 }
 
+.actions {
+  display: flex;
+  gap: 20px;
+}
+
 /* statsSection */
 .cards {
   display: flex;
@@ -105,7 +110,7 @@
 
 /* earnSection */
 .earnSection {
-  margin: 180px auto;
+  margin: 220px auto;
 }
 .rewardCard {
   position: relative;
@@ -113,43 +118,49 @@
   height: 318px;
   left: 0px;
   top: 0px;
-  background: rgba(255, 255, 255, 0.07);
+  background: #1F1C29;
+  border: 1px solid rgb(59, 56, 67);
   backdrop-filter: blur(72px);
   border-radius: 8px;
   padding: 32px 36px 36px;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 .rewardCard .title {
   color: var(--white-09);
+  font-family: 'Inter';
+  font-style: normal;
   font-weight: 600;
-  font-size: 1.875rem;
+  font-size: 30px;
   line-height: 38px;
   letter-spacing: -0.15px;
 }
 .rewardCard .text {
-  margin-top: 12px;
+  margin-top: 16px;
   color: var(--white-06);
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .rewardCard .icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 56px;
-  height: 56px;
   border-radius: 6px;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 .rewardCard .filter {
   position: absolute;
-  width: 197px;
-  height: 144px;
-  left: -27px;
-  top: -31px;
-  opacity: 0.1;
-  transform: rotate(-22.11deg);
-  filter: blur(72px);
-  background-color: var(--purple);
+  width: 380px;
+  height: 300px;
+  left: -64px;
+  top: -110px;
+  filter: blur(100px);
 }
 .rewardCard a {
   display: block;
@@ -172,12 +183,17 @@
   flex-direction: column;
 }
 .partnersLogos {
-  background: var(--dark-grey-3);
   border-radius: 8px;
-  padding: 64px 55px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
+}
+.partnersLogos .filter {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: linear-gradient(90deg, rgba(19, 16, 29, 0.95) 0%, rgba(19, 16, 29, 0) 49.31%, rgba(19, 16, 29, 0.95) 100%);
 }
 
 @media (max-width: 1300px) {
