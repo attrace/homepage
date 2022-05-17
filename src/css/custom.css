@@ -10,6 +10,7 @@
 /* You can override the default Infima variables here. */
 :root {
   /* Primary */
+  /* --peach:  */
   --purple: #c77bf9;
 
   /* Neutral */
@@ -37,6 +38,7 @@
   /* Gradients */
   --primary-gradient: linear-gradient(86.19deg, #8836ff 0%, #b646ef 100%);
   --secondary-gradient: linear-gradient(86.19deg, #be5bff 0.01%, #ff8982 100%);
+  /* --secondary-gradient-text: linear-gradient(86.19deg, #be5bff 0.01%, #ff8982 100%); */
 
   /* Box shadow */
   --box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.08);

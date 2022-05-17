@@ -84,7 +84,6 @@ export default function Home(): JSX.Element {
               <div className={styles.filter} />
               <div
                 className={styles.icon}
-                style={{ backgroundColor: "rgba(199, 123, 249, 0.15)" }}
               >
                 <Chart1Icon />
               </div>
@@ -100,7 +99,6 @@ export default function Home(): JSX.Element {
             <div className={styles.rewardCard}>
               <div
                 className={styles.icon}
-                style={{ backgroundColor: "rgba(83, 146, 255, 0.1)" }}
               >
                 <Chart2Icon />
               </div>
@@ -117,7 +115,6 @@ export default function Home(): JSX.Element {
             <div className={clsx(styles.rewardCard, styles.rewardCard3)}>
               <div
                 className={styles.icon}
-                style={{ backgroundColor: "rgba(233, 89, 236, 0.1)" }}
               >
                 <Chart3Icon />
               </div>
