@@ -18,6 +18,9 @@
 
 .primary >div {
   z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 12.34px;
 }
 
 .primary::after {
@@ -34,10 +37,6 @@
 }
 .primary:hover::after {
   opacity: 1;
-}
-
-.primary svg {
-  margin-right: 10px;
 }
 
 .secondary {

@@ -5,6 +5,7 @@ import truncateString from "../../../utils/truncateString";
 
 import Button from "../../button";
 
+import ArrowDown from "@site/static/img/icons/arrowDown.svg";
 import styles from "./index.module.css";
 
 export default function MainSection(): JSX.Element {
@@ -24,7 +25,10 @@ export default function MainSection(): JSX.Element {
             <Button>Enter App</Button>
           </a>
           <a href="#" target="_blank">
-            <Button variant="secondary">Learn More</Button>
+            <Button variant="secondary">
+              Learn More
+              <ArrowDown />
+              </Button>
           </a>
         </div>
       </div>
