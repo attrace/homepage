@@ -96,30 +96,30 @@
   position: absolute;
 }
 .filter1 {
-  width: 268px;
-  height: 268px;
-  left: 53px;
-  top: -35px;
-  background: #ffcad0;
+  width: 260px;
+  height: 260px;
+  left: -60px;
+  bottom: -48px;
+  background: #C362FE;
   opacity: 0.15;
   filter: blur(200px);
 }
 .filter2 {
-  width: 281px;
-  height: 281px;
-  right: -130px;
-  top: 86px;
-  background: #269ef5;
-  opacity: 0.1;
-  filter: blur(120px);
+  width: 280px;
+  height: 280px;
+  right: 70px;
+  top: -80px;
+  background: #FE99A4;
+  opacity: 0.15;
+  filter: blur(200px);
 }
 .filter3 {
-  width: 277px;
-  height: 277px;
-  left: -38px;
-  bottom: -47px;
-  background: #a35cd4;
-  opacity: 0.12;
+  width: 300px;
+  height: 300px;
+  right: -106px;
+  bottom: 25px;
+  background: #5FD2FA;
+  opacity: 0.15;
   filter: blur(200px);
 }
 
