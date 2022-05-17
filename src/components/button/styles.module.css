@@ -1,9 +1,11 @@
 .primary {
   display: flex;
   align-items: center;
+  position: relative;
   border: 0;
   border-radius: 6px;
   background: var(--primary-btn);
+  background-repeat: no-repeat;
   color: var(--white);
   font-weight: 500;
   font-size: 1rem;
@@ -11,6 +13,27 @@
   padding: 8px 20px;
   font-family: "Inter";
   cursor: pointer;
+  transition: .3s;
+}
+
+.primary >div {
+  z-index: 1;
+}
+
+.primary::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 6px;
+  background: var(--primary-btn-hover);
+  transition: .3s;
+  opacity: 0;
+}
+.primary:hover::after {
+  opacity: 1;
 }
 
 .primary svg {
@@ -23,4 +46,8 @@
     var(--primary-gradient) border-box;
   border: 1px solid transparent;
   color: var(--white-09);
+}
+
+.secondary::after {
+  background: var(--secondary-btn-hover);
 }

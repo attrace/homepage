@@ -21,8 +21,14 @@
   -webkit-text-fill-color: transparent;
 }
 .actionBlock p {
-  font-size: 1.25rem;
-  line-height: 32px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 36px;
+  letter-spacing: 0.1px;
+  color: #FFFFFF;
+  opacity: 0.7;
   margin-bottom: 40px;
   max-width: 628px;
 }

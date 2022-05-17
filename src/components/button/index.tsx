@@ -31,7 +31,9 @@ const Button: FC<Props> = ({
       type="button"
       {...rest}
     >
-      {children}
+      <div>
+        {children}
+      </div>
     </button>
   );
 };

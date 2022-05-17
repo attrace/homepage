@@ -33,7 +33,9 @@
   --background: #13101d;
   --modal-overlay: rgba(11, 9, 16, 0.85);
   --modal-border: rgba(255, 255, 255, 0.1);
-  --primary-btn: linear-gradient(86.19deg, #8836ff 0%, #b646ef 100%);
+  --primary-btn: linear-gradient(86.19deg, #600CDC 0%, #C766FF 100%);
+  --primary-btn-hover: linear-gradient(86.19deg, #600CDC 0%, #600CDC 100%);
+  --secondary-btn-hover: linear-gradient(86.19deg, rgb(36, 33, 45) 0%, rgb(36, 33, 45) 100%);
 
   /* Gradients */
   --primary-gradient: linear-gradient(86.19deg, #8836ff 0%, #b646ef 100%);
