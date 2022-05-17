@@ -27,7 +27,7 @@
   font-size: 20px;
   line-height: 36px;
   letter-spacing: 0.1px;
-  color: #FFFFFF;
+  color: var(--white);
   opacity: 0.7;
   margin-bottom: 40px;
   max-width: 628px;
@@ -40,11 +40,11 @@
 }
 
 .referral {
-  height: 480px;
   width: 412px;
-  background: var(--dark-grey-7);
+  background: var(--panel-back);
+  border: 1px solid var(--panel-border);
   border-radius: 10px;
-  padding: 6px 6px 0 6px;
+  padding: 4px 4px 0 4px;
   position: relative;
 }
 .referral .img {
@@ -54,20 +54,39 @@
   background: rgb(228 206 250 / 60%);
   border-radius: 8px 8px 4px 4px;
 }
+.referral .img >img {
+  border-radius: 8px;
+}
+.referral .bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px 10px 16px;
+}
 .referral .data {
-  padding: 12px 16px;
   font-size: 0.875rem;
   position: relative;
 }
 .referral .name {
-  color: var(--white-09);
-  font-family: "Exo 2";
-  font-size: 1rem;
+  color: var(--white);
+  font-family: 'Exo 2';
+  font-style: normal;
   font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+.referral .creator {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.15px;
+  color: var(--white-06);
 }
 .referral .data a {
   color: var(--white-08);
-  font-weight: 600;
+  font-weight: 500;
 }
 .referral .data a:hover {
   text-decoration: none;

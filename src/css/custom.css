@@ -31,6 +31,8 @@
   --white-09: rgb(255 255 255 / 90%);
 
   --background: #13101d;
+  --panel-back: rgba(36, 33, 45, 0.5);
+  --panel-border: rgb(58, 54, 68);
   --modal-overlay: rgba(11, 9, 16, 0.85);
   --modal-border: rgba(255, 255, 255, 0.1);
   --primary-btn: linear-gradient(86.19deg, #600CDC 0%, #C766FF 100%);

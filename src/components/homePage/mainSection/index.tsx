@@ -6,6 +6,7 @@ import truncateString from "../../../utils/truncateString";
 import Button from "../../button";
 
 import ArrowDown from "@site/static/img/icons/arrowDown.svg";
+import External from "@site/static/img/icons/external.svg";
 import styles from "./index.module.css";
 
 export default function MainSection(): JSX.Element {
@@ -28,7 +29,7 @@ export default function MainSection(): JSX.Element {
             <Button variant="secondary">
               Learn More
               <ArrowDown />
-              </Button>
+            </Button>
           </a>
         </div>
       </div>
@@ -39,17 +40,20 @@ export default function MainSection(): JSX.Element {
         <div className={styles.img}>
           <img src="/img/attrace-nft.jpg"></img>
         </div>
-        <div className={styles.data}>
-          <div className={styles.name}>Referral Genesis</div>
-          <div>
-            Created by{" "}
-            <a
-              href={`https://etherscan.io/address/0x26bc596D39c5D45C855901b6995e0842E37Ae57a`}
-              target="_blank"
-            >
-              {truncateString("0x26bc596D39c5D45C855901b6995e0842E37Ae57a")}
-            </a>
+        <div className={styles.bottom}>
+          <div className={styles.data}>
+            <div className={styles.name}>Proof of recommendation</div>
+            <div className={styles.creator}>
+              Created by{" "}
+              <a
+                href={`https://etherscan.io/address/0x26bc596D39c5D45C855901b6995e0842E37Ae57a`}
+                target="_blank"
+              >
+                {truncateString("0x26bc596D39c5D45C855901b6995e0842E37Ae57a")}
+              </a>
+            </div>
           </div>
+          <External />
         </div>
       </div>
     </div>
