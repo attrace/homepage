@@ -5,6 +5,7 @@ import styles from "./styles.module.css";
 
 interface Props extends HTMLProps<HTMLButtonElement> {
   variant?: "secondary" | "primary" | "tertiary";
+  sizes?: "large" | "medium" | "small";
   className?: string;
   children?: ReactNode;
   style?: CSSProperties;
@@ -14,6 +15,7 @@ const Button: FC<Props> = ({
   children,
   className = "",
   variant,
+  sizes,
   onClick,
   style,
   type,
@@ -22,6 +24,8 @@ const Button: FC<Props> = ({
   const btnClass = clsx(styles.primary, {
     [styles.secondary]: variant === "secondary",
     [styles.tertiary]: variant === "tertiary",
+    [styles.medium]: sizes === "medium",
+    [styles.small]: sizes === "small",
     className,
   });
 

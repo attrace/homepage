@@ -67,3 +67,15 @@
 .tertiary::after {
   background: transparent;
 }
+
+.medium {
+  padding: 5px 16px;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.small {
+  padding: 1px 8px;
+  font-size: 14px;
+  line-height: 22px;
+}
