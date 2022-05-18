@@ -4,13 +4,13 @@ import clsx from "clsx";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 
 import Button from "../components/button";
+import Badge from "../components/badge";
 import MainSection from "../components/homePage/mainSection";
 import TokensAPR from "../components/homePage/tokensAPR";
 
 import MaskLogo from "@site/static/img/partners/mask.svg";
 import DeribitLogo from "@site/static/img/partners/deribit.svg";
 import ImpossibleFinLogo from "@site/static/img/partners/impossibleFinance.svg";
-// import ExternalLinkIcon from "@site/static/img/icons/externalLink.svg";
 import Chart1Icon from "@site/static/img/icons/chart1.svg";
 import Chart2Icon from "@site/static/img/icons/chart2.svg";
 import Chart3Icon from "@site/static/img/icons/chart3.svg";
@@ -195,6 +195,7 @@ export default function Home(): JSX.Element {
               </div>
             </div>
             <div className={styles.oracleRowRight}>
+              <Badge color='green' />
               <div className={styles.farmingText}>
                 Oracles capture the value of ‘word of mouth’ marketing in web3 and power referral farming by detecting and distributing rewards in a trustless manner.<br /><br />
                 The referral protocol is secured by the $ATTR token. Help securing the network by delegating your stake to the oracles and earn rewards!
