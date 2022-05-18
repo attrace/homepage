@@ -21,8 +21,6 @@
   -webkit-text-fill-color: transparent;
 }
 .actionBlock p {
-  font-family: 'Inter';
-  font-style: normal;
   font-weight: 300;
   font-size: 20px;
   line-height: 36px;
@@ -76,8 +74,6 @@
   line-height: 24px;
 }
 .referral .creator {
-  font-family: 'Inter';
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;

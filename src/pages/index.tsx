@@ -51,11 +51,16 @@ export default function Home(): JSX.Element {
             <div className={styles.farmingRowRight}>
               <div className={styles.cards}>
                 <div className={styles.statsCard}>
-                  <div className={clsx(styles.filter, styles.filter1)} />
-                  <div className={styles.value}>12,034</div>
-                  <span className={styles.text}>
-                    Users who joined referral farming
-                  </span>
+                  <div className={styles.info}>
+                    <img src="/img/farms/radar.png" />
+                    <div>
+                      <div className={styles.name}>RADAR</div>
+                      <div className={styles.description}>DappRadar</div>
+                    </div>
+                  </div>
+                  <div className={styles.figure}>
+
+                  </div>
                 </div>
               </div>
             </div>
