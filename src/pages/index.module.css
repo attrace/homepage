@@ -284,15 +284,46 @@
   background: linear-gradient(90deg, rgba(19, 16, 29, 0.95) 0%, rgba(19, 16, 29, 0) 49.31%, rgba(19, 16, 29, 0.95) 100%);
 }
 
+@media (max-width: 1350px) {
+  .farmingRow {
+    flex-direction: column;
+    gap: 32px;
+  }
+  .sectionTitle {
+    max-width: 300px;
+    font-size: 2rem;
+    line-height: 36px;
+  }
+  .farmingText {
+    text-align: center;
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
+  .farmingRowRight {
+    display: none;
+  }
+  .oracleRowLeft >img {
+    width: 300px;
+  }
+  .oracleRowLeft >.blast {
+    display: none;
+  }
+  .oracleRowRight {
+    align-items: center;
+  }
+  .actions {
+    flex-direction: column;
+    align-items: center;
+  }
+  .rewardCard {
+    padding: 16px 18px 18px;
+  }
+}
 @media (max-width: 1300px) {
   .cards {
     flex-flow: wrap;
-    max-width: 650px;
     margin: 0 auto;
     justify-content: space-between;
-  }
-  .cards .statsCard {
-    margin-bottom: 32px;
   }
   .earnSection .cards {
     flex-direction: column;
@@ -325,7 +356,7 @@
   }
 
   .rewardCard {
-    max-width: 100%;
+    max-width: calc(100% - 32px);
     width: auto;
     height: auto;
   }
