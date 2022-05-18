@@ -30,8 +30,8 @@ export default function Home(): JSX.Element {
         <TokensAPR />
         <div className={clsx("container", styles.section)}>
           <div className={styles.sectionTitle}>
-            Start{'\u00a0'}
-            <span>Referral Farming</span>
+            Start
+            <span> Referral Farming</span>
           </div>
           <div className={styles.farmingRow}>
             <div className={styles.farmingRowLeft}>
@@ -121,10 +121,100 @@ export default function Home(): JSX.Element {
             </div>
           </div>
         </div>
+        <div className={clsx("container", styles.earnSection)}>
+          <div className={styles.sectionTitle}>
+            <span>Stake </span>
+            with Oracles
+          </div>
+          <div className={styles.farmingRow}>
+            <div className={styles.oracleRowLeft}>
+              <div className={styles.cards}>
+                <div className={styles.statsCard}>
+                  <div className={styles.info}>
+                    <div className={styles.icon}>
+                      <img src="/img/farms/radar.png" />
+                    </div>
+                    <div>
+                      <div className={styles.name}>RADAR</div>
+                      <div className={styles.description}>DappRadar</div>
+                    </div>
+                  </div>
+                  <div className={styles.figure}>
+                    <div>
+                      <div className={styles.propname}>Estimated APR</div>
+                      <div className={styles.apr}>🔥%</div>
+                    </div>
+                    <div>
+                      <div className={styles.propname}>Daily Farm Rewards</div>
+                      <div className={styles.apr}>🤑 wETH</div>
+                    </div>
+                  </div>
+                </div>
+                <div className={styles.statsCard} style={{ marginLeft: -12 }}>
+                  <div className={styles.info}>
+                    <div className={styles.icon}>
+                      <img src="/img/farms/mask.png" />
+                    </div>
+                    <div>
+                      <div className={styles.name}>Mask</div>
+                      <div className={styles.description}>Mask Network</div>
+                    </div>
+                  </div>
+                  <div className={styles.figure}>
+                    <div>
+                      <div className={styles.propname}>Estimated APR</div>
+                      <div className={styles.apr}>🔥%</div>
+                    </div>
+                    <div>
+                      <div className={styles.propname}>Daily Farm Rewards</div>
+                      <div className={styles.apr}>🤑 MASK</div>
+                    </div>
+                  </div>
+                </div>
+                <div className={styles.statsCard} style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', padding: '32px 36px', minWidth: 370, height: 210 }}>
+                  <div className={styles.info}>
+                    <div className={styles.icon}>
+                      <img src="/img/farms/yacht.png" />
+                      <VerifyIcon />
+                    </div>
+                    <div>
+                      <div className={styles.name}>Bored Ape Yacht Club</div>
+                    </div>
+                  </div>
+                  <div className={styles.figure}>
+                    <div>
+                      <div className={styles.propname}>Estimated APR</div>
+                      <div className={styles.apr}>🔥%</div>
+                    </div>
+                    <div>
+                      <div className={styles.propname}>Daily Farm Rewards</div>
+                      <div className={styles.apr}>🤑 wETH</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className={styles.oracleRowRight}>
+              <div className={styles.farmingText}>
+                Oracles capture the value of ‘word of mouth’ marketing in web3 and power referral farming by detecting and distributing rewards in a trustless manner.<br /><br />
+                The referral protocol is secured by the $ATTR token. Help securing the network by delegating your stake to the oracles and earn rewards!
+              </div>
+              <div className={styles.actions}>
+                <Button>
+                  Oracle Staking
+                  <ArrowRightIcon />
+                </Button>
+                <Button variant="secondary">
+                  Learn More
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
         <div className={clsx("container", styles.section, styles.earnSection)}>
-          <h2 className={styles.sectionTitle}>
-            Earn rewards with
-            <span> Referral Protocol</span>
+          <h2 className={styles.sectionTitle} style={{ marginBottom: 80 }}>
+            <span>Earn rewards </span>
+            with Attrace
           </h2>
           <div className={styles.cards}>
             <div className={styles.rewardCard}>

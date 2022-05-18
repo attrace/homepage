@@ -24,6 +24,7 @@
 .farmingRow {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .farmingRowLeft {
@@ -32,7 +33,13 @@
   row-gap: 44px;
 }
 
-.farmingRowLeft .farmingText {
+.oracleRowRight {
+  display: flex;
+  flex-direction: column;
+  row-gap: 44px;
+}
+
+.farmingRowLeft, .oracleRowRight .farmingText {
   max-width: 520px;
   font-weight: 300;
   font-size: 20px;
@@ -50,8 +57,9 @@
 /* statsSection */
 .cards {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   position: relative;
+  gap: 20px;
 }
 .cards .filter {
   filter: blur(72px);
