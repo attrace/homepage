@@ -1,5 +1,6 @@
 .section {
   margin: 120px auto;
+  padding: 0;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -31,6 +32,38 @@
   display: flex;
   flex-direction: column;
   row-gap: 44px;
+}
+
+.oracleRowLeft {
+  display: flex;
+  position: relative;
+}
+
+.oracleRowLeft .blast {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 204px;
+  height: 204px;
+  background: url('/static/img/blast.png');
+  background-size: 100% 100%;
+  position: absolute;
+  top: -32px; right: -80px;
+}
+
+.oracleRowLeft .blast .title {
+  color: var(--white-09);
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 46px;
+}
+
+.oracleRowLeft .blast .comment {
+  color: var(--white-07);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .oracleRowRight {
@@ -169,6 +202,7 @@
 /* earnSection */
 .earnSection {
   margin: 220px auto;
+  padding: 0;
 }
 .rewardCard {
   position: relative;
