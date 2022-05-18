@@ -14,6 +14,7 @@ import ImpossibleFinLogo from "@site/static/img/partners/impossibleFinance.svg";
 import Chart1Icon from "@site/static/img/icons/chart1.svg";
 import Chart2Icon from "@site/static/img/icons/chart2.svg";
 import Chart3Icon from "@site/static/img/icons/chart3.svg";
+import VerifyIcon from "@site/static/img/verified.svg";
 import ArrowRightIcon from "@site/static/img/icons/arrowRight.svg";
 import styles from "./index.module.css";
 
@@ -34,7 +35,7 @@ export default function Home(): JSX.Element {
           </div>
           <div className={styles.farmingRow}>
             <div className={styles.farmingRowLeft}>
-              <div>
+              <div className={styles.farmingText}>
                 Referral farming incentivises referrals for the purchase of crypto tokens or NFTs by rewarding both promoter and buyer.<br /><br />
                 Use Attrace link when recommending any crypto or NFT project and earn farming rewards!
               </div>
@@ -50,16 +51,70 @@ export default function Home(): JSX.Element {
             </div>
             <div className={styles.farmingRowRight}>
               <div className={styles.cards}>
+                <div className={styles.filter} style={{ background: 'rgb(95, 210, 250, 0.1)', bottom: -57.75, left: -20 }} />
+                <div className={styles.filter} style={{ background: 'rgb(254, 153, 164, 0.1)', top: -97.6, left: '50%', transform: 'translateX(-50%)' }} />
+                <div className={styles.filter} style={{ background: 'rgb(195, 98, 254, 0.1)', bottom: -81.75, right: 20 }} />
                 <div className={styles.statsCard}>
                   <div className={styles.info}>
-                    <img src="/img/farms/radar.png" />
+                    <div className={styles.icon}>
+                      <img src="/img/farms/radar.png" />
+                    </div>
                     <div>
                       <div className={styles.name}>RADAR</div>
                       <div className={styles.description}>DappRadar</div>
                     </div>
                   </div>
                   <div className={styles.figure}>
-
+                    <div>
+                      <div className={styles.propname}>Estimated APR</div>
+                      <div className={styles.apr}>🔥%</div>
+                    </div>
+                    <div>
+                      <div className={styles.propname}>Daily Farm Rewards</div>
+                      <div className={styles.apr}>🤑 wETH</div>
+                    </div>
+                  </div>
+                </div>
+                <div className={styles.statsCard} style={{ marginLeft: -12 }}>
+                  <div className={styles.info}>
+                    <div className={styles.icon}>
+                      <img src="/img/farms/mask.png" />
+                    </div>
+                    <div>
+                      <div className={styles.name}>Mask</div>
+                      <div className={styles.description}>Mask Network</div>
+                    </div>
+                  </div>
+                  <div className={styles.figure}>
+                    <div>
+                      <div className={styles.propname}>Estimated APR</div>
+                      <div className={styles.apr}>🔥%</div>
+                    </div>
+                    <div>
+                      <div className={styles.propname}>Daily Farm Rewards</div>
+                      <div className={styles.apr}>🤑 MASK</div>
+                    </div>
+                  </div>
+                </div>
+                <div className={styles.statsCard} style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', padding: '32px 36px', minWidth: 370, height: 210 }}>
+                  <div className={styles.info}>
+                    <div className={styles.icon}>
+                      <img src="/img/farms/yacht.png" />
+                      <VerifyIcon />
+                    </div>
+                    <div>
+                      <div className={styles.name}>Bored Ape Yacht Club</div>
+                    </div>
+                  </div>
+                  <div className={styles.figure}>
+                    <div>
+                      <div className={styles.propname}>Estimated APR</div>
+                      <div className={styles.apr}>🔥%</div>
+                    </div>
+                    <div>
+                      <div className={styles.propname}>Daily Farm Rewards</div>
+                      <div className={styles.apr}>🤑 wETH</div>
+                    </div>
                   </div>
                 </div>
               </div>

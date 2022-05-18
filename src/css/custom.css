@@ -55,8 +55,8 @@
   --ifm-code-background: rgb(51, 52, 55);
   --ifm-code-font-size: 1rem;
   --ifm-font-family-base: "Inter";
-  --ifm-container-width-xl: 1312px;
-  --ifm-container-width: 1312px;
+  --ifm-container-width-xl: 1276px;
+  --ifm-container-width: 1276px;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
