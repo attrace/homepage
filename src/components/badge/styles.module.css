@@ -18,3 +18,11 @@
   background: #42BE65;
   border-radius: 50%;
 }
+
+.red {
+  color: red;
+}
+
+.signalRed {
+  background: red;
+}

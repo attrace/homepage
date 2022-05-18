@@ -1,4 +1,5 @@
 import React, { CSSProperties, FC, HTMLAttributes } from "react";
+import clsx from "clsx";
 
 import styles from "./styles.module.css";
 
@@ -12,13 +13,18 @@ const Badge: FC<Props> = ({
   children,
   className = "",
   color,
-  onClick,
   style,
   ...rest
 }) => {
   return (
-    <div className={styles.badge} style={style} {...rest}>
-      <div className={styles.signal} />
+    <div className={clsx(styles.badge, {
+      [styles.red]: color === "red",
+      className,
+    })} style={style} {...rest}>
+      <div className={clsx(styles.signal, {
+        [styles.signalRed]: color === "red",
+        className,
+      })} />
       Live on Ethereum
     </div>
   );

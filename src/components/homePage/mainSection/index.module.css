@@ -1,5 +1,6 @@
 .wrapper {
   padding-top: 86px;
+  padding-right: 86px;
   display: flex;
   justify-content: space-between;
   flex-flow: wrap;
