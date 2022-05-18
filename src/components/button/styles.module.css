@@ -35,7 +35,10 @@
   transition: .3s;
   opacity: 0;
 }
-.primary:hover::after {
+.primary:disabled {
+  opacity: 0.2;
+}
+.primary:hover:not(:disabled)::after {
   opacity: 1;
 }
 
@@ -49,4 +52,18 @@
 
 .secondary::after {
   background: var(--secondary-btn-hover);
+}
+
+.tertiary {
+  background: transparent;
+  border: 1px solid transparent;
+  color: var(--purple);
+}
+
+.tertiary svg {
+  fill: var(--purple);
+}
+
+.tertiary::after {
+  background: transparent;
 }

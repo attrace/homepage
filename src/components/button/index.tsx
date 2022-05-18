@@ -1,10 +1,10 @@
-import React, { CSSProperties, FC, ReactNode, HTMLAttributes } from "react";
+import React, { CSSProperties, FC, ReactNode, HTMLProps } from "react";
 import clsx from "clsx";
 
 import styles from "./styles.module.css";
 
-interface Props extends HTMLAttributes<HTMLButtonElement> {
-  variant?: "secondary" | "primary" | "borderless";
+interface Props extends HTMLProps<HTMLButtonElement> {
+  variant?: "secondary" | "primary" | "tertiary";
   className?: string;
   children?: ReactNode;
   style?: CSSProperties;
@@ -16,10 +16,12 @@ const Button: FC<Props> = ({
   variant,
   onClick,
   style,
+  type,
   ...rest
 }) => {
   const btnClass = clsx(styles.primary, {
     [styles.secondary]: variant === "secondary",
+    [styles.tertiary]: variant === "tertiary",
     className,
   });
 

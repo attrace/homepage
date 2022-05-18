@@ -22,15 +22,11 @@ export default function MainSection(): JSX.Element {
           crypto or NFT and earn rewards from referral farms.{" "}
         </p>
         <div className={styles.actions}>
-          <a href="#" target="_blank">
-            <Button>Enter App</Button>
-          </a>
-          <a href="#" target="_blank">
-            <Button variant="secondary">
-              Learn More
-              <ArrowDownIcon />
-            </Button>
-          </a>
+          <Button>Enter App</Button>
+          <Button variant="secondary">
+            Learn More
+            <ArrowDownIcon />
+          </Button>
         </div>
       </div>
       <div className={styles.referral}>
