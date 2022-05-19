@@ -285,6 +285,9 @@
 }
 
 @media (max-width: 1350px) {
+  .section, .earnSection {
+    margin: 64px auto;
+  }
   .farmingRow {
     flex-direction: column;
     gap: 32px;
