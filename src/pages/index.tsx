@@ -18,6 +18,9 @@ import VerifyIcon from "@site/static/img/verified.svg";
 import ArrowRightIcon from "@site/static/img/icons/arrowRight.svg";
 import styles from "./index.module.css";
 
+///comment
+
+
 export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
   return (
