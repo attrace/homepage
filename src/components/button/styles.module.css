@@ -20,7 +20,7 @@
   z-index: 1;
   display: flex;
   align-items: center;
-  gap: 12.34px;
+  gap: 12px;
 }
 
 .primary::after {

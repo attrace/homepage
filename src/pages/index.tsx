@@ -51,9 +51,9 @@ export default function Home(): JSX.Element {
             </div>
             <div className={styles.farmingRowRight}>
               <div className={styles.cards}>
-                <div className={styles.filter} style={{ background: 'rgb(95, 210, 250, 0.1)', bottom: -57.75, left: -20 }} />
-                <div className={styles.filter} style={{ background: 'rgb(254, 153, 164, 0.1)', top: -97.6, left: '50%', transform: 'translateX(-50%)' }} />
-                <div className={styles.filter} style={{ background: 'rgb(195, 98, 254, 0.1)', bottom: -81.75, right: 20 }} />
+                <div className={styles.filter} style={{ background: 'var(--index-color1)', bottom: -57.75, left: -20 }} />
+                <div className={styles.filter} style={{ background: 'var(--index-color2)', top: -97.6, left: '50%', transform: 'translateX(-50%)' }} />
+                <div className={styles.filter} style={{ background: 'var(--index-color3)', bottom: -81.75, right: 20 }} />
                 <div className={styles.statsCard}>
                   <div className={styles.info}>
                     <div className={styles.icon}>
@@ -135,7 +135,8 @@ export default function Home(): JSX.Element {
               </div>
             </div>
             <div className={styles.oracleRowRight}>
-              <Badge color='green' />
+              {/* <Badge color='green' /> */}
+              <Badge />
               <div className={styles.farmingText}>
                 Oracles capture the value of ‘word of mouth’ marketing in web3 and power referral farming by detecting and distributing rewards in a trustless manner.<br /><br />
                 The referral protocol is secured by the $ATTR token. Help securing the network by delegating your stake to the oracles and earn rewards!

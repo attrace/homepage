@@ -3,19 +3,20 @@
   align-items: center;
   padding: 4px 12px;
   gap: 8px;
-  background: #24212D;
+  /* background: #24212D; */
+  background: var(--badge-background);
   border-radius: 6px;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #42BE65;
+  color: var(--badge-green);
   width: fit-content;
 }
 
 .signal {
   width: 10px;
   height: 10px;
-  background: #42BE65;
+  background:  var(--badge-green);
   border-radius: 50%;
 }
 

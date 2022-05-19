@@ -24,6 +24,17 @@
   --dark-grey-5: #1f1c29;
   --dark-grey-3: #1a1724;
 
+  --statscard-back: rgba(36, 33, 45, 0.8);
+  --statscard-border: rgb(44,41,54);
+  --statscard-boxshadow: #13101D;
+
+  --index-color1: rgb(95, 210, 250, 0.1);
+  --index-color2: rgb(254, 153, 164, 0.1);
+
+  
+  /* color for badge */
+  --badge-green: #42BE65;
+  --badge-background: #24212D;
   /* White */
   --white-06: rgb(255 255 255 / 60%);
   --white-07: rgb(255 255 255 / 70%);
