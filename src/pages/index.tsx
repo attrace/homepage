@@ -51,9 +51,9 @@ export default function Home(): JSX.Element {
             </div>
             <div className={styles.farmingRowRight}>
               <div className={styles.cards}>
-                <div className={styles.filter} style={{ background: 'var(--index-color1)', bottom: -57.75, left: -20 }} />
-                <div className={styles.filter} style={{ background: 'var(--index-color2)', top: -97.6, left: '50%', transform: 'translateX(-50%)' }} />
-                <div className={styles.filter} style={{ background: 'var(--index-color3)', bottom: -81.75, right: 20 }} />
+                <div className={clsx(styles.filter, styles.filter1)} />
+                <div className={clsx(styles.filter, styles.filter2)} />
+                <div className={clsx(styles.filter, styles.filter3)} />
                 <div className={styles.statsCard}>
                   <div className={styles.info}>
                     <div className={styles.icon}>
@@ -75,7 +75,7 @@ export default function Home(): JSX.Element {
                     </div>
                   </div>
                 </div>
-                <div className={styles.statsCard} style={{ marginLeft: -12 }}>
+                <div className={clsx(styles.statsCard, styles.secondCard)}>
                   <div className={styles.info}>
                     <div className={styles.icon}>
                       <img src="/img/farms/mask.png" />
@@ -96,7 +96,7 @@ export default function Home(): JSX.Element {
                     </div>
                   </div>
                 </div>
-                <div className={styles.statsCard} style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', padding: '32px 36px', minWidth: 370, height: 210 }}>
+                <div className={clsx(styles.statsCard, styles.thirdCard)}>
                   <div className={styles.info}>
                     <div className={styles.icon}>
                       <img src="/img/farms/attr.png" />
