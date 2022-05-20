@@ -167,22 +167,6 @@
   top: -70px;
   filter: blur(72px);
 }
-.statsCard .filter1 {
-  background: #7a40c0;
-  opacity: 0.22;
-}
-.statsCard .filter2 {
-  background: #ca5ed6;
-  opacity: 0.15;
-}
-.statsCard .filter3 {
-  background: #3690d2;
-  opacity: 0.12;
-}
-.statsCard .filter4 {
-  background: #ff7686;
-  opacity: 0.1;
-}
 .statsCard .value {
   display: flex;
   justify-content: space-between;
@@ -210,8 +194,8 @@
   height: 318px;
   left: 0px;
   top: 0px;
-  background: #1F1C29;
-  border: 1px solid rgb(59, 56, 67);
+  background: var(--dark-grey-5);
+  border: 1px solid var(--reward-card-border);
   backdrop-filter: blur(72px);
   border-radius: 8px;
   padding: 32px 36px 36px;
@@ -233,7 +217,7 @@
   font-weight: 300;
   font-size: 16px;
   line-height: 24px;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: 0px 4px 4px var(--reward-card-text-shadow);
 }
 .rewardCard .icon {
   display: flex;
@@ -281,7 +265,7 @@
   position: absolute;
   top: 0; left: 0;
   width: 100%; height: 100%;
-  background: linear-gradient(90deg, rgba(19, 16, 29, 0.95) 0%, rgba(19, 16, 29, 0) 49.31%, rgba(19, 16, 29, 0.95) 100%);
+  background: var(--partner-filter);
 }
 
 .bigTitle {
