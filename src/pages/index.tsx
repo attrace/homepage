@@ -99,11 +99,11 @@ export default function Home(): JSX.Element {
                 <div className={styles.statsCard} style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', padding: '32px 36px', minWidth: 370, height: 210 }}>
                   <div className={styles.info}>
                     <div className={styles.icon}>
-                      <img src="/img/farms/yacht.png" />
-                      <VerifyIcon />
+                      <img src="/img/farms/attr.png" />
                     </div>
                     <div>
-                      <div className={styles.name}>Bored Ape Yacht Club</div>
+                      <div className={styles.name}>ATTR</div>
+                      <div className={styles.name}>Attrace Protocol</div>
                     </div>
                   </div>
                   <div className={styles.figure}>
@@ -113,7 +113,7 @@ export default function Home(): JSX.Element {
                     </div>
                     <div>
                       <div className={styles.propname}>Daily Farm Rewards</div>
-                      <div className={styles.apr}>🤑 wETH</div>
+                      <div className={styles.apr}>🤑 ATTR</div>
                     </div>
                   </div>
                 </div>
