@@ -1,17 +1,20 @@
 .section {
-  margin: 112px auto;
+  margin: 120px auto;
+  padding: 0;
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 .sectionTitle {
+  font-family: 'Exo 2';
+  font-style: normal;
   font-weight: 600;
-  font-size: 3rem;
+  font-size: 48px;
   line-height: 54px;
   text-align: center;
   letter-spacing: -0.4px;
   color: var(--white-09);
-  margin: 0 auto 72px;
+  margin: 0 auto 104px;
 }
 .sectionTitle span {
   background: var(--secondary-gradient);
@@ -19,24 +22,166 @@
   -webkit-text-fill-color: transparent;
 }
 
+.farmingRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.farmingRowLeft {
+  display: flex;
+  flex-direction: column;
+  row-gap: 44px;
+}
+
+.oracleRowLeft {
+  display: flex;
+  position: relative;
+}
+
+.oracleRowLeft .blast {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 204px;
+  height: 204px;
+  background: url('/static/img/blast.png');
+  background-size: 100% 100%;
+  position: absolute;
+  top: -32px; right: -80px;
+}
+
+.oracleRowLeft .blast .title {
+  color: var(--white-09);
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 46px;
+}
+
+.oracleRowLeft .blast .comment {
+  color: var(--white-07);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.oracleRowRight {
+  display: flex;
+  flex-direction: column;
+  row-gap: 44px;
+}
+
+.farmingRowLeft, .oracleRowRight .farmingText {
+  max-width: 520px;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.1px;
+  color: var(--white);
+  opacity: 0.7;
+}
+
+.actions {
+  display: flex;
+  gap: 20px;
+}
+
 /* statsSection */
 .cards {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  position: relative;
+  gap: 20px;
+}
+.cards .filter {
+  filter: blur(72px);
+  position: absolute;
+  width: 220px;
+  height: 220px;
+}
+.cards .filter1 {
+  background: var(--index-color1);
+  left: -20px; bottom: -57.75px;
+}
+.cards .filter2 {
+  background: var(--index-color2);
+  top: -97.6px; left: 50%;
+  transform: translateX(-50%);
+}
+.cards .filter3 {
+  background: var(--index-color3);
+  bottom: -81.75px; right: 20px;
 }
 .statsCard {
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: center;
-  padding: 0 44px;
-  width: 304px;
-  height: 194px;
-  background: rgba(255, 255, 255, 0.07);
-  backdrop-filter: blur(72px);
-  border-radius: 8px;
-  overflow: hidden;
+  justify-content: space-between;
+  padding: 28px 31px;
+  height: 183px;
+  border: 1px solid var(--statscard-border);
+  background: var(--statscard-back);
+  box-shadow: 0px 0px 28px var(--statscard-boxshadow);
+  backdrop-filter: blur(14px);
+  border-radius: 7px;
+}
+.secondCard {
+  margin-left: -12px;
+}
+.thirdCard {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 32px 36px;
+  min-width: 370px;
+  height: 210px;
+}
+.statsCard .info {
+  display: flex;
+  align-items: center;
+  column-gap: 14px;
+}
+.statsCard .info .icon {
+  display: flex;
+  position: relative;
+}
+.statsCard .info .icon >svg {
+  position: absolute;
+  bottom: 0; right: 0;
+}
+.statsCard .info .name {
+  margin-bottom: 1.73px;
+  color: var(--white-09);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+}
+.statsCard .info .description {
+  color: var(--white-07);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+}
+.statsCard .figure {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.statsCard .figure .propname {
+  margin-bottom: 6px;
+  color: var(--white-06);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.statsCard .figure .apr {
+  color: var(--white-09);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
 }
 .statsCard .filter {
   position: absolute;
@@ -45,22 +190,6 @@
   left: -28px;
   top: -70px;
   filter: blur(72px);
-}
-.statsCard .filter1 {
-  background: #7a40c0;
-  opacity: 0.22;
-}
-.statsCard .filter2 {
-  background: #ca5ed6;
-  opacity: 0.15;
-}
-.statsCard .filter3 {
-  background: #3690d2;
-  opacity: 0.12;
-}
-.statsCard .filter4 {
-  background: #ff7686;
-  opacity: 0.1;
 }
 .statsCard .value {
   display: flex;
@@ -80,7 +209,8 @@
 
 /* earnSection */
 .earnSection {
-  margin: 180px auto;
+  margin: 220px auto;
+  padding: 0;
 }
 .rewardCard {
   position: relative;
@@ -88,43 +218,45 @@
   height: 318px;
   left: 0px;
   top: 0px;
-  background: rgba(255, 255, 255, 0.07);
+  background: var(--dark-grey-5);
+  border: 1px solid var(--reward-card-border);
   backdrop-filter: blur(72px);
   border-radius: 8px;
   padding: 32px 36px 36px;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 .rewardCard .title {
   color: var(--white-09);
   font-weight: 600;
-  font-size: 1.875rem;
+  font-size: 30px;
   line-height: 38px;
   letter-spacing: -0.15px;
 }
 .rewardCard .text {
-  margin-top: 12px;
+  margin-top: 16px;
   color: var(--white-06);
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  text-shadow: 0px 4px 4px var(--reward-card-text-shadow);
 }
 .rewardCard .icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 56px;
-  height: 56px;
   border-radius: 6px;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 .rewardCard .filter {
   position: absolute;
-  width: 197px;
-  height: 144px;
-  left: -27px;
-  top: -31px;
-  opacity: 0.1;
-  transform: rotate(-22.11deg);
-  filter: blur(72px);
-  background-color: var(--purple);
+  width: 380px;
+  height: 300px;
+  left: -64px;
+  top: -110px;
+  filter: blur(100px);
 }
 .rewardCard a {
   display: block;
@@ -147,23 +279,73 @@
   flex-direction: column;
 }
 .partnersLogos {
-  background: var(--dark-grey-3);
   border-radius: 8px;
-  padding: 64px 55px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
+}
+.partnersLogos .filter {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: var(--partner-filter);
 }
 
+.bigTitle {
+  margin-bottom: 80px;
+}
+
+.filterColor1 { background: var(--earn-filter1); }
+.filterColor2 { background: var(--earn-filter2); }
+.filterColor3 { background: var(--earn-filter3); }
+.purpleIcon {
+  fill: var(--purple);
+}
+
+@media (max-width: 1350px) {
+  .section, .earnSection {
+    margin: 64px auto;
+  }
+  .farmingRow {
+    flex-direction: column;
+    gap: 32px;
+  }
+  .sectionTitle {
+    max-width: 300px;
+    font-size: 2rem;
+    line-height: 36px;
+  }
+  .farmingText {
+    text-align: center;
+    font-size: 16px ;
+    line-height: 24px ;
+  }
+  .farmingRowRight {
+    display: none;
+  }
+  .oracleRowLeft >img {
+    width: 300px;
+  }
+  .oracleRowLeft >.blast {
+    display: none;
+  }
+  .oracleRowRight {
+    align-items: center;
+  }
+  .actions {
+    flex-direction: column;
+    align-items: center;
+  }
+  .rewardCard {
+    padding: 16px 18px 18px;
+  }
+}
 @media (max-width: 1300px) {
   .cards {
     flex-flow: wrap;
-    max-width: 650px;
     margin: 0 auto;
     justify-content: space-between;
-  }
-  .cards .statsCard {
-    margin-bottom: 32px;
   }
   .earnSection .cards {
     flex-direction: column;
@@ -194,9 +376,9 @@
     max-width: 500px;
     justify-content: center;
   }
-
+  
   .rewardCard {
-    max-width: 100%;
+    max-width: calc(100% - 32px);
     width: auto;
     height: auto;
   }
