@@ -5,6 +5,8 @@ import truncateString from "../../../utils/truncateString";
 
 import Button from "../../button";
 
+import ArrowDownIcon from "@site/static/img/icons/arrowDown.svg";
+import External from "@site/static/img/icons/external.svg";
 import styles from "./index.module.css";
 
 export default function MainSection(): JSX.Element {
@@ -12,20 +14,19 @@ export default function MainSection(): JSX.Element {
     <div className={clsx("container", styles.wrapper)}>
       <div className={styles.actionBlock}>
         <h1>
-          <span>Referral</span> <span>Protocol</span> for <br />
-          Web3 Assets
+          <span>Referral Protocol</span><br />
+          for Web3 Assets
         </h1>
         <p>
           Unlock the value of ‘word of mouth’ marketing in web3. Recommend
           crypto or NFT and earn rewards from referral farms.{" "}
         </p>
         <div className={styles.actions}>
-          <a href="#" target="_blank">
-            <Button>Enter App</Button>
-          </a>
-          <a href="#" target="_blank">
-            <Button variant="secondary">Learn More</Button>
-          </a>
+          <Button>Enter App</Button>
+          <Button variant="secondary">
+            Learn More
+            <ArrowDownIcon />
+          </Button>
         </div>
       </div>
       <div className={styles.referral}>
@@ -35,17 +36,20 @@ export default function MainSection(): JSX.Element {
         <div className={styles.img}>
           <img src="/img/attrace-nft.jpg"></img>
         </div>
-        <div className={styles.data}>
-          <div className={styles.name}>Referral Genesis</div>
-          <div>
-            Created by{" "}
-            <a
-              href={`https://etherscan.io/address/0x26bc596D39c5D45C855901b6995e0842E37Ae57a`}
-              target="_blank"
-            >
-              {truncateString("0x26bc596D39c5D45C855901b6995e0842E37Ae57a")}
-            </a>
+        <div className={styles.bottom}>
+          <div className={styles.data}>
+            <div className={styles.name}>Proof of recommendation</div>
+            <div className={styles.creator}>
+              Created by{" "}
+              <a
+                href={`https://etherscan.io/address/0x26bc596D39c5D45C855901b6995e0842E37Ae57a`}
+                target="_blank"
+              >
+                {truncateString("0x26bc596D39c5D45C855901b6995e0842E37Ae57a")}
+              </a>
+            </div>
           </div>
+          <External />
         </div>
       </div>
     </div>
