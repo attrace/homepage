@@ -3,7 +3,6 @@
   align-items: center;
   padding: 4px 12px;
   gap: 8px;
-  /* background: #24212D; */
   background: var(--badge-background);
   border-radius: 6px;
   font-weight: 400;
@@ -21,9 +20,9 @@
 }
 
 .red {
-  color: red;
+  /* color: red; */
 }
 
 .signalRed {
-  background: red;
+  /* background: red; */
 }

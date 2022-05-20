@@ -135,7 +135,6 @@ export default function Home(): JSX.Element {
               </div>
             </div>
             <div className={styles.oracleRowRight}>
-              {/* <Badge color='green' /> */}
               <Badge />
               <div className={styles.farmingText}>
                 Oracles capture the value of ‘word of mouth’ marketing in web3 and power referral farming by detecting and distributing rewards in a trustless manner.<br /><br />
@@ -154,13 +153,13 @@ export default function Home(): JSX.Element {
           </div>
         </div>
         <div className={clsx("container", styles.section, styles.earnSection)}>
-          <h2 className={styles.sectionTitle} style={{ marginBottom: 80 }}>
+          <h2 className={clsx(styles.sectionTitle, styles.bigTitle)}>
             <span>Earn rewards </span>
             with Attrace
           </h2>
           <div className={styles.cards}>
             <div className={styles.rewardCard}>
-              <div className={styles.filter} style={{ background: 'rgba(218, 156, 255, .15)' }} />
+              <div className={clsx(styles.filter, styles.filterColor1)} />
               <div
                 className={styles.icon}
               >
@@ -171,7 +170,7 @@ export default function Home(): JSX.Element {
                 Share Attrace link when recommending any crypto or NFT project and earn farming rewards for every token bought via your link.
               </div>
               <a>
-                Join Referral Farms <ArrowRightIcon fill='#C766FF' />
+                Join Referral Farms <ArrowRightIcon className={styles.purpleIcon} />
               </a>
             </div>
             <div className={styles.rewardCard}>
@@ -180,13 +179,13 @@ export default function Home(): JSX.Element {
               >
                 <Chart2Icon />
               </div>
-              <div className={styles.filter} style={{ background: 'rgba(255, 153, 161, .1)' }} />
+              <div className={clsx(styles.filter, styles.filterColor2)} />
               <div className={styles.title}>Oracle Staking</div>
               <div className={styles.text}>
                 Stake with the Oracles to secure the network and receive protocol and staking rewards in return.
               </div>
               <a>
-                Stake $ATTR <ArrowRightIcon fill='#C766FF' />
+                Stake $ATTR <ArrowRightIcon className={styles.purpleIcon} />
               </a>
             </div>
             <div className={clsx(styles.rewardCard, styles.rewardCard3)}>
@@ -195,13 +194,13 @@ export default function Home(): JSX.Element {
               >
                 <Chart3Icon />
               </div>
-              <div className={styles.filter} style={{ background: 'rgba(95, 210, 250, .08)' }} />
+              <div className={clsx(styles.filter, styles.filterColor3)} />
               <div className={styles.title}>Liquidity Mining</div>
               <div className={styles.text}>
                 Provide liquidity to ATTR/ETH liquidity pool on SushiSwap and earn $ATTR rewards in return for enabling the token exchange.
               </div>
               <a>
-                Provide Liquidity <ArrowRightIcon fill='#C766FF' />
+                Provide Liquidity <ArrowRightIcon className={styles.purpleIcon} />
               </a>
             </div>
           </div>
@@ -209,7 +208,7 @@ export default function Home(): JSX.Element {
         <div
           className={clsx("container", styles.section, styles.partnersSection)}
         >
-          <h2 className={styles.sectionTitle} style={{ marginBottom: 80 }}>
+          <h2 className={clsx(styles.sectionTitle, styles.bigTitle)}>
             <span>Partners </span>
             Who Joined the Ecosystem
           </h2>

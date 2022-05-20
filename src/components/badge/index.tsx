@@ -4,7 +4,6 @@ import clsx from "clsx";
 import styles from "./styles.module.css";
 
 interface Props extends HTMLAttributes<HTMLDivElement> {
-  // color?: "green" | "red";
   className?: string;
   style?: CSSProperties;
 }
@@ -12,19 +11,12 @@ interface Props extends HTMLAttributes<HTMLDivElement> {
 const Badge: FC<Props> = ({
   children,
   className = "",
-  // color,
   style,
   ...rest
 }) => {
   return (
-    <div className={clsx(styles.badge, {
-      // [styles.red]: color === "red",
-      className,
-    })} style={style} {...rest}>
-      <div className={clsx(styles.signal, {
-        // [styles.red]: color === "red",
-        className,
-      })} />
+    <div className={clsx(styles.badge)} style={style} {...rest}>
+      <div className={clsx(styles.signal)} />
       Live on Ethereum
     </div>
   );

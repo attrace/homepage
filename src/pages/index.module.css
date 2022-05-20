@@ -284,6 +284,17 @@
   background: linear-gradient(90deg, rgba(19, 16, 29, 0.95) 0%, rgba(19, 16, 29, 0) 49.31%, rgba(19, 16, 29, 0.95) 100%);
 }
 
+.bigTitle {
+  margin-bottom: 80px;
+}
+
+.filterColor1 { background: var(--earn-filter1); }
+.filterColor2 { background: var(--earn-filter2); }
+.filterColor3 { background: var(--earn-filter3); }
+.purpleIcon {
+  fill: var(--purple);
+}
+
 @media (max-width: 1350px) {
   .section, .earnSection {
     margin: 64px auto;

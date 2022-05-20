@@ -49,6 +49,9 @@
   --primary-btn: linear-gradient(86.19deg, #600CDC 0%, #C766FF 100%);
   --primary-btn-hover: linear-gradient(86.19deg, #600CDC 0%, #600CDC 100%);
   --secondary-btn-hover: linear-gradient(86.19deg, rgb(36, 33, 45) 0%, rgb(36, 33, 45) 100%);
+  --earn-filter1: rgba(218, 156, 255, .15);
+  --earn-filter2: rgba(255, 153, 161, .1);
+  --earn-filter3: rgba(95, 210, 250, .08);
 
   /* Gradients */
   --primary-gradient: linear-gradient(86.19deg, #8836ff 0%, #b646ef 100%);
