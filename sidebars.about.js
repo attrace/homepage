@@ -58,7 +58,7 @@ module.exports = {
         label: 'Project',
         collapsed: false,
         items: [
-          'reference/glossary',
+          'project/roadmap',
           {
             type: 'link',
             label: 'Attrace Team', // The link label
