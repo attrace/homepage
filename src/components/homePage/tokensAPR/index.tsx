@@ -1,5 +1,6 @@
 import React from "react";
 import uuid from "react-uuid";
+import Marquee from "react-fast-marquee";
 
 import styles from "./index.module.css";
 
@@ -88,11 +89,13 @@ const MOCK_TOKEN_LIST = [
 export default function TokensAPR(): JSX.Element {
   return (
     <div className={styles.wrapper}>
-      {MOCK_TOKEN_LIST.map((token) => (
-        <div className={styles.item} key={uuid()}>
-          ${token.symbol}
-        </div>
-      ))}
+      <Marquee>
+        {MOCK_TOKEN_LIST.map((token) => (
+          <div className={styles.item} key={uuid()}>
+            ${token.symbol}
+          </div>
+        ))}
+      </Marquee>
     </div>
   );
 }

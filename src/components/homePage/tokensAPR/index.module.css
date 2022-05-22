@@ -6,7 +6,6 @@
   border: 1px solid var(--dark-grey-11);
   display: flex;
   align-items: center;
-  flex-flow: wrap;
   overflow: hidden;
 }
 .item {
