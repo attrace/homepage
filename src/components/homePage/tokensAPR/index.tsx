@@ -89,7 +89,7 @@ const MOCK_TOKEN_LIST = [
 export default function TokensAPR(): JSX.Element {
   return (
     <div className={styles.wrapper}>
-      <Marquee>
+      <Marquee speed={100}>
         {MOCK_TOKEN_LIST.map((token) => (
           <div className={styles.item} key={uuid()}>
             ${token.symbol}
