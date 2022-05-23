@@ -234,6 +234,10 @@
     flex-direction: column;
     align-items: center;
   }
+  .rewardCards {
+    flex-direction: column;
+    align-items: center;
+  }
   .rewardCard {
     padding: 16px 18px 18px;
   }
