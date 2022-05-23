@@ -69,7 +69,7 @@
   bottom: 0; right: 0;
 }
 .statsCard .info .name {
-  margin-bottom: 1.73px;
+  margin-bottom: 2px;
   color: var(--white-09);
   font-style: normal;
   font-weight: 500;
