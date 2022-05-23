@@ -6,6 +6,7 @@ import Marquee from "react-fast-marquee";
 
 import Button from "../components/button";
 import Badge from "../components/badge";
+import CardArray from "../components/homePage/cardArray";
 import MainSection from "../components/homePage/mainSection";
 import TokensAPR from "../components/homePage/tokensAPR";
 
@@ -21,14 +22,28 @@ import styles from "./index.module.css";
 export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
   const [playing, setPlaying] = useState(true);
+  const [delta, setDelta] = useState(2000);
+  let timer
   useMemo(() => {
-    setInterval(() => {
-      setPlaying(false)
-      setTimeout(() => {
-        setPlaying(true)
-      }, 2000)
-    }, 4500)
+    let index = 0
+    timer = setInterval(() => {
+      index++
+      if(index %2 === 1) setPlaying(true)
+      else setPlaying(false)
+    }, delta)
   }, [])
+  
+  // useMemo(() => {
+  //   let index = 0
+  //   clearInterval(timer)
+  //   timer = null
+  //   timer = setInterval(() => {
+  //     index++
+  //     console.log(index)
+  //     if(index %2 === 1) setPlaying(true)
+  //     else setPlaying(false)
+  //   }, delta)
+  // }, [delta])
   return (
     <Layout
       title={siteConfig.title}
@@ -59,74 +74,7 @@ export default function Home(): JSX.Element {
               </div>
             </div>
             <div className={styles.farmingRowRight}>
-              <div className={styles.cards}>
-                {/* <div className={clsx(styles.filter, styles.filter1)} />
-                <div className={clsx(styles.filter, styles.filter2)} />
-                <div className={clsx(styles.filter, styles.filter3)} /> */}
-                  <div className={clsx(styles.statsCard, styles.firstCard)}>
-                    <div className={styles.info}>
-                      <div className={styles.icon}>
-                        <img src="/img/farms/radar.png" />
-                      </div>
-                      <div>
-                        <div className={styles.name}>RADAR</div>
-                        <div className={styles.description}>DappRadar</div>
-                      </div>
-                    </div>
-                    <div className={styles.figure}>
-                      <div>
-                        <div className={styles.propname}>Estimated APR</div>
-                        <div className={styles.apr}>🔥%</div>
-                      </div>
-                      <div>
-                        <div className={styles.propname}>Daily Farm Rewards</div>
-                        <div className={styles.apr}>🤑 wETH</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className={clsx(styles.statsCard, styles.secondCard)}>
-                    <div className={styles.info}>
-                      <div className={styles.icon}>
-                        <img src="/img/farms/mask.png" />
-                      </div>
-                      <div>
-                        <div className={styles.name}>Mask</div>
-                        <div className={styles.description}>Mask Network</div>
-                      </div>
-                    </div>
-                    <div className={styles.figure}>
-                      <div>
-                        <div className={styles.propname}>Estimated APR</div>
-                        <div className={styles.apr}>🔥%</div>
-                      </div>
-                      <div>
-                        <div className={styles.propname}>Daily Farm Rewards</div>
-                        <div className={styles.apr}>🤑 MASK</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className={clsx(styles.statsCard, styles.thirdCard)}>
-                    <div className={styles.info}>
-                      <div className={styles.icon}>
-                        <img src="/img/farms/attr.png" />
-                      </div>
-                      <div>
-                        <div className={styles.name}>ATTR</div>
-                        <div className={styles.description}>Attrace Protocol</div>
-                      </div>
-                    </div>
-                    <div className={styles.figure}>
-                      <div>
-                        <div className={styles.propname}>Estimated APR</div>
-                        <div className={styles.apr}>🔥%</div>
-                      </div>
-                      <div>
-                        <div className={styles.propname}>Daily Farm Rewards</div>
-                        <div className={styles.apr}>🤑 ATTR</div>
-                      </div>
-                    </div>
-                  </div>
-              </div>
+              <CardArray />
             </div>
           </div>
         </div>
@@ -217,7 +165,7 @@ export default function Home(): JSX.Element {
         <div
           className={clsx("container", styles.section, styles.partnersSection)}
         >
-          <h2 className={clsx(styles.sectionTitle, styles.bigTitle)}>
+          <h2 className={clsx(styles.sectionTitle, styles.bigTitle)} onClick={() => setDelta(5000)}>
             <span>Partners </span>
             Who Joined the Ecosystem
           </h2>

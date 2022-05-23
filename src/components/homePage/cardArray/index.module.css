@@ -1,0 +1,127 @@
+.cards {
+  /* display: flex;
+  justify-content: center; */
+  position: relative;
+  gap: 20px;
+  perspective: 175px;
+  transform: translate(-499px, -105px);
+}
+.cards .filter {
+  filter: blur(72px);
+  position: absolute;
+  width: 220px;
+  height: 220px;
+}
+.cards .filter1 {
+  background: var(--index-color1);
+  left: -20px; bottom: -57.75px;
+}
+.cards .filter2 {
+  background: var(--index-color2);
+  top: -97.6px; left: 50%;
+  transform: translateX(-50%);
+}
+.cards .filter3 {
+  background: var(--index-color3);
+  bottom: -81.75px; right: 20px;
+}
+.statsCard {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 32px 36px;
+  width: 370px;
+  height: 210px;
+  border: 1px solid var(--statscard-border);
+  background: var(--statscard-back);
+  box-shadow: 0px 0px 28px var(--statscard-boxshadow);
+  backdrop-filter: blur(14px);
+  border-radius: 7px;
+  transition: .3s;
+  position: absolute;
+}
+.firstCard {
+  transform: translate3d(-40%, 10px, -20px);
+  z-index: 1;
+}
+.secondCard {
+  transform: translate3d(calc(-40% + 320px), 10px, -20px);
+  z-index: 2;
+}
+.thirdCard {
+  z-index: 3;
+}
+.statsCard .info {
+  display: flex;
+  align-items: center;
+  column-gap: 14px;
+}
+.statsCard .info .icon {
+  display: flex;
+  position: relative;
+}
+.statsCard .info .icon >img {
+  width: 60px;
+  height: 60px;
+}
+.statsCard .info .icon >svg {
+  position: absolute;
+  bottom: 0; right: 0;
+}
+.statsCard .info .name {
+  margin-bottom: 1.73px;
+  color: var(--white-09);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+}
+.statsCard .info .description {
+  color: var(--white-07);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+}
+.statsCard .figure {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.statsCard .figure .propname {
+  margin-bottom: 6px;
+  color: var(--white-06);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.statsCard .figure .apr {
+  color: var(--white-09);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+}
+.statsCard .filter {
+  position: absolute;
+  width: 197px;
+  height: 144px;
+  left: -28px;
+  top: -70px;
+  filter: blur(72px);
+}
+.statsCard .value {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 2.375rem;
+  font-weight: 600;
+  color: var(--white-09);
+  line-height: 46px;
+  letter-spacing: -0.2px;
+}
+.statsCard .text {
+  margin-top: 16px;
+  color: var(--white-06);
+  font-weight: 500;
+}
