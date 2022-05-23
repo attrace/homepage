@@ -52,6 +52,8 @@
   height: 400px;
   margin: 0 auto;
   border-radius: 8px 8px 4px 4px;
+  position: relative;
+  z-index: 1;
 }
 .referral .img >img {
   border-radius: 8px;
@@ -61,6 +63,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px 10px 16px;
+  position: relative;
+  z-index: 1;
 }
 .referral .data {
   font-size: 0.875rem;
@@ -118,6 +122,9 @@
   background: var(--referral-filter3);
   opacity: 0.15;
   filter: blur(200px);
+}
+.etherscanlink {
+  display: flex;
 }
 
 @media (max-width: 1350px) {

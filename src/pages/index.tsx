@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+import React, { useMemo, useRef, useState } from "react";
 import Layout from "@theme/Layout";
 import clsx from "clsx";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
@@ -23,37 +23,26 @@ export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
   const [playing, setPlaying] = useState(true);
   const [delta, setDelta] = useState(2000);
+  const referralRef = useRef<any>();
   let timer
   useMemo(() => {
     let index = 0
     timer = setInterval(() => {
       index++
-      if(index %2 === 1) setPlaying(true)
+      if (index % 2 === 1) setPlaying(true)
       else setPlaying(false)
     }, delta)
   }, [])
-  
-  // useMemo(() => {
-  //   let index = 0
-  //   clearInterval(timer)
-  //   timer = null
-  //   timer = setInterval(() => {
-  //     index++
-  //     console.log(index)
-  //     if(index %2 === 1) setPlaying(true)
-  //     else setPlaying(false)
-  //   }, delta)
-  // }, [delta])
   return (
     <Layout
       title={siteConfig.title}
       description="‘Word of Mouth’ Protocol for Web3"
     >
       <main>
-        <MainSection />
+        <MainSection ref={referralRef} />
         <TokensAPR />
         <div className={clsx("container", styles.section)}>
-          <div className={styles.sectionTitle}>
+          <div className={styles.sectionTitle} ref={referralRef}>
             Start
             <span> Referral Farming</span>
           </div>
@@ -68,7 +57,7 @@ export default function Home(): JSX.Element {
                   Referral Farming
                   <ArrowRightIcon />
                 </Button>
-                <Button variant="secondary">
+                <Button variant="secondary" onClick={() => window.open('https://homepage.testnet.attrace.com/about/category/referral-farming', '_blank')}>
                   Learn More
                 </Button>
               </div>
@@ -102,7 +91,7 @@ export default function Home(): JSX.Element {
                   Oracle Staking
                   <ArrowRightIcon />
                 </Button>
-                <Button variant="secondary">
+                <Button variant="secondary" onClick={() => window.open('https://homepage.testnet.attrace.com/about/category/oracles', '_blank')}>
                   Learn More
                 </Button>
               </div>
@@ -156,7 +145,7 @@ export default function Home(): JSX.Element {
               <div className={styles.text}>
                 Provide liquidity to ATTR/ETH liquidity pool on SushiSwap and earn $ATTR rewards in return for enabling the token exchange.
               </div>
-              <a>
+              <a href='https://app.sushi.com/farm?chainId=1' target='_blank'>
                 Provide Liquidity <ArrowRightIcon className={styles.purpleIcon} />
               </a>
             </div>

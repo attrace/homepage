@@ -9,7 +9,7 @@ import ArrowDownIcon from "@site/static/img/icons/arrowDown.svg";
 import External from "@site/static/img/icons/external.svg";
 import styles from "./index.module.css";
 
-export default function MainSection(): JSX.Element {
+export default function MainSection({ referralRef }: any): JSX.Element {
   return (
     <div className={clsx("container", styles.wrapper)}>
       <div className={styles.actionBlock}>
@@ -49,7 +49,13 @@ export default function MainSection(): JSX.Element {
               </a>
             </div>
           </div>
-          <External />
+          <a
+            className={styles.etherscanlink}
+            href={`https://etherscan.io/address/0x26bc596D39c5D45C855901b6995e0842E37Ae57a`}
+            target="_blank"
+          >
+            <External />
+          </a>
         </div>
       </div>
     </div>
