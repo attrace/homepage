@@ -85,6 +85,166 @@ const MOCK_TOKEN_LIST = [
     symbol: "MANA",
     apr: 1.89,
   },
+  {
+    symbol: "MASK",
+    apr: 0.5,
+  },
+  {
+    symbol: "BAL",
+    apr: 0.31,
+  },
+  {
+    symbol: "UNI",
+    apr: 0.24,
+  },
+  {
+    symbol: "RADAR",
+    apr: 0.12,
+  },
+  {
+    symbol: "MANA",
+    apr: 1.89,
+  },
+  {
+    symbol: "MASK",
+    apr: 0.5,
+  },
+  {
+    symbol: "BAL",
+    apr: 0.31,
+  },
+  {
+    symbol: "UNI",
+    apr: 0.24,
+  },
+  {
+    symbol: "RADAR",
+    apr: 0.12,
+  },
+  {
+    symbol: "MANA",
+    apr: 1.89,
+  },
+  {
+    symbol: "MASK",
+    apr: 0.5,
+  },
+  {
+    symbol: "BAL",
+    apr: 0.31,
+  },
+  {
+    symbol: "UNI",
+    apr: 0.24,
+  },
+  {
+    symbol: "RADAR",
+    apr: 0.12,
+  },
+  {
+    symbol: "MANA",
+    apr: 1.89,
+  },
+  {
+    symbol: "MASK",
+    apr: 0.5,
+  },
+  {
+    symbol: "BAL",
+    apr: 0.31,
+  },
+  {
+    symbol: "UNI",
+    apr: 0.24,
+  },
+  {
+    symbol: "RADAR",
+    apr: 0.12,
+  },
+  {
+    symbol: "MANA",
+    apr: 1.89,
+  },
+  {
+    symbol: "MASK",
+    apr: 0.5,
+  },
+  {
+    symbol: "BAL",
+    apr: 0.31,
+  },
+  {
+    symbol: "UNI",
+    apr: 0.24,
+  },
+  {
+    symbol: "RADAR",
+    apr: 0.12,
+  },
+  {
+    symbol: "MANA",
+    apr: 1.89,
+  },
+  {
+    symbol: "MASK",
+    apr: 0.5,
+  },
+  {
+    symbol: "BAL",
+    apr: 0.31,
+  },
+  {
+    symbol: "UNI",
+    apr: 0.24,
+  },
+  {
+    symbol: "RADAR",
+    apr: 0.12,
+  },
+  {
+    symbol: "MANA",
+    apr: 1.89,
+  },
+  {
+    symbol: "MASK",
+    apr: 0.5,
+  },
+  {
+    symbol: "BAL",
+    apr: 0.31,
+  },
+  {
+    symbol: "UNI",
+    apr: 0.24,
+  },
+  {
+    symbol: "RADAR",
+    apr: 0.12,
+  },
+  {
+    symbol: "MANA",
+    apr: 1.89,
+  },
+  {
+    symbol: "MASK",
+    apr: 0.5,
+  },
+  {
+    symbol: "BAL",
+    apr: 0.31,
+  },
+  {
+    symbol: "UNI",
+    apr: 0.24,
+  },
+  {
+    symbol: "RADAR",
+    apr: 0.12,
+  },
+  {
+    symbol: "MANA",
+    apr: 1.89,
+  },
 ];
 export default function TokensAPR(): JSX.Element {
   return (

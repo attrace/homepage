@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useMemo, useState } from "react";
 import Layout from "@theme/Layout";
 import clsx from "clsx";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import Marquee from "react-fast-marquee";
 
 import Button from "../components/button";
 import Badge from "../components/badge";
@@ -14,12 +15,20 @@ import ImpossibleFinLogo from "@site/static/img/partners/impossibleFinance.svg";
 import Chart1Icon from "@site/static/img/icons/chart1.svg";
 import Chart2Icon from "@site/static/img/icons/chart2.svg";
 import Chart3Icon from "@site/static/img/icons/chart3.svg";
-import VerifyIcon from "@site/static/img/verified.svg";
 import ArrowRightIcon from "@site/static/img/icons/arrowRight.svg";
 import styles from "./index.module.css";
 
 export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
+  const [playing, setPlaying] = useState(true);
+  useMemo(() => {
+    setInterval(() => {
+      setPlaying(false)
+      setTimeout(() => {
+        setPlaying(true)
+      }, 2000)
+    }, 4500)
+  }, [])
   return (
     <Layout
       title={siteConfig.title}
@@ -214,16 +223,18 @@ export default function Home(): JSX.Element {
           </h2>
           <div className={styles.partnersLogos}>
             <div className={styles.filter} />
-            <DeribitLogo />
-            <ImpossibleFinLogo />
-            <img
-              src={require("@site/static/img/partners/dappradar.png").default}
-            />
-            <MaskLogo />
-            <img src={require("@site/static/img/partners/amasa.png").default} />
-            <img
-              src={require("@site/static/img/partners/despace.png").default}
-            />
+            <Marquee speed={100} className={styles.marqueeContainer} play={playing}>
+              <DeribitLogo />
+              <ImpossibleFinLogo />
+              <img
+                src={require("@site/static/img/partners/dappradar.png").default}
+              />
+              <MaskLogo />
+              <img src={require("@site/static/img/partners/amasa.png").default} />
+              <img
+                src={require("@site/static/img/partners/despace.png").default}
+              />
+            </Marquee>
           </div>
         </div>
       </main>
