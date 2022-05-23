@@ -88,7 +88,22 @@
 }
 
 /* statsSection */
+@keyframes rotation{
+	from{
+		transform: rotateY(0deg);
+	}
+	to{
+		transform: rotateY(360deg);
+	}
+}
 .cards {
+  /* display: flex;
+  justify-content: center; */
+  position: relative;
+  gap: 20px;
+  perspective: 175px;
+}
+.rewardCards {
   display: flex;
   justify-content: center;
   position: relative;
@@ -118,24 +133,30 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  padding: 28px 31px;
-  height: 183px;
+  padding: 32px 36px;
+  width: 370px;
+  height: 210px;
   border: 1px solid var(--statscard-border);
   background: var(--statscard-back);
   box-shadow: 0px 0px 28px var(--statscard-boxshadow);
   backdrop-filter: blur(14px);
   border-radius: 7px;
 }
+.firstCard {
+  transform: translate3d(-100%, 100%, -20px);
+}
 .secondCard {
-  margin-left: -12px;
+  transform: translate3d(0, 0, -20px);
+  /* margin-left: -12px; */
 }
 .thirdCard {
-  position: absolute;
+  transform: translate3d(-50%, -100%, 0);
+  /* position: absolute;
   top: 50%; left: 50%;
   transform: translate(-50%, -50%);
   padding: 32px 36px;
   min-width: 370px;
-  height: 210px;
+  height: 210px; */
 }
 .statsCard .info {
   display: flex;
@@ -145,6 +166,10 @@
 .statsCard .info .icon {
   display: flex;
   position: relative;
+}
+.statsCard .info .icon >img {
+  width: 60px;
+  height: 60px;
 }
 .statsCard .info .icon >svg {
   position: absolute;

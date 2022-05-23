@@ -60,72 +60,72 @@ export default function Home(): JSX.Element {
             </div>
             <div className={styles.farmingRowRight}>
               <div className={styles.cards}>
-                <div className={clsx(styles.filter, styles.filter1)} />
+                {/* <div className={clsx(styles.filter, styles.filter1)} />
                 <div className={clsx(styles.filter, styles.filter2)} />
-                <div className={clsx(styles.filter, styles.filter3)} />
-                <div className={styles.statsCard}>
-                  <div className={styles.info}>
-                    <div className={styles.icon}>
-                      <img src="/img/farms/radar.png" />
+                <div className={clsx(styles.filter, styles.filter3)} /> */}
+                  <div className={clsx(styles.statsCard, styles.firstCard)}>
+                    <div className={styles.info}>
+                      <div className={styles.icon}>
+                        <img src="/img/farms/radar.png" />
+                      </div>
+                      <div>
+                        <div className={styles.name}>RADAR</div>
+                        <div className={styles.description}>DappRadar</div>
+                      </div>
                     </div>
-                    <div>
-                      <div className={styles.name}>RADAR</div>
-                      <div className={styles.description}>DappRadar</div>
-                    </div>
-                  </div>
-                  <div className={styles.figure}>
-                    <div>
-                      <div className={styles.propname}>Estimated APR</div>
-                      <div className={styles.apr}>🔥%</div>
-                    </div>
-                    <div>
-                      <div className={styles.propname}>Daily Farm Rewards</div>
-                      <div className={styles.apr}>🤑 wETH</div>
-                    </div>
-                  </div>
-                </div>
-                <div className={clsx(styles.statsCard, styles.secondCard)}>
-                  <div className={styles.info}>
-                    <div className={styles.icon}>
-                      <img src="/img/farms/mask.png" />
-                    </div>
-                    <div>
-                      <div className={styles.name}>Mask</div>
-                      <div className={styles.description}>Mask Network</div>
+                    <div className={styles.figure}>
+                      <div>
+                        <div className={styles.propname}>Estimated APR</div>
+                        <div className={styles.apr}>🔥%</div>
+                      </div>
+                      <div>
+                        <div className={styles.propname}>Daily Farm Rewards</div>
+                        <div className={styles.apr}>🤑 wETH</div>
+                      </div>
                     </div>
                   </div>
-                  <div className={styles.figure}>
-                    <div>
-                      <div className={styles.propname}>Estimated APR</div>
-                      <div className={styles.apr}>🔥%</div>
+                  <div className={clsx(styles.statsCard, styles.secondCard)}>
+                    <div className={styles.info}>
+                      <div className={styles.icon}>
+                        <img src="/img/farms/mask.png" />
+                      </div>
+                      <div>
+                        <div className={styles.name}>Mask</div>
+                        <div className={styles.description}>Mask Network</div>
+                      </div>
                     </div>
-                    <div>
-                      <div className={styles.propname}>Daily Farm Rewards</div>
-                      <div className={styles.apr}>🤑 MASK</div>
-                    </div>
-                  </div>
-                </div>
-                <div className={clsx(styles.statsCard, styles.thirdCard)}>
-                  <div className={styles.info}>
-                    <div className={styles.icon}>
-                      <img src="/img/farms/attr.png" />
-                    </div>
-                    <div>
-                      <div className={styles.name}>ATTR</div>
-                      <div className={styles.name}>Attrace Protocol</div>
-                    </div>
-                  </div>
-                  <div className={styles.figure}>
-                    <div>
-                      <div className={styles.propname}>Estimated APR</div>
-                      <div className={styles.apr}>🔥%</div>
-                    </div>
-                    <div>
-                      <div className={styles.propname}>Daily Farm Rewards</div>
-                      <div className={styles.apr}>🤑 ATTR</div>
+                    <div className={styles.figure}>
+                      <div>
+                        <div className={styles.propname}>Estimated APR</div>
+                        <div className={styles.apr}>🔥%</div>
+                      </div>
+                      <div>
+                        <div className={styles.propname}>Daily Farm Rewards</div>
+                        <div className={styles.apr}>🤑 MASK</div>
+                      </div>
                     </div>
                   </div>
-                </div>
+                  <div className={clsx(styles.statsCard, styles.thirdCard)}>
+                    <div className={styles.info}>
+                      <div className={styles.icon}>
+                        <img src="/img/farms/attr.png" />
+                      </div>
+                      <div>
+                        <div className={styles.name}>ATTR</div>
+                        <div className={styles.description}>Attrace Protocol</div>
+                      </div>
+                    </div>
+                    <div className={styles.figure}>
+                      <div>
+                        <div className={styles.propname}>Estimated APR</div>
+                        <div className={styles.apr}>🔥%</div>
+                      </div>
+                      <div>
+                        <div className={styles.propname}>Daily Farm Rewards</div>
+                        <div className={styles.apr}>🤑 ATTR</div>
+                      </div>
+                    </div>
+                  </div>
               </div>
             </div>
           </div>
@@ -166,7 +166,7 @@ export default function Home(): JSX.Element {
             <span>Earn rewards </span>
             with Attrace
           </h2>
-          <div className={styles.cards}>
+          <div className={styles.rewardCards}>
             <div className={styles.rewardCard}>
               <div className={clsx(styles.filter, styles.filterColor1)} />
               <div
