@@ -14,16 +14,15 @@
 }
 .cards .filter1 {
   background: var(--index-color1);
-  left: -20px; bottom: -57.75px;
+  top: -34px; left: -149px;
 }
 .cards .filter2 {
   background: var(--index-color2);
-  top: -97.6px; left: 50%;
-  transform: translateX(-50%);
+  top: -84px; left: 64px;
 }
 .cards .filter3 {
   background: var(--index-color3);
-  bottom: -81.75px; right: 20px;
+  top: 58px; left: 257px;
 }
 .statsCard {
   display: flex;

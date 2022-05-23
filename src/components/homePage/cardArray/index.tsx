@@ -17,9 +17,9 @@ export default function CardArray(): JSX.Element {
   }, [cardClasses])
   return (
     <div className={styles.cards}>
-      {/* <div className={clsx(styles.filter, styles.filter1)} />
+      <div className={clsx(styles.filter, styles.filter1)} />
       <div className={clsx(styles.filter, styles.filter2)} />
-      <div className={clsx(styles.filter, styles.filter3)} /> */}
+      <div className={clsx(styles.filter, styles.filter3)} />
       <div className={clsx(styles.statsCard, cardClasses[0])}>
         <div className={styles.info}>
           <div className={styles.icon}>
