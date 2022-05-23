@@ -9,7 +9,11 @@ import ArrowDownIcon from "@site/static/img/icons/arrowDown.svg";
 import External from "@site/static/img/icons/external.svg";
 import styles from "./index.module.css";
 
-export default function MainSection({ referralRef }: any): JSX.Element {
+interface Props {
+  reff: any
+}
+
+const MainSection:React.FC<Props> = ({ reff }) => {
   return (
     <div className={clsx("container", styles.wrapper)}>
       <div className={styles.actionBlock}>
@@ -23,7 +27,7 @@ export default function MainSection({ referralRef }: any): JSX.Element {
         </p>
         <div className={styles.actions}>
           <Button>Enter App</Button>
-          <Button variant="secondary">
+          <Button variant="secondary" onClick={() => reff.current.scrollIntoView({ behavior: 'smooth' })}>
             Learn More
             <ArrowDownIcon />
           </Button>
@@ -61,3 +65,5 @@ export default function MainSection({ referralRef }: any): JSX.Element {
     </div>
   );
 }
+
+export default MainSection;

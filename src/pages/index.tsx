@@ -23,7 +23,7 @@ export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
   const [playing, setPlaying] = useState(true);
   const [delta, setDelta] = useState(2000);
-  const referralRef = useRef<any>();
+  const referralRef = useRef<any>(null);
   let timer
   useMemo(() => {
     let index = 0
@@ -39,10 +39,10 @@ export default function Home(): JSX.Element {
       description="‘Word of Mouth’ Protocol for Web3"
     >
       <main>
-        <MainSection ref={referralRef} />
-        <TokensAPR />
+        <MainSection reff={referralRef} />
+        <TokensAPR reff={referralRef} />
         <div className={clsx("container", styles.section)}>
-          <div className={styles.sectionTitle} ref={referralRef}>
+          <div className={styles.sectionTitle}>
             Start
             <span> Referral Farming</span>
           </div>
