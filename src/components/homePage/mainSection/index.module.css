@@ -55,7 +55,7 @@
   position: relative;
   z-index: 1;
 }
-.referral .img >img {
+.referral .img >video {
   border-radius: 8px;
 }
 .referral .bottom {

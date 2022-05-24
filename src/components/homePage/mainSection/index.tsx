@@ -38,7 +38,7 @@ const MainSection:React.FC<Props> = ({ reff }) => {
         <div className={clsx(styles.filter, styles.filter2)} />
         <div className={clsx(styles.filter, styles.filter3)} />
         <div className={styles.img}>
-          <img src="/img/attrace-nft.jpg"></img>
+          <video src='/media/video.webm' autoPlay muted loop />
         </div>
         <div className={styles.bottom}>
           <div className={styles.data}>
