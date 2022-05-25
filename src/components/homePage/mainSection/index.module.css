@@ -33,9 +33,8 @@
 }
 .actions {
   display: flex;
-}
-.actions button:first-child {
-  margin-right: 20px;
+  column-gap: 20px;
+  row-gap: 24px;
 }
 
 .referral {
@@ -136,17 +135,23 @@
     padding-left: 0;
     padding-right: 0;
   }
+  .actionBlock {
+    padding: 0 16px;
+  }
   .actionBlock h1 {
-    text-align: center;
-    font-size: 2rem;
-    line-height: 36px;
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 46px;
+    letter-spacing: -0.2px;
+    margin-top: 40px;
   }
   .actionBlock p {
-    text-align: center;
+    font-weight: 300;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 28px;
   }
   .actions {
+    flex-direction: column;
     justify-content: center;
   }
   .filter {
@@ -177,7 +182,7 @@
   .referral .img {
     /* max-width: 280px;
     max-height: 280px; */
-    width: 280px;
-    height: 280px;
+    width: 320px;
+    height: 320px;
   }
 }
