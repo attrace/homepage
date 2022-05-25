@@ -23,3 +23,8 @@
   font-size: 0.875rem;
   font-weight: 500;
 }
+@media (max-width: 1350px) {
+  .wrapper {
+    margin-top: 80px;
+  }
+}

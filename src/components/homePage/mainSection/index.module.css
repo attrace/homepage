@@ -155,7 +155,17 @@
     justify-content: center;
   }
   .filter {
-    display: none;
+    filter: blur(120px);
+  }
+  .filter2 {
+    top: -56px; left: 50%;
+    transform: translateX(-50%);
+  }
+  .filter1 {
+    bottom: -80px; left: -48px;
+  }
+  .filter3 {
+    bottom: -56px; right: -48px;
   }
 }
 
@@ -167,7 +177,6 @@
 
 @media (max-width: 560px) {
   .referral {
-    overflow: hidden;
     max-width: fit-content;
     width: 100%;
   }

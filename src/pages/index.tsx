@@ -38,7 +38,7 @@ export default function Home(): JSX.Element {
       title={siteConfig.title}
       description="‘Word of Mouth’ Protocol for Web3"
     >
-      <main>
+      <main className="main-overflow">
         <MainSection reff={referralRef} />
         <TokensAPR reff={referralRef} />
         <div className={clsx("container", styles.section)}>
