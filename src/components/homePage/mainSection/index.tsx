@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import React from "react";
+import React, { ForwardedRef } from "react";
 
 import truncateString from "../../../utils/truncateString";
 
@@ -10,7 +10,7 @@ import External from "@site/static/img/icons/external.svg";
 import styles from "./index.module.css";
 
 interface Props {
-  reff: any
+  reff: React.Ref<any>
 }
 
 const MainSection:React.FC<Props> = ({ reff }) => {

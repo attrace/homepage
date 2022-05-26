@@ -5,7 +5,7 @@ import styles from "./styles.module.css";
 
 const MobileMarquee: FC = () => {
   const [playing, setPlaying] = useState(true);
-  const [delta, setDelta] = useState(1100);
+  const [delta] = useState(1100);
   useEffect(() => {
     let index = 0
     let timer = setInterval(() => {

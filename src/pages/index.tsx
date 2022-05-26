@@ -23,8 +23,8 @@ import styles from "./index.module.css";
 const Home: React.FC = () => {
   const { siteConfig } = useDocusaurusContext();
   const [playing, setPlaying] = useState(true);
-  const [delta, setDelta] = useState(2000);
-  const referralRef = useRef<any>(null);
+  const [delta] = useState(2000);
+  const referralRef = useRef<React.Ref<HTMLElement>>(null);
   let timer
   useMemo(() => {
     let index = 0
