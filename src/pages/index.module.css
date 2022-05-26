@@ -251,7 +251,7 @@
     display: none;
   }
   .partnersLogos >div:last-of-type {
-    display: none !important;
+    display: none !important; 
   }
 }
 
