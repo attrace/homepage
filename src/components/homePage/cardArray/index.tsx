@@ -1,18 +1,13 @@
 import clsx from "clsx";
-import React, { useMemo, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import styles from "./index.module.css";
 
 export default function CardArray(): JSX.Element {
   const [cardClasses, setCardClasses] = useState([styles.firstCard, styles.secondCard, styles.thirdCard]);
-  let timer
-  useMemo(() => {
-    clearTimeout(timer)
-    timer = setTimeout(() => {
-      let tmp = [...cardClasses]
-      const first = tmp.shift();
-      tmp.push(first);
-      setCardClasses(tmp);
+  useEffect(() => {
+    setTimeout(() => {
+      setCardClasses(prev => [prev[1], prev[2], prev[0]])
     }, 3000)
   }, [cardClasses])
   return (

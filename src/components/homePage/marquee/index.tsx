@@ -1,4 +1,4 @@
-import React,{ FC, useState, useMemo } from "react";
+import React,{ FC, useState, useEffect } from "react";
 import Marquee from "react-fast-marquee";
 
 import styles from "./styles.module.css";
@@ -6,14 +6,14 @@ import styles from "./styles.module.css";
 const MobileMarquee: FC = () => {
   const [playing, setPlaying] = useState(true);
   const [delta, setDelta] = useState(1100);
-  let timer
-  useMemo(() => {
+  useEffect(() => {
     let index = 0
-    timer = setInterval(() => {
+    let timer = setInterval(() => {
       index++
       if (index % 2 === 1) setPlaying(true)
       else setPlaying(false)
     }, delta)
+    return () => clearInterval(timer)
   }, [])
   return (
     <Marquee className={styles.marqueeMobile} speed={50} play={playing}>

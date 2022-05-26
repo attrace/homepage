@@ -1,6 +1,4 @@
 .cards {
-  /* display: flex;
-  justify-content: center; */
   position: relative;
   gap: 20px;
   perspective: 175px;

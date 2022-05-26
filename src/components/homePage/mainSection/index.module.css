@@ -189,8 +189,6 @@
 
 @media (max-width: 420px) {
   .referral .img {
-    /* max-width: 280px;
-    max-height: 280px; */
     width: 320px;
     height: 320px;
   }

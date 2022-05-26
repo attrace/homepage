@@ -159,7 +159,7 @@ const Home: React.FC = () => {
         <div
           className={clsx("container", styles.section, styles.partnersSection)}
         >
-          <h2 className={clsx(styles.sectionTitle, styles.bigTitle)} onClick={() => setDelta(5000)}>
+          <h2 className={clsx(styles.sectionTitle, styles.bigTitle)}>
             <span>Partners </span>
             Who Joined the Ecosystem
           </h2>
