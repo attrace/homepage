@@ -41,6 +41,9 @@ export default function Home(): JSX.Element {
       <main className="main-overflow">
         <MainSection reff={referralRef} />
         <TokensAPR reff={referralRef} />
+        <div className={styles.cardsMobile}>
+          <CardArray />
+        </div>
         <div className={clsx("container", styles.section)}>
           <div className={styles.sectionTitle}>
             Start
@@ -68,6 +71,13 @@ export default function Home(): JSX.Element {
           </div>
         </div>
         <div className={clsx("container", styles.earnSection)}>
+          <div className={styles.graphBoxMobile}>
+            <img src="/img/blankgraph.png" />
+            <div className={styles.blast}>
+              <div className={styles.title}>100M</div>
+              <div className={styles.comment}>$ATTR staked</div>
+            </div>
+          </div>
           <div className={styles.sectionTitle}>
             <span>Stake </span>
             with Oracles
