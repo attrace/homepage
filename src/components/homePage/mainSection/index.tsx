@@ -10,10 +10,10 @@ import External from "@site/static/img/icons/external.svg";
 import styles from "./index.module.css";
 
 interface Props {
-  reff: React.Ref<any>
+  handleClick: () => void
 }
 
-const MainSection:React.FC<Props> = ({ reff }) => {
+const MainSection:React.FC<Props> = ({ handleClick }) => {
   return (
     <div className={clsx("container", styles.wrapper)}>
       <div className={styles.actionBlock}>
@@ -27,7 +27,7 @@ const MainSection:React.FC<Props> = ({ reff }) => {
         </p>
         <div className={styles.actions}>
           <Button>Enter App</Button>
-          <Button variant="secondary" onClick={() => reff.current.scrollIntoView({ behavior: 'smooth' })}>
+          <Button variant="secondary" onClick={handleClick}>
             Learn More
             <ArrowDownIcon />
           </Button>

@@ -1,4 +1,4 @@
-import React, { useMemo, useRef, useState } from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 import Layout from "@theme/Layout";
 import clsx from "clsx";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
@@ -24,23 +24,26 @@ const Home: React.FC = () => {
   const { siteConfig } = useDocusaurusContext();
   const [playing, setPlaying] = useState(true);
   const [delta] = useState(2000);
-  const referralRef = useRef<React.Ref<HTMLElement>>(null);
-  let timer
-  useMemo(() => {
+  const referralRef = useRef(null);
+  useEffect(() => {
     let index = 0
-    timer = setInterval(() => {
+    let timer = setInterval(() => {
       index++
       if (index % 2 === 1) setPlaying(true)
       else setPlaying(false)
     }, delta)
+    return () => clearInterval(timer)
   }, [])
+  const handleLearnmore = useCallback(() => {
+    referralRef.current.scrollIntoView({ behavior: 'smooth' })
+  }, [referralRef])
   return (
     <Layout
       title={siteConfig.title}
       description="‘Word of Mouth’ Protocol for Web3"
     >
       <main className="main-overflow">
-        <MainSection reff={referralRef} />
+        <MainSection handleClick={handleLearnmore} />
         <TokensAPR reff={referralRef} />
         <div className={styles.cardsMobile}>
           <CardArray />
