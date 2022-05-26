@@ -27,9 +27,3 @@
   justify-content: center;
   align-items: center;
 }
-
-@media (min-width: 1351px) {
-  .marqueeMobile {
-    display: none;
-  }
-}
