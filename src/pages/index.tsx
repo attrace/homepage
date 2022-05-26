@@ -44,7 +44,7 @@ export default function Home(): JSX.Element {
         <div className={styles.cardsMobile}>
           <CardArray />
         </div>
-        <div className={clsx("container", styles.section)}>
+        <div className={clsx("container", styles.section, styles.farmingSection)}>
           <div className={styles.sectionTitle}>
             Start
             <span> Referral Farming</span>
@@ -72,7 +72,7 @@ export default function Home(): JSX.Element {
         </div>
         <div className={clsx("container", styles.earnSection)}>
           <div className={styles.graphBoxMobile}>
-            <img src="/img/blankgraph.png" />
+            <img src="/img/blankgraph_mobile.png" width='100%' />
             <div className={styles.blast}>
               <div className={styles.title}>100M</div>
               <div className={styles.comment}>$ATTR staked</div>
@@ -96,7 +96,7 @@ export default function Home(): JSX.Element {
                 Oracles capture the value of ‘word of mouth’ marketing in web3 and power referral farming by detecting and distributing rewards in a trustless manner.<br /><br />
                 The referral protocol is secured by the $ATTR token. Help securing the network by delegating your stake to the oracles and earn rewards!
               </div>
-              <div className={styles.actions}>
+              <div className={clsx(styles.actions, styles.oracleActions)}>
                 <Button>
                   Oracle Staking
                   <ArrowRightIcon />
@@ -116,9 +116,7 @@ export default function Home(): JSX.Element {
           <div className={styles.rewardCards}>
             <div className={styles.rewardCard}>
               <div className={clsx(styles.filter, styles.filterColor1)} />
-              <div
-                className={styles.icon}
-              >
+              <div className={styles.icon}>
                 <Chart1Icon />
               </div>
               <div className={styles.title}>Referral Farming</div>
@@ -130,9 +128,7 @@ export default function Home(): JSX.Element {
               </a>
             </div>
             <div className={styles.rewardCard}>
-              <div
-                className={styles.icon}
-              >
+              <div className={styles.icon}>
                 <Chart2Icon />
               </div>
               <div className={clsx(styles.filter, styles.filterColor2)} />
@@ -145,9 +141,7 @@ export default function Home(): JSX.Element {
               </a>
             </div>
             <div className={clsx(styles.rewardCard, styles.rewardCard3)}>
-              <div
-                className={styles.icon}
-              >
+              <div className={styles.icon}>
                 <Chart3Icon />
               </div>
               <div className={clsx(styles.filter, styles.filterColor3)} />

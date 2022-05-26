@@ -55,6 +55,7 @@
 .graphBoxMobile {
   display: flex;
   position: relative;
+  margin-bottom: 48px;
 }
 
 .graphBoxMobile .blast {
@@ -110,8 +111,7 @@
   font-size: 20px;
   line-height: 30px;
   letter-spacing: 0.1px;
-  color: var(--white);
-  opacity: 0.7;
+  color: var(--white-07);
 }
 .actions {
   display: flex;
@@ -254,6 +254,9 @@
     margin: 64px auto;
     padding: 0 16px;
   }
+  .farmingSection {
+    margin-bottom: 149px;
+  }
   .farmingRow {
     flex-direction: column;
     align-items: flex-start;
@@ -288,11 +291,14 @@
     width: 300px;
   }
   .oracleRowRight {
-    align-items: center;
+    row-gap: 28px;
+  }
+  .oracleActions {
+    margin-top: 8px;
   }
   .actions {
     flex-direction: column;
-    align-items: center;
+    align-items: center;  
     gap: 16px;
   }
   .actions >button {
@@ -303,7 +309,15 @@
     align-items: center;
   }
   .rewardCard {
-    padding: 16px 18px 18px;
+    padding: 34px 28px 36px 28px;
+  }
+  .rewardCard .icon >svg{
+    width: 44px; height: 44px;
+  }
+  .rewardCard .title {
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.1px;
   }
 }
 @media (max-width: 1300px) {
@@ -343,7 +357,6 @@
   }
   
   .rewardCard {
-    max-width: calc(100% - 32px);
     width: auto;
     height: auto;
   }
