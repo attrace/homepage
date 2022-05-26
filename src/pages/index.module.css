@@ -211,6 +211,9 @@
   justify-content: space-between;
   position: relative;
 }
+.partnersLogos >div:last-of-type {
+  flex-direction: column !important;
+}
 .partnersLogos .filter {
   position: absolute;
   top: 0; left: 0;
@@ -218,7 +221,7 @@
   background: var(--partner-filter);
   z-index: 2;
 }
-.marqueeContainer >div:not(:first-of-type) {
+.marqueeContainer >div >div:not(:first-of-type) {
   justify-content: space-around;
 }
 .bigTitle {
@@ -307,6 +310,7 @@
   .rewardCards {
     flex-direction: column;
     align-items: center;
+    gap: 24px;
   }
   .rewardCard {
     padding: 34px 28px 36px 28px;
@@ -319,7 +323,18 @@
     line-height: 32px;
     letter-spacing: -0.1px;
   }
+  .marqueeContainer {
+    display: none;
+  }
+  .partnersSection {
+    margin-top: 96px;
+    margin-bottom: 80px;
+  }
+  .partnersLogos .filter {
+    background: var(--partner-filter-mobile);
+  }
 }
+
 @media (max-width: 1300px) {
   .cards {
     flex-flow: wrap;
@@ -330,19 +345,12 @@
     flex-direction: column;
     align-items: center;
   }
-  .earnSection .rewardCard {
-    margin-bottom: 24px;
-  }
 }
 
 @media (max-width: 991px) {
   .partnersLogos {
     flex-direction: column;
-    padding: 44px 24px;
-  }
-  .partnersLogos svg,
-  .partnersLogos img {
-    margin-bottom: 32px;
+    margin: 40px 0;
   }
   .partnersLogos svg:last-child,
   .partnersLogos img:last-child {
@@ -355,7 +363,6 @@
     max-width: 500px;
     justify-content: center;
   }
-  
   .rewardCard {
     width: auto;
     height: auto;

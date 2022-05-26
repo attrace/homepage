@@ -9,6 +9,7 @@ import Badge from "../components/badge";
 import CardArray from "../components/homePage/cardArray";
 import MainSection from "../components/homePage/mainSection";
 import TokensAPR from "../components/homePage/tokensAPR";
+import MobileMarquee from "../components/homePage/marquee";
 
 import MaskLogo from "@site/static/img/partners/mask.svg";
 import DeribitLogo from "@site/static/img/partners/deribit.svg";
@@ -19,7 +20,7 @@ import Chart3Icon from "@site/static/img/icons/chart3.svg";
 import ArrowRightIcon from "@site/static/img/icons/arrowRight.svg";
 import styles from "./index.module.css";
 
-export default function Home(): JSX.Element {
+const Home: React.FC = () => {
   const { siteConfig } = useDocusaurusContext();
   const [playing, setPlaying] = useState(true);
   const [delta, setDelta] = useState(2000);
@@ -164,21 +165,26 @@ export default function Home(): JSX.Element {
           </h2>
           <div className={styles.partnersLogos}>
             <div className={styles.filter} />
-            <Marquee speed={100} className={styles.marqueeContainer} play={playing}>
-              <DeribitLogo />
-              <ImpossibleFinLogo />
-              <img
-                src={require("@site/static/img/partners/dappradar.png").default}
-              />
-              <MaskLogo />
-              <img src={require("@site/static/img/partners/amasa.png").default} />
-              <img
-                src={require("@site/static/img/partners/despace.png").default}
-              />
-            </Marquee>
+            <div className={styles.marqueeContainer}>
+              <Marquee speed={100} play={playing}>
+                <DeribitLogo />
+                <ImpossibleFinLogo />
+                <img
+                  src={require("@site/static/img/partners/dappradar.png").default}
+                />
+                <MaskLogo />
+                <img src={require("@site/static/img/partners/amasa.png").default} />
+                <img
+                  src={require("@site/static/img/partners/despace.png").default}
+                />
+              </Marquee>
+            </div>
+            <MobileMarquee />
           </div>
         </div>
       </main>
     </Layout>
   );
 }
+
+export default Home;

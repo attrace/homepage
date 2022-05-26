@@ -58,6 +58,7 @@
   --reward-card-border: rgb(59, 56, 67);
   --reward-card-text-shadow: rgba(0, 0, 0, 0.25);
   --partner-filter: linear-gradient(90deg, rgba(19, 16, 29, 0.95) 0%, rgba(19, 16, 29, 0) 49.31%, rgba(19, 16, 29, 0.95) 100%);
+  --partner-filter-mobile: linear-gradient(rgba(19, 16, 29, 0.95) 0%, rgba(19, 16, 29, 0) 49.31%, rgba(19, 16, 29, 0.95) 100%);
 
   /* Gradients */
   --primary-gradient: linear-gradient(86.19deg, #8836ff 0%, #b646ef 100%);

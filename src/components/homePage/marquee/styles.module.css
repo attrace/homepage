@@ -1,0 +1,35 @@
+
+@keyframes scrollup {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.marqueeMobile {
+  display: flex;
+  align-items: center;
+  flex-direction: column !important;
+  width: 100%;
+  height: 480px;
+  position: relative;
+  overflow-y: hidden;
+}
+
+.marqueeMobile >div:not(:first-of-type) {
+  flex-direction: column;
+  animation-name: scrollup;
+}
+.marqueeMobile >div:not(:first-of-type) >div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 1351px) {
+  .marqueeMobile {
+    display: none;
+  }
+}
