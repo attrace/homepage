@@ -299,6 +299,9 @@
   .oracleActions {
     margin-top: 8px;
   }
+  .oracleActions >a, .oracleActions >a>button{
+    width: 100%;
+  }
   .actions {
     flex-direction: column;
     align-items: center;  

@@ -102,9 +102,11 @@ const Home: React.FC = () => {
                   Oracle Staking
                   <ArrowRightIcon />
                 </Button>
-                <Button variant="secondary" onClick={() => window.open('https://homepage.testnet.attrace.com/about/category/oracles', '_blank')}>
-                  Learn More
-                </Button>
+                <a href="https://homepage.testnet.attrace.com/about/category/oracles" target="_blank">
+                  <Button variant="secondary">
+                    Learn More
+                  </Button>
+                </a>
               </div>
             </div>
           </div>
