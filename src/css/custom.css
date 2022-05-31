@@ -36,6 +36,7 @@
   --badge-green: #42BE65;
   --badge-background: #24212D;
   /* White */
+  --white-01: rgb(255 255 255 / 10%);
   --white-06: rgb(255 255 255 / 60%);
   --white-07: rgb(255 255 255 / 70%);
   --white-08: rgb(255 255 255 / 80%);
@@ -107,8 +108,24 @@
   --ifm-navbar-background-color: var(--dark-grey-3);
   --ifm-navbar-link-color: var(--white-06);
 
-  height: 64px;
-  padding: 12px 24px;
+  background-color: transparent;
+  box-shadow: none;
+  position: absolute;
+  width: 100%;
+  height: 72px;
+  padding: 0 24px;
+}
+
+.navbar__inner {
+  align-items: center;
+}
+
+.navbar__items {
+  flex: unset;
+}
+
+.navbar__items >a {
+  display: flex;
 }
 
 .navbar__item {
@@ -119,11 +136,49 @@
   font-weight: 500;
 }
 
+.navbar-sidebar {
+  z-index: 2;
+  right: 0; left: unset;
+  transform: translate3d(100%, 0, 0);
+  border-left: 1px solid var(--white-01);
+  background-color: var(--dark-grey-5);
+}
+
+.navbar-sidebar__brand {
+  box-shadow: none;
+  padding: 20px 16px;
+}
+
+.navbar-sidebar__brand >button >svg {
+  width: 16px;
+  height: 16px;
+}
+
+.menu__link {
+  padding: 0.5rem 20px;
+}
+
+.menu__list-item:not(:first-child) {
+  margin-top: 0.5rem;
+}
+
+.menu__link {
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--white-06);
+}
+
 /* main-wrapper */
 .main-wrapper {
   background: var(--background);
   color: var(--white-07);
   padding: 2px 0 20px 0;
+}
+
+.main-wrapper >div {
+  margin-top: 72px !important;
 }
 
 .main-wrapper a:hover {
@@ -147,4 +202,18 @@
 
 .marquee-container .overlay {
   display: none;
+}
+
+@media (max-width: 996px) {
+  .navbar {
+    padding: 0 16px;
+    border-bottom: 1px solid #24212D;
+  }
+  .navbar__inner .navbar__items:nth-of-type(2) {
+    display: none;
+  }
+}
+
+a {
+  text-decoration: none !important;
 }

@@ -1,6 +1,6 @@
 .wrapper {
   background-color: var(--dark-grey-3);
-  color: var(--white-07);
+  color: var(--white-06);
   font-size: 0.875rem;
   line-height: 22px;
 }
@@ -8,14 +8,14 @@
 .upper {
   display: flex;
   justify-content: space-between;
-  padding: 48px 58px;
+  padding: 48px 82px;
   border-bottom: 1px solid var(--dark-grey-11);
   flex-wrap: wrap;
 }
 
 .footerLogo {
   display: flex;
-  margin-bottom: 40px;
+  margin-bottom: 48px;
 }
 
 .logo {
@@ -30,16 +30,18 @@
   color: var(--white-08);
 }
 
+.logoText >p {
+  margin: 0;
+}
+
 .socialIcons a {
   margin-right: 20px;
 }
 
 .upperRight {
   display: flex;
-}
-
-.links:not(:last-child) {
-  margin-right: 80px;
+  flex-wrap: wrap;
+  gap: 96px;
 }
 
 .links h6 {
@@ -62,25 +64,31 @@
 .externalLink {
   display: flex;
   align-items: center;
-  margin-bottom: 8px;
+}
+
+.externalLink:not(:last-of-type) {
+  margin-bottom: 12px;
+}
+
+.externalLink >img, .externalLink >svg {
+  margin-right: 6px;
 }
 
 .externalLink a {
-  margin-left: 6px;
-  color: var(--white-07);
+  color: var(--white-06);
 }
 
 .lower {
   display: flex;
   justify-content: space-between;
-  padding: 20px 58px;
+  padding: 20px 82px;
   flex-wrap: wrap;
   font-size: 0.75rem;
   line-height: 20px;
 }
 
 .lower a {
-  color: var(--white-07);
+  color: var(--white-06);
 }
 .lower a:first-child {
   margin-right: 40px;
@@ -96,19 +104,18 @@
 }
 
 @media (max-width: 768px) {
+  .footerLogo {
+    margin-bottom: 32px;
+  }
+  
   .upper {
     flex-direction: column;
-    padding: 48px 24px;
+    padding: 28px 24px 48px 24px;
   }
 
   .upperRight {
-    flex-direction: column;
-    margin-top: 40px;
-  }
-
-  .links:not(:last-child) {
-    margin-right: 0;
-    margin-bottom: 30px;
+    margin-top: 48px;
+    gap: 40px;
   }
 
   .lower {

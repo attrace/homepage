@@ -15,13 +15,22 @@
 .enterAppBtn:hover {
   text-decoration: none;
 }
-
+.menuBtnMobile >button {
+  margin: 0;
+  margin-left: 24px;
+}
 /*
 Hide color mode toggle in small viewports
 */
 
+@media (min-width: 997px) {
+  .enterAppBtnMobile {
+    display: none !important;
+  }
+}
+
 @media (max-width: 996px) {
-  .colorModeToggle {
-    display: none;
+  .colorModeToggle, .enterAppBtn {
+    display: none !important;
   }
 }
