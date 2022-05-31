@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 import Layout from "@theme/Layout";
 import clsx from "clsx";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import Marquee from "react-fast-marquee";
 
 import Button from "../components/button";
 import Badge from "../components/badge";
+import CardArray from "../components/homePage/cardArray";
 import MainSection from "../components/homePage/mainSection";
 import TokensAPR from "../components/homePage/tokensAPR";
+import MobileMarquee from "../components/homePage/marquee";
 
 import MaskLogo from "@site/static/img/partners/mask.svg";
 import DeribitLogo from "@site/static/img/partners/deribit.svg";
@@ -14,21 +17,38 @@ import ImpossibleFinLogo from "@site/static/img/partners/impossibleFinance.svg";
 import Chart1Icon from "@site/static/img/icons/chart1.svg";
 import Chart2Icon from "@site/static/img/icons/chart2.svg";
 import Chart3Icon from "@site/static/img/icons/chart3.svg";
-import VerifyIcon from "@site/static/img/verified.svg";
 import ArrowRightIcon from "@site/static/img/icons/arrowRight.svg";
 import styles from "./index.module.css";
 
-export default function Home(): JSX.Element {
+const Home: React.FC = () => {
   const { siteConfig } = useDocusaurusContext();
+  const [playing, setPlaying] = useState(true);
+  const [delta] = useState(2000);
+  const referralRef = useRef(null);
+  useEffect(() => {
+    let index = 0
+    let timer = setInterval(() => {
+      index++
+      if (index % 2 === 1) setPlaying(true)
+      else setPlaying(false)
+    }, delta)
+    return () => clearInterval(timer)
+  }, [])
+  const handleLearnmore = useCallback(() => {
+    referralRef.current.scrollIntoView({ behavior: 'smooth' })
+  }, [referralRef])
   return (
     <Layout
       title={siteConfig.title}
       description="‘Word of Mouth’ Protocol for Web3"
     >
-      <main>
-        <MainSection />
-        <TokensAPR />
-        <div className={clsx("container", styles.section)}>
+      <main className="main-overflow">
+        <MainSection handleClick={handleLearnmore} />
+        <TokensAPR reff={referralRef} />
+        <div className={styles.cardsMobile}>
+          <CardArray />
+        </div>
+        <div className={clsx("container", styles.section, styles.farmingSection)}>
           <div className={styles.sectionTitle}>
             Start
             <span> Referral Farming</span>
@@ -44,84 +64,24 @@ export default function Home(): JSX.Element {
                   Referral Farming
                   <ArrowRightIcon />
                 </Button>
-                <Button variant="secondary">
+                <Button variant="secondary" onClick={() => window.open('https://homepage.testnet.attrace.com/about/category/referral-farming', '_blank')}>
                   Learn More
                 </Button>
               </div>
             </div>
             <div className={styles.farmingRowRight}>
-              <div className={styles.cards}>
-                <div className={clsx(styles.filter, styles.filter1)} />
-                <div className={clsx(styles.filter, styles.filter2)} />
-                <div className={clsx(styles.filter, styles.filter3)} />
-                <div className={styles.statsCard}>
-                  <div className={styles.info}>
-                    <div className={styles.icon}>
-                      <img src="/img/farms/radar.png" />
-                    </div>
-                    <div>
-                      <div className={styles.name}>RADAR</div>
-                      <div className={styles.description}>DappRadar</div>
-                    </div>
-                  </div>
-                  <div className={styles.figure}>
-                    <div>
-                      <div className={styles.propname}>Estimated APR</div>
-                      <div className={styles.apr}>🔥%</div>
-                    </div>
-                    <div>
-                      <div className={styles.propname}>Daily Farm Rewards</div>
-                      <div className={styles.apr}>🤑 wETH</div>
-                    </div>
-                  </div>
-                </div>
-                <div className={clsx(styles.statsCard, styles.secondCard)}>
-                  <div className={styles.info}>
-                    <div className={styles.icon}>
-                      <img src="/img/farms/mask.png" />
-                    </div>
-                    <div>
-                      <div className={styles.name}>Mask</div>
-                      <div className={styles.description}>Mask Network</div>
-                    </div>
-                  </div>
-                  <div className={styles.figure}>
-                    <div>
-                      <div className={styles.propname}>Estimated APR</div>
-                      <div className={styles.apr}>🔥%</div>
-                    </div>
-                    <div>
-                      <div className={styles.propname}>Daily Farm Rewards</div>
-                      <div className={styles.apr}>🤑 MASK</div>
-                    </div>
-                  </div>
-                </div>
-                <div className={clsx(styles.statsCard, styles.thirdCard)}>
-                  <div className={styles.info}>
-                    <div className={styles.icon}>
-                      <img src="/img/farms/attr.png" />
-                    </div>
-                    <div>
-                      <div className={styles.name}>ATTR</div>
-                      <div className={styles.name}>Attrace Protocol</div>
-                    </div>
-                  </div>
-                  <div className={styles.figure}>
-                    <div>
-                      <div className={styles.propname}>Estimated APR</div>
-                      <div className={styles.apr}>🔥%</div>
-                    </div>
-                    <div>
-                      <div className={styles.propname}>Daily Farm Rewards</div>
-                      <div className={styles.apr}>🤑 ATTR</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <CardArray />
             </div>
           </div>
         </div>
         <div className={clsx("container", styles.earnSection)}>
+          <div className={styles.graphBoxMobile}>
+            <img src="/img/blankgraph_mobile.png" width='100%' />
+            <div className={styles.blast}>
+              <div className={styles.title}>100M</div>
+              <div className={styles.comment}>$ATTR staked</div>
+            </div>
+          </div>
           <div className={styles.sectionTitle}>
             <span>Stake </span>
             with Oracles
@@ -140,14 +100,16 @@ export default function Home(): JSX.Element {
                 Oracles capture the value of ‘word of mouth’ marketing in web3 and power referral farming by detecting and distributing rewards in a trustless manner.<br /><br />
                 The referral protocol is secured by the $ATTR token. Help securing the network by delegating your stake to the oracles and earn rewards!
               </div>
-              <div className={styles.actions}>
+              <div className={clsx(styles.actions, styles.oracleActions)}>
                 <Button>
                   Oracle Staking
                   <ArrowRightIcon />
                 </Button>
-                <Button variant="secondary">
-                  Learn More
-                </Button>
+                <a href="https://homepage.testnet.attrace.com/about/category/oracles" target="_blank">
+                  <Button variant="secondary">
+                    Learn More
+                  </Button>
+                </a>
               </div>
             </div>
           </div>
@@ -157,12 +119,10 @@ export default function Home(): JSX.Element {
             <span>Earn rewards </span>
             with Attrace
           </h2>
-          <div className={styles.cards}>
+          <div className={styles.rewardCards}>
             <div className={styles.rewardCard}>
               <div className={clsx(styles.filter, styles.filterColor1)} />
-              <div
-                className={styles.icon}
-              >
+              <div className={styles.icon}>
                 <Chart1Icon />
               </div>
               <div className={styles.title}>Referral Farming</div>
@@ -174,9 +134,7 @@ export default function Home(): JSX.Element {
               </a>
             </div>
             <div className={styles.rewardCard}>
-              <div
-                className={styles.icon}
-              >
+              <div className={styles.icon}>
                 <Chart2Icon />
               </div>
               <div className={clsx(styles.filter, styles.filterColor2)} />
@@ -189,9 +147,7 @@ export default function Home(): JSX.Element {
               </a>
             </div>
             <div className={clsx(styles.rewardCard, styles.rewardCard3)}>
-              <div
-                className={styles.icon}
-              >
+              <div className={styles.icon}>
                 <Chart3Icon />
               </div>
               <div className={clsx(styles.filter, styles.filterColor3)} />
@@ -199,7 +155,7 @@ export default function Home(): JSX.Element {
               <div className={styles.text}>
                 Provide liquidity to ATTR/ETH liquidity pool on SushiSwap and earn $ATTR rewards in return for enabling the token exchange.
               </div>
-              <a>
+              <a href='https://app.sushi.com/farm?chainId=1' target='_blank'>
                 Provide Liquidity <ArrowRightIcon className={styles.purpleIcon} />
               </a>
             </div>
@@ -214,19 +170,26 @@ export default function Home(): JSX.Element {
           </h2>
           <div className={styles.partnersLogos}>
             <div className={styles.filter} />
-            <DeribitLogo />
-            <ImpossibleFinLogo />
-            <img
-              src={require("@site/static/img/partners/dappradar.png").default}
-            />
-            <MaskLogo />
-            <img src={require("@site/static/img/partners/amasa.png").default} />
-            <img
-              src={require("@site/static/img/partners/despace.png").default}
-            />
+            <div className={styles.marqueeContainer}>
+              <Marquee speed={100} play={playing}>
+                <DeribitLogo />
+                <ImpossibleFinLogo />
+                <img
+                  src={require("@site/static/img/partners/dappradar.png").default}
+                />
+                <MaskLogo />
+                <img src={require("@site/static/img/partners/amasa.png").default} />
+                <img
+                  src={require("@site/static/img/partners/despace.png").default}
+                />
+              </Marquee>
+            </div>
+            <MobileMarquee />
           </div>
         </div>
       </main>
     </Layout>
   );
 }
+
+export default Home;

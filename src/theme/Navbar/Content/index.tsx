@@ -34,11 +34,12 @@ function NavbarItems({items}) {
   );
 }
 
-function NavbarContentLayout({left, right}) {
+function NavbarContentLayout({left, center, right}) {
   return (
     <div className="navbar__inner">
       <div className="navbar__items">{left}</div>
-      <div className="navbar__items navbar__items--right">{right}</div>
+      <div className="navbar__items">{center}</div>
+      <div className="navbar__items">{right}</div>
     </div>
   );
 }
@@ -51,17 +52,22 @@ export default function NavbarContent() {
   return (
     <NavbarContentLayout
       left={
-        <>
-          {!mobileSidebar.disabled && <NavbarMobileSidebarToggle />}
-          <a href="/" ><Logo className={styles.logo}/></a>
-          <NavbarItems items={leftItems} />
-        </>
+        <a href="/" ><Logo className={styles.logo}/></a>
+      }
+      center={
+        <NavbarItems items={leftItems} />
       }
       right={
         <>
-           <a href="#" target="_blank" className={styles.enterAppBtn}>
+          <a href="#" target="_blank" className={styles.enterAppBtn}>
             <Button variant="secondary">Enter App</Button>
           </a>
+          <a href="#" target="_blank" className={styles.enterAppBtnMobile}>
+            <Button variant="primary">Enter App</Button>
+          </a>
+          <div className={styles.menuBtnMobile}>
+            {!mobileSidebar.disabled && <NavbarMobileSidebarToggle />}
+          </div>
           <NavbarItems items={rightItems} />
           <NavbarColorModeToggle className={styles.colorModeToggle} />
           {autoAddSearchBar && <SearchBar />}

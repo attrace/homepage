@@ -74,6 +74,68 @@ const Footer: FC = () => (
             </a>
           </div>
         </div>
+        <div className={styles.links}>
+          <h6>About</h6>
+          <div className={styles.externalLink}>
+            <a
+              href="https://app.sushi.com/swap?inputCurrency=ETH&outputCurrency=0x44e2dec86b9f0e0266e9aa66e10323a2bd69cf9a"
+              target="_blank"
+            >
+              What is Attrace?
+            </a>
+          </div>
+          <div className={styles.externalLink}>
+            <a
+              href="https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0x44e2dec86b9f0e0266e9aa66e10323a2bd69cf9a&chain=rinkeby"
+              target="_blank"
+            >
+              Help
+            </a>
+          </div>
+          <div className={styles.externalLink}>
+            <a
+              href="https://global.bittrex.com/Market/Index?MarketName=USDT-ATTR"
+              target="_blank"
+            >
+              FAQs
+            </a>
+          </div>
+          <div className={styles.externalLink}>
+            <a
+              href="https://global.bittrex.com/Market/Index?MarketName=USDT-ATTR"
+              target="_blank"
+            >
+              Blog
+            </a>
+          </div>
+        </div>
+        <div className={styles.links}>
+          <h6>Guides & Docs</h6>
+          <div className={styles.externalLink}>
+            <a
+              href="https://app.sushi.com/swap?inputCurrency=ETH&outputCurrency=0x44e2dec86b9f0e0266e9aa66e10323a2bd69cf9a"
+              target="_blank"
+            >
+              Referral Oracles
+            </a>
+          </div>
+          <div className={styles.externalLink}>
+            <a
+              href="https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0x44e2dec86b9f0e0266e9aa66e10323a2bd69cf9a&chain=rinkeby"
+              target="_blank"
+            >
+              Referral Farming
+            </a>
+          </div>
+          <div className={styles.externalLink}>
+            <a
+              href="https://global.bittrex.com/Market/Index?MarketName=USDT-ATTR"
+              target="_blank"
+            >
+              Tokenomics
+            </a>
+          </div>
+        </div>
       </div>
     </div>
     <div className={styles.lower}>
