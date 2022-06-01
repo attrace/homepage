@@ -39,8 +39,8 @@ const Home: React.FC = () => {
   }, [referralRef])
   return (
     <Layout
-      title={siteConfig.title}
-      description="‘Word of Mouth’ Protocol for Web3"
+      title='Web3 Referral Protocol'
+      description="Unlock the value of ‘word of mouth’ marketing in web3. Recommend crypto or NFT and earn rewards from referral farms."
     >
       <main className="main-overflow">
         <MainSection handleClick={handleLearnmore} />

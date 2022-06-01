@@ -46,16 +46,16 @@ const MainSection:React.FC<Props> = ({ handleClick }) => {
             <div className={styles.creator}>
               Created by{" "}
               <a
-                href={`https://etherscan.io/address/0x26bc596D39c5D45C855901b6995e0842E37Ae57a`}
+                href={`https://etherscan.io/token/0x8d2e527675094dc1bb9ef878b6566f3b17240fd8`}
                 target="_blank"
               >
-                {truncateString("0x26bc596D39c5D45C855901b6995e0842E37Ae57a")}
+                {truncateString("0x8d2e527675094dc1bb9ef878b6566f3b17240fd8")}
               </a>
             </div>
           </div>
           <a
             className={styles.etherscanlink}
-            href={`https://etherscan.io/address/0x26bc596D39c5D45C855901b6995e0842E37Ae57a`}
+            href={`https://etherscan.io/token/0x8d2e527675094dc1bb9ef878b6566f3b17240fd8`}
             target="_blank"
           >
             <External />

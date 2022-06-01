@@ -21,7 +21,7 @@ const Footer: FC = () => (
           <div className={styles.logoText}>
             <h4>Attrace Referral Network</h4>
             <p>
-              The world&#39;s first &#39;Word of Mouth&#39; protocol for web3
+              Referral protocol for Web3 assets
             </p>
           </div>
         </div>
@@ -78,32 +78,21 @@ const Footer: FC = () => (
           <h6>About</h6>
           <div className={styles.externalLink}>
             <a
-              href="https://app.sushi.com/swap?inputCurrency=ETH&outputCurrency=0x44e2dec86b9f0e0266e9aa66e10323a2bd69cf9a"
-              target="_blank"
+              href="/about/"
             >
               What is Attrace?
             </a>
-          </div>
+          </div> 
           <div className={styles.externalLink}>
             <a
-              href="https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0x44e2dec86b9f0e0266e9aa66e10323a2bd69cf9a&chain=rinkeby"
-              target="_blank"
-            >
-              Help
-            </a>
-          </div>
-          <div className={styles.externalLink}>
-            <a
-              href="https://global.bittrex.com/Market/Index?MarketName=USDT-ATTR"
-              target="_blank"
+              href="/about/reference/faq"
             >
               FAQs
             </a>
           </div>
           <div className={styles.externalLink}>
             <a
-              href="https://global.bittrex.com/Market/Index?MarketName=USDT-ATTR"
-              target="_blank"
+              href="/updates"
             >
               Blog
             </a>
@@ -113,24 +102,21 @@ const Footer: FC = () => (
           <h6>Guides & Docs</h6>
           <div className={styles.externalLink}>
             <a
-              href="https://app.sushi.com/swap?inputCurrency=ETH&outputCurrency=0x44e2dec86b9f0e0266e9aa66e10323a2bd69cf9a"
-              target="_blank"
+              href="/about/category/referral-farming"
             >
               Referral Oracles
             </a>
           </div>
           <div className={styles.externalLink}>
             <a
-              href="https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0x44e2dec86b9f0e0266e9aa66e10323a2bd69cf9a&chain=rinkeby"
-              target="_blank"
+              href="/about/category/oracles"
             >
               Referral Farming
             </a>
           </div>
           <div className={styles.externalLink}>
             <a
-              href="https://global.bittrex.com/Market/Index?MarketName=USDT-ATTR"
-              target="_blank"
+              href="/about/community/tokenomics"
             >
               Tokenomics
             </a>
