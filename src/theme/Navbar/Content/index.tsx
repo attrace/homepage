@@ -60,7 +60,7 @@ export default function NavbarContent({ isContained }) {
       right={
         <>
           <a href="#" target="_blank" className={styles.enterAppBtn}>
-            <Button variant={isContained ? "primary" : "secondary"} className={isContained && styles.primaryNavbarBtn}>Enter App</Button>
+            <Button variant={isContained ? "primary" : "secondary"}>Enter App</Button>
           </a>
           <a href="#" target="_blank" className={styles.enterAppBtnMobile}>
             <Button variant="primary">Enter App</Button>

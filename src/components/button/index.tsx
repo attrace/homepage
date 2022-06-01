@@ -26,8 +26,7 @@ const Button: FC<Props> = ({
     [styles.tertiary]: variant === "tertiary",
     [styles.medium]: sizes === "medium",
     [styles.small]: sizes === "small",
-    className,
-  });
+  }, className);
 
   return (
     <button

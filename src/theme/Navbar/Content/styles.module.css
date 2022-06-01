@@ -9,9 +9,6 @@
   background: var(--mobile-navbar-background);
   backdrop-filter: blur(16px);
 }
-.primaryNavbarBtn::after {
-  opacity: 1;
-}
 .logo {
   margin-right: 20px;
 }
