@@ -4,7 +4,14 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
+.navBarContainerActive >nav{
+  border-bottom: 1px solid #24212D;
+  background: var(--mobile-navbar-background);
+  backdrop-filter: blur(16px);
+}
+.primaryNavbarBtn::after {
+  opacity: 1;
+}
 .logo {
   margin-right: 20px;
 }
