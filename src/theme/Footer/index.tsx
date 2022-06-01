@@ -21,7 +21,7 @@ const Footer: FC = () => (
           <div className={styles.logoText}>
             <h4>Attrace Referral Network</h4>
             <p>
-              The world&#39;s first &#39;Word of Mouth&#39; protocol for web3
+              Referral protocol for Web3 assets
             </p>
           </div>
         </div>
@@ -71,6 +71,54 @@ const Footer: FC = () => (
               target="_blank"
             >
               Bittrex
+            </a>
+          </div>
+        </div>
+        <div className={styles.links}>
+          <h6>About</h6>
+          <div className={styles.externalLink}>
+            <a
+              href="/about/"
+            >
+              What is Attrace?
+            </a>
+          </div> 
+          <div className={styles.externalLink}>
+            <a
+              href="/about/reference/faq"
+            >
+              FAQs
+            </a>
+          </div>
+          <div className={styles.externalLink}>
+            <a
+              href="/updates"
+            >
+              Blog
+            </a>
+          </div>
+        </div>
+        <div className={styles.links}>
+          <h6>Guides & Docs</h6>
+          <div className={styles.externalLink}>
+            <a
+              href="/about/category/referral-farming"
+            >
+              Referral Oracles
+            </a>
+          </div>
+          <div className={styles.externalLink}>
+            <a
+              href="/about/category/oracles"
+            >
+              Referral Farming
+            </a>
+          </div>
+          <div className={styles.externalLink}>
+            <a
+              href="/about/community/tokenomics"
+            >
+              Tokenomics
             </a>
           </div>
         </div>

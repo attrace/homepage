@@ -1,0 +1,57 @@
+.cards {
+  position: relative;
+  gap: 20px;
+  perspective: 175px;
+  transform: translate(-499px, -105px);
+}
+.cards .filter {
+  filter: blur(72px);
+  position: absolute;
+  width: 220px;
+  height: 220px;
+}
+.cards .filter1 {
+  background: var(--index-color1);
+  top: -34px; left: -149px;
+}
+.cards .filter2 {
+  background: var(--index-color2);
+  top: -84px; left: 64px;
+}
+.cards .filter3 {
+  background: var(--index-color3);
+  top: 58px; left: 257px;
+}
+.firstCard {
+  transform: translate3d(-40%, 10px, -20px);
+  z-index: 1;
+}
+.secondCard {
+  transform: translate3d(calc(-40% + 320px), 10px, -20px);
+  z-index: 2;
+}
+.thirdCard {
+  z-index: 3;
+}
+
+@media (max-width: 1350px) {
+  .cards {
+    transform: translate(0, 0);
+  }
+  .cards .filter1 {
+    top: 43px; left: -72px;
+  }
+  .cards .filter2 {
+    top: -56px; left: 50%;
+    transform: translate(-50%);
+  }
+  .cards .filter3 {
+    top: 51px; right: -56px; left: unset;
+  }
+  .secondCard {
+    transform: translate3d(0, 50px, -24px);
+  }
+  .firstCard {
+    transform: translate3d(0, 100px, -48px);
+  }
+}
