@@ -43,6 +43,7 @@
   --white-09: rgb(255 255 255 / 90%);
 
   --background: #13101d;
+  --mobile-navbar-background: rgba(19, 16, 29, 0.9);
   --panel-back: rgba(36, 33, 45, 0.5);
   --panel-border: rgb(58, 54, 68);
   --modal-overlay: rgba(11, 9, 16, 0.85);
@@ -154,6 +155,11 @@
   height: 16px;
 }
 
+.navbar-sidebar__backdrop {
+  background: var(--modal-overlay);
+  backdrop-filter: blur(8px);
+}
+
 .menu__link {
   padding: 0.5rem 20px;
 }
@@ -206,8 +212,14 @@
 
 @media (max-width: 996px) {
   .navbar {
+    position: fixed;
     padding: 0 16px;
     border-bottom: 1px solid #24212D;
+    background: var(--mobile-navbar-background);
+    backdrop-filter: blur(16px);
+  }
+  .navbar-sidebar--show {
+    backdrop-filter: unset;
   }
   .navbar__inner .navbar__items:nth-of-type(2) {
     display: none;
