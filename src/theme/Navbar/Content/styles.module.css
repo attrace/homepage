@@ -4,7 +4,11 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
+.navBarContainerActive >nav{
+  border-bottom: 1px solid #24212D;
+  background: var(--mobile-navbar-background);
+  backdrop-filter: blur(16px);
+}
 .logo {
   margin-right: 20px;
 }
@@ -15,13 +19,25 @@
 .enterAppBtn:hover {
   text-decoration: none;
 }
-
+.menuBtnMobile >button {
+  margin: 0;
+  margin-left: 24px;
+}
 /*
 Hide color mode toggle in small viewports
 */
 
+@media (min-width: 997px) {
+  .enterAppBtnMobile {
+    display: none !important;
+  }
+}
+
 @media (max-width: 996px) {
-  .colorModeToggle {
-    display: none;
+  .navBarContainerActive >nav:global(.navbar-sidebar--show) {
+    backdrop-filter: unset !important;
+  }
+  .colorModeToggle, .enterAppBtn {
+    display: none !important;
   }
 }

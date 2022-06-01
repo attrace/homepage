@@ -52,6 +52,39 @@
   top: -32px; right: -80px;
 }
 
+.graphBoxMobile {
+  display: flex;
+  position: relative;
+  margin-bottom: 48px;
+}
+
+.graphBoxMobile .blast {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url('/static/img/blast.png');
+  background-size: 100% 100%;
+  position: absolute;
+  width: 156px;
+  height: 156px;
+  top: -85px; right: 0;
+}
+
+.graphBoxMobile .blast .title {
+  color: var(--white-09);
+  font-weight: 700;
+  font-size: 29px;
+  line-height: 35px;
+  letter-spacing: -0.15px;
+}
+.graphBoxMobile .blast .comment {
+  color: var(--white-07);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+}
+
 .oracleRowLeft .blast .title {
   color: var(--white-09);
   font-weight: 700;
@@ -78,135 +111,28 @@
   font-size: 20px;
   line-height: 30px;
   letter-spacing: 0.1px;
-  color: var(--white);
-  opacity: 0.7;
+  color: var(--white-07);
 }
-
 .actions {
   display: flex;
   gap: 20px;
 }
 
-/* statsSection */
-.cards {
+/* reward section */
+@keyframes rotation{
+	from{
+		transform: rotateY(0deg);
+	}
+	to{
+		transform: rotateY(360deg);
+	}
+}
+.rewardCards {
   display: flex;
   justify-content: center;
   position: relative;
   gap: 20px;
 }
-.cards .filter {
-  filter: blur(72px);
-  position: absolute;
-  width: 220px;
-  height: 220px;
-}
-.cards .filter1 {
-  background: var(--index-color1);
-  left: -20px; bottom: -57.75px;
-}
-.cards .filter2 {
-  background: var(--index-color2);
-  top: -97.6px; left: 50%;
-  transform: translateX(-50%);
-}
-.cards .filter3 {
-  background: var(--index-color3);
-  bottom: -81.75px; right: 20px;
-}
-.statsCard {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-  padding: 28px 31px;
-  height: 183px;
-  border: 1px solid var(--statscard-border);
-  background: var(--statscard-back);
-  box-shadow: 0px 0px 28px var(--statscard-boxshadow);
-  backdrop-filter: blur(14px);
-  border-radius: 7px;
-}
-.secondCard {
-  margin-left: -12px;
-}
-.thirdCard {
-  position: absolute;
-  top: 50%; left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 32px 36px;
-  min-width: 370px;
-  height: 210px;
-}
-.statsCard .info {
-  display: flex;
-  align-items: center;
-  column-gap: 14px;
-}
-.statsCard .info .icon {
-  display: flex;
-  position: relative;
-}
-.statsCard .info .icon >svg {
-  position: absolute;
-  bottom: 0; right: 0;
-}
-.statsCard .info .name {
-  margin-bottom: 1.73px;
-  color: var(--white-09);
-  font-style: normal;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
-}
-.statsCard .info .description {
-  color: var(--white-07);
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 21px;
-}
-.statsCard .figure {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-.statsCard .figure .propname {
-  margin-bottom: 6px;
-  color: var(--white-06);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-}
-.statsCard .figure .apr {
-  color: var(--white-09);
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
-}
-.statsCard .filter {
-  position: absolute;
-  width: 197px;
-  height: 144px;
-  left: -28px;
-  top: -70px;
-  filter: blur(72px);
-}
-.statsCard .value {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  font-size: 2.375rem;
-  font-weight: 600;
-  color: var(--white-09);
-  line-height: 46px;
-  letter-spacing: -0.2px;
-}
-.statsCard .text {
-  margin-top: 16px;
-  color: var(--white-06);
-  font-weight: 500;
-}
-
 /* earnSection */
 .earnSection {
   margin: 220px auto;
@@ -285,13 +211,19 @@
   justify-content: space-between;
   position: relative;
 }
+.partnersLogos >div:last-of-type {
+  flex-direction: column !important;
+}
 .partnersLogos .filter {
   position: absolute;
   top: 0; left: 0;
   width: 100%; height: 100%;
   background: var(--partner-filter);
+  z-index: 2;
 }
-
+.marqueeContainer >div >div:not(:first-of-type) {
+  justify-content: space-around;
+}
 .bigTitle {
   margin-bottom: 80px;
 }
@@ -302,45 +234,113 @@
 .purpleIcon {
   fill: var(--purple);
 }
+.cardsMobile {
+  width: 328px;
+  height: 187px;
+  margin-top: 96px;
+  margin-bottom: 84px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 1351px) {
+  .cardsMobile {
+    display: none;
+  }
+  .graphBoxMobile {
+    display: none;
+  }
+  .partnersLogos >div:last-of-type {
+    display: none !important; 
+  }
+}
 
 @media (max-width: 1350px) {
   .section, .earnSection {
     margin: 64px auto;
+    padding: 0 16px;
+  }
+  .farmingSection {
+    margin-bottom: 149px;
   }
   .farmingRow {
     flex-direction: column;
+    align-items: flex-start;
     gap: 32px;
   }
+  .farmingRowLeft, .oracleRowRight .farmingText {
+    max-width: unset;
+  }
   .sectionTitle {
-    max-width: 300px;
-    font-size: 2rem;
-    line-height: 36px;
+    text-align: left;
+    font-size: 30px;
+    line-height: 38px;
+    letter-spacing: -0.15px;
+    color: var(--white-09);
+    margin: 0 0 28px;
   }
   .farmingText {
-    text-align: center;
-    font-size: 16px ;
-    line-height: 24px ;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--white-07);
+  }
+  .farmingRowLeft {
+    row-gap: 36px;
   }
   .farmingRowRight {
+    display: none;
+  }
+  .oracleRowLeft {
     display: none;
   }
   .oracleRowLeft >img {
     width: 300px;
   }
-  .oracleRowLeft >.blast {
-    display: none;
-  }
   .oracleRowRight {
-    align-items: center;
+    row-gap: 28px;
+  }
+  .oracleActions {
+    margin-top: 8px;
+  }
+  .oracleActions >a, .oracleActions >a>button{
+    width: 100%;
   }
   .actions {
     flex-direction: column;
+    align-items: center;  
+    gap: 16px;
+  }
+  .actions >button {
+    width: 100%;
+  }
+  .rewardCards {
+    flex-direction: column;
     align-items: center;
+    gap: 24px;
   }
   .rewardCard {
-    padding: 16px 18px 18px;
+    padding: 34px 28px 36px 28px;
+  }
+  .rewardCard .icon >svg{
+    width: 44px; height: 44px;
+  }
+  .rewardCard .title {
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.1px;
+  }
+  .marqueeContainer {
+    display: none;
+  }
+  .partnersSection {
+    margin-top: 96px;
+    margin-bottom: 80px;
+  }
+  .partnersLogos .filter {
+    background: var(--partner-filter-mobile);
   }
 }
+
 @media (max-width: 1300px) {
   .cards {
     flex-flow: wrap;
@@ -351,19 +351,12 @@
     flex-direction: column;
     align-items: center;
   }
-  .earnSection .rewardCard {
-    margin-bottom: 24px;
-  }
 }
 
 @media (max-width: 991px) {
   .partnersLogos {
     flex-direction: column;
-    padding: 44px 24px;
-  }
-  .partnersLogos svg,
-  .partnersLogos img {
-    margin-bottom: 32px;
+    margin: 40px 0;
   }
   .partnersLogos svg:last-child,
   .partnersLogos img:last-child {
@@ -376,9 +369,7 @@
     max-width: 500px;
     justify-content: center;
   }
-  
   .rewardCard {
-    max-width: calc(100% - 32px);
     width: auto;
     height: auto;
   }
