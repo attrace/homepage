@@ -38,7 +38,7 @@ const MainSection:React.FC<Props> = ({ handleClick }) => {
         <div className={clsx(styles.filter, styles.filter2)} />
         <div className={clsx(styles.filter, styles.filter3)} />
         <div className={styles.img}>
-          <video src='/media/video.webm' autoPlay muted loop />
+          <video src='/media/video.mp4' autoPlay muted loop />
         </div>
         <div className={styles.bottom}>
           <div className={styles.data}>
