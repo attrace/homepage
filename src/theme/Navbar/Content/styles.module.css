@@ -23,6 +23,13 @@
   margin: 0;
   margin-left: 24px;
 }
+.btnByScroll {
+  border: 0;
+}
+.btnByScroll::after {
+  background: var(--primary-btn);
+  opacity: 1;
+}
 /*
 Hide color mode toggle in small viewports
 */
