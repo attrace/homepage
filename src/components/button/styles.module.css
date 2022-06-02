@@ -30,7 +30,7 @@
   left: 0;
   border-radius: 6px;
   background: var(--primary-btn-hover);
-  transition: .3s;
+  transition: .7s;
   opacity: 0;
 }
 .primary:disabled {
