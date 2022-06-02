@@ -34,7 +34,7 @@ function NavbarItems({ items }) {
   );
 }
 
-function NavbarContentLayout({left, center, right}) {
+function NavbarContentLayout({ left, center, right }) {
   return (
     <div className="navbar__inner">
       <div className="navbar__items">{left}</div>
