@@ -24,7 +24,7 @@ function useNavbarItems() {
   return useThemeConfig().navbar.items;
 }
 
-function NavbarItems({items}) {
+function NavbarItems({ items }) {
   return (
     <>
       {items.map((item, i) => (
@@ -34,7 +34,7 @@ function NavbarItems({items}) {
   );
 }
 
-function NavbarContentLayout({left, center, right}) {
+function NavbarContentLayout({ left, center, right }) {
   return (
     <div className="navbar__inner">
       <div className="navbar__items">{left}</div>
@@ -44,7 +44,7 @@ function NavbarContentLayout({left, center, right}) {
   );
 }
 
-export default function NavbarContent() {
+export default function NavbarContent({ isContained }) {
   const mobileSidebar = useNavbarMobileSidebar();
   const items = useNavbarItems();
   const [leftItems, rightItems] = splitNavbarItems(items);
@@ -52,7 +52,7 @@ export default function NavbarContent() {
   return (
     <NavbarContentLayout
       left={
-        <a href="/" ><Logo className={styles.logo}/></a>
+        <a href="/" ><Logo className={styles.logo} /></a>
       }
       center={
         <NavbarItems items={leftItems} />
@@ -60,7 +60,7 @@ export default function NavbarContent() {
       right={
         <>
           <a href="#" target="_blank" className={styles.enterAppBtn}>
-            <Button variant="secondary">Enter App</Button>
+            <Button variant="secondary" className={isContained && styles.btnByScroll}>Enter App</Button>
           </a>
           <a href="#" target="_blank" className={styles.enterAppBtnMobile}>
             <Button variant="primary">Enter App</Button>
