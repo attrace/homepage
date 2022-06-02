@@ -64,7 +64,7 @@ const Home: React.FC = () => {
                   Referral Farming
                   <ArrowRightIcon />
                 </Button>
-                <Button variant="secondary" onClick={() => window.open('https://homepage.testnet.attrace.com/about/category/referral-farming', '_blank')}>
+                <Button variant="secondary" onClick={() => window.open('https://homepage.testnet.attrace.com/about/category/referral-farming')}>
                   Learn More
                 </Button>
               </div>
