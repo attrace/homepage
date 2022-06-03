@@ -176,6 +176,11 @@
   line-height: 24px;
   color: var(--white-06);
 }
+.menu__link--sublist-caret:after {
+  margin-right: -8px;
+}
+
+
 
 /* main-wrapper */
 .main-wrapper {
