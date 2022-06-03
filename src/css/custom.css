@@ -176,6 +176,11 @@
   line-height: 24px;
   color: var(--white-06);
 }
+.menu__link--sublist-caret:after {
+  margin-right: -8px;
+}
+
+
 
 /* main-wrapper */
 .main-wrapper {
@@ -218,6 +223,17 @@
   .navbar__inner .navbar__items:nth-of-type(2) {
     display: none;
   }
+}
+
+@media 
+(-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi) { 
+   img.normalDisplay {
+      display: none;
+   }
+    img.retinaDisplay {
+      display: block;
+   }
 }
 
 a {

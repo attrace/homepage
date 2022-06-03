@@ -25,7 +25,7 @@ export default function Navbar() {
     };
   });
   return (
-    <div className={isContained && styles.navBarContainerActive}>
+    <div className={isContained ? styles.navBarContainerActive : ''}>
       <NavbarLayout>
         <NavbarContent isContained={isContained} />
       </NavbarLayout>

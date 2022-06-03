@@ -175,12 +175,13 @@ const Home: React.FC = () => {
                 <DeribitLogo />
                 <ImpossibleFinLogo />
                 <img
-                  src={require("@site/static/img/partners/dappradar.png").default}
+                  src={require("@site/static/img/partners/dappradar2x.png").default} style={{ width: "222px" }}
                 />
                 <MaskLogo />
-                <img src={require("@site/static/img/partners/amasa.png").default} />
+                <img src={require("@site/static/img/partners/amasa2x.png").default} style={{ width: "101px" }}
+                />
                 <img
-                  src={require("@site/static/img/partners/despace.png").default}
+                  src={require("@site/static/img/partners/despace2x.png").default} style={{ width: "107px" }}
                 />
               </Marquee>
             </div>
