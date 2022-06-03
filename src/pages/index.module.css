@@ -108,7 +108,7 @@
 .farmingRowLeft, .oracleRowRight .farmingText {
   max-width: 520px;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.1px;
   color: var(--white-07);
