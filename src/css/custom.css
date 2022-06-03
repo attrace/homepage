@@ -225,17 +225,6 @@
   }
 }
 
-@media 
-(-webkit-min-device-pixel-ratio: 2), 
-(min-resolution: 192dpi) { 
-   img.normalDisplay {
-      display: none;
-   }
-    img.retinaDisplay {
-      display: block;
-   }
-}
-
 a {
   text-decoration: none !important;
 }
