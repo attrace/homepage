@@ -15,7 +15,7 @@ import {
 } from '@docusaurus/theme-common';
 import NavbarMobileSidebarToggle from '@theme/Navbar/MobileSidebar/Toggle';
 
-import Logo from "@site/static/img/logo-update.svg";
+import Logo from "@site/static/img/logo-update2.svg";
 import Button from "../../../components/button";
 
 import styles from './styles.module.css';
