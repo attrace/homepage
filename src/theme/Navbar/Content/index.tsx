@@ -15,7 +15,6 @@ import {
 } from '@docusaurus/theme-common';
 import NavbarMobileSidebarToggle from '@theme/Navbar/MobileSidebar/Toggle';
 
-import Logo from "@site/static/img/logo-update.svg";
 import Button from "../../../components/button";
 
 import styles from './styles.module.css';
@@ -52,7 +51,7 @@ export default function NavbarContent({ isContained }) {
   return (
     <NavbarContentLayout
       left={
-        <a href="/" ><Logo className={styles.logo} /></a>
+        <a href="/" > <img className={styles.logo} src='/img/attrace-logo.png' /></a>
       }
       center={
         <NavbarItems items={leftItems} />

@@ -3,20 +3,20 @@ import clsx from "clsx";
 
 import styles from "./styles.module.css";
 
+
 interface Props {
   posiClass: string
   name: string
   description: string
-  src: string
 }
 
 const Card: FC<Props> = (props) => {
-  const { posiClass, name, description, src } = props
+  const { posiClass, name, description } = props
   return (
     <div className={clsx(styles.statsCard, posiClass)}>
       <div className={styles.info}>
         <div className={styles.icon}>
-          <img src={src} />
+          {props.children}
         </div>
         <div>
           <div className={styles.name}>{name}</div>
