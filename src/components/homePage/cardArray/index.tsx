@@ -3,6 +3,10 @@ import React, { useEffect, useState } from "react";
 
 import Card from "../../card";
 
+import MaskIcon from '/img/farms/mask.svg';
+import DappRadarIcon from '/img/farms/dappradar.svg';
+import AttraceIcon from '/img/farms/attrace.svg';
+
 import styles from "./index.module.css";
 
 export default function CardArray(): JSX.Element {
@@ -20,18 +24,21 @@ export default function CardArray(): JSX.Element {
       <Card
         posiClass={cardClasses[0]}
         name="RADAR" description="DappRadar"
-        src="/img/farms/radar.png"
-      />
+      >
+        <DappRadarIcon />
+      </Card>
       <Card
         posiClass={cardClasses[1]}
         name="Mask" description="Mask Network"
-        src="/img/farms/mask.png"
-      />
+      >
+        <MaskIcon />
+      </Card>
       <Card
         posiClass={cardClasses[2]}
         name="ATTR" description="Attrace Protocol"
-        src="/img/farms/attr.png"
-      />
+      >
+        <img src='/img/farms/attrace.png' /> 
+      </Card>
     </div>
   );
 }
