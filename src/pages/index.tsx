@@ -64,9 +64,11 @@ const Home: React.FC = () => {
                   Referral Farming
                   <ArrowRightIcon />
                 </Button>
-                <Button variant="secondary" onClick={() => window.open('https://homepage.testnet.attrace.com/about/category/referral-farming')}>
+                <a href="/about/category/referral-farming" >
+                <Button variant="secondary">
                   Learn More
                 </Button>
+                </a>
               </div>
             </div>
             <div className={styles.farmingRowRight}>
@@ -105,7 +107,7 @@ const Home: React.FC = () => {
                   Oracle Staking
                   <ArrowRightIcon />
                 </Button>
-                <a href="https://homepage.testnet.attrace.com/about/category/oracles" target="_blank">
+                <a href="/about/category/oracles" >
                   <Button variant="secondary">
                     Learn More
                   </Button>
