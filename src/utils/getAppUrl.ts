@@ -4,8 +4,8 @@
  * @returns the path
  */
 function getAppUrl(path: string = '') {
-    const currentURL = window.location.origin;
-    return currentURL.replace('://', '://app.').replace('homepage.', '') + path;
+    const url = process.env.REACT_APP_DAPP_URL || 'https://app.testnet.attrace.com'
+    return url + path
 }
 
 export default getAppUrl;
