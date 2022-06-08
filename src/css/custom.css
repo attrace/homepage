@@ -225,6 +225,6 @@
   }
 }
 
-a {
-  text-decoration: none !important;
+.theme-doc-markdown a {
+  text-decoration: underline;
 }

@@ -42,7 +42,25 @@ _The Single Referral Token Farm is suitable for crypto or NFT projects/protocols
 - A referredToken and rewardToken can also be the same when the same crypto/fungible token is chosen for both when creating the farm
 
 
-### Farming flow
+### Multi Referral Token Farm _(coming soon)_
+_ Multi Referral Token Farm is the most suitable for ecosystems hosting token exchanges that are willing to incentivise traffic/volume towards their protocols via purchase of various tokens (e.g., DEX, Marketplaces, blockchain networks). _
+
+- Multi Referral Token Farm consists of multiple referredToken and single rewardToken
+- Referrals are sponsored for a number of referredToken chosen by those who create a farm (“buy and hold” of any of the token via referral link earns rewards) 
+- In addition to the chosen referredToken the destination contract address where buying of tokens will happen is specified at the moment the farm is created
+- A rewardToken is a token which is deposited in a referral farm as a reward for the successful referrals 
+- A rewardToken can be any crypto/fungible token on a blockchain supported by the Attrace protocol (e.g. ERC20). At the moment only ERC20 tokens are supported as rewardTokens 
+
+Check our [Medium article](https://medium.com/attrace/overview-attrace-referral-farms-52b2f88f05af) for more examples.  
+
+:::note Attrace Referral Farm
+The Attrace Referral Farm, a protocol native referral farm, will be the first to utilize Multi Referral Token Farm
+:::note
+
+
+
+
+## Farming flow
 The farming flow involves three players:
 1. **Project:** The party that is looking for promotion for its digital asset. As an example a new crypto project that wants to create demand for its token, or a newly launch NFT collection
 1. **Promotor:** The promotor is typically looking for a way to montise it's traffic or influence. This could a Twitter or YouTube account with large dedicated following, or a crypto news or statistics website that would like to earn from traffic being sent to a DEX or NFT market place
@@ -61,18 +79,6 @@ The flow below explains in 5 steps how a farm is setup between the players
 
 
 
-
-## Roles and Actors
-
-| Role           | Name        | Description       | Value Proposition | Token Role     |
-| -------------- |------------ | ----------------- | ----------------- | -------------- |
-| Builders       | Attrace Team | Developing referral protocol (smart contracts, oracles, tokenomics) + dapp | Deliver trustless Referral protocol | Incentivised with ATTR token allocation | 
-|                | Promoters (large crypto or NFT websites) | Utilizing SDK to integrate with referral protocol (provide cashback offers to their users or visitors) | Monetise traffic they send to Tokens, Dapps, DEXs or Marketplaces + increase user engagement | Earn sponsored tokens + earn ATTR tokens |
-|                | Protocol, Dapp, marketplaces or DEXs | Utilizing SDK to integrate with referral protocol (bring referral feature to their users) | Increase the number of users/volume via referrals + increase the existing user engagement | Provide incentive in their native tokens including 5% worth of protocol fee in ATTR |  
-| Promoters      | Crypto user, influencer or website | A user, influencer or website which promotes a token to their friends, followers or visitors  | Earn Referral Farm Rewards and become Attrace stakeholder | Earn sponsored tokens from sponsored referral farms + earn ATTR tokens from Attrace Referral farms |
-| Projects | Attrace (Attrace Referral Farm) | Provides an incentive to promote a token and drive traffic towards their Protocol, Dapp, marketplaces or DEXs | Increase the number of users or volume via referrals | 100m ATTR over 2.5 years (10% of total token allocation) |
-| | Protocol, Dapp, marketplaces or DEXs (Sponsored Referral Farms) | | | Provide incentive in their native tokens including |
-| Participants | Buyer or Customer | Participant who bought tokens with attrace Promoter's link | Discover new projects, earn rewards and become Attrace stakeholder | Earn sponsored tokens from sponsored referral farms + earn ATTR tokens from Attrace Referral farms |
 
 
 
