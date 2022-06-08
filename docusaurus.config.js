@@ -14,6 +14,7 @@ const config = {
   projectName: "attrace/homepage", // Usually your repo name.
   customFields: {
     baseEditUrl: "https://github.com/attrace/homepage/edit/master/",
+    dappUrl: process.env.REACT_APP_DAPP_URL,
   },
   presets: [
     [
