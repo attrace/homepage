@@ -299,10 +299,10 @@
   .oracleRowRight {
     row-gap: 28px;
   }
-  .oracleActions {
+  .actionsWrapper {
     margin-top: 8px;
   }
-  .oracleActions >a, .oracleActions >a>button{
+  .actionsWrapper >a, .actionsWrapper >a>button{
     width: 100%;
   }
   .actions {

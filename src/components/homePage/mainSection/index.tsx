@@ -27,7 +27,7 @@ const MainSection: React.FC<Props> = ({ handleClick }) => {
           Unlock the value of ‘word of mouth’ marketing in web3. Recommend
           crypto or NFT and earn rewards from referral farms.{" "}
         </p>
-        <div className={styles.actions}>
+        <div className={clsx(styles.actions, styles.actionsWrapper)}>
           <a href={getAppUrl()}>
             <Button>Enter App</Button>
           </a>

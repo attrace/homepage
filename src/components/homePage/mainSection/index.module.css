@@ -37,6 +37,13 @@
   row-gap: 24px;
 }
 
+.actionsWrapper {
+  margin-top: 8px;
+}
+.actionsWrapper >a, .actionsWrapper >a>button{
+  width: 100%;
+}
+
 .referral {
   width: 412px;
   background: var(--panel-back);

@@ -59,7 +59,7 @@ const Home: React.FC = () => {
                 Referral farming incentivises referrals for the purchase of crypto tokens or NFTs by rewarding both promoter and buyer.<br /><br />
                 Use Attrace link when recommending any crypto or NFT project and earn farming rewards!
               </div>
-              <div className={clsx(styles.actions, styles.oracleActions)}>
+              <div className={clsx(styles.actions, styles.actionsWrapper)}>
                 <Button>
                   Referral Farming
                   <ArrowRightIcon />
@@ -102,7 +102,7 @@ const Home: React.FC = () => {
                 Oracles capture the value of ‘word of mouth’ marketing in web3 and power referral farming by detecting and distributing rewards in a trustless manner.<br /><br />
                 The referral protocol is secured by the $ATTR token. Help securing the network by delegating your stake to the oracles and earn rewards!
               </div>
-              <div className={clsx(styles.actions, styles.oracleActions)}>
+              <div className={clsx(styles.actions, styles.actionsWrapper)}>
                 <Button>
                   Oracle Staking
                   <ArrowRightIcon />
