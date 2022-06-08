@@ -37,13 +37,6 @@
   row-gap: 24px;
 }
 
-.actionsWrapper {
-  margin-top: 8px;
-}
-.actionsWrapper >a, .actionsWrapper >a>button{
-  width: 100%;
-}
-
 .referral {
   width: 412px;
   background: var(--panel-back);
@@ -161,6 +154,11 @@
     flex-direction: column;
     justify-content: center;
   }
+  .actionsWrapper >a, .actionsWrapper >a>button{
+    width: 100%;
+  }
+
+
   .filter {
     filter: blur(120px);
   }
