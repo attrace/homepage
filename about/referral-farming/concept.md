@@ -5,9 +5,41 @@ description: Deep dive into concept and flow of Referral Farming
 slug: '/referral-farming'
 ---
 
-## What is Referral Farming
-Referral Farming works in a similar way to Farming on a DEX, where yield farming-like rewards will be distributed for successful referrals (instead of providing liquidity). 
-The concept of farming is that a project dedicates a daily budget to promote its tokenised asset. As an example, when a new crypto currency is launched, it could dedicate a daily budget to promote this token. The moment a promoter is joining this farm, and succesfully onboarded a buyer for this token, the daily budget is devided over these two players.
+Referral farming is a concept invented by the Attrace team which aims at providing proper incentives for successful referrals of tokens. Referral farming distributes rewards to those who “spread the word” about the tokens and those who buy and hold the tokens based on the recommendation. 
+
+## “Adding value” via referrals
+When people buy tokens and hold them, whether they simply keep or stake the tokens or provide liquidity, we say that they “add value” to the token community, or more specifically to the existing token holders or anyone who benefits from token value/price increase (typically projects or large investors in projects).
+
+To properly account for the "value added" via referrals, Attrace Oracles track "position" of the amount of tokens bought and held (when purchase came via referral link). And because a person who bought the tokens was influenced/persuaded by a promoter/recommender, we consider that both of them "added value" to the token community. Therefore, to attribute a share of “added value” to both parties, the Oracles create two “positions” in the farm by splitting the purchased amount of tokens in half (e.g. purchased tokens = 100; promoter position = 50; buyer’s position = 50). Everyone who joins the farm, receives rewards based on their share of the total “position” in the referral farm.
+
+## How it works
+​​Referral farming works in a similar way to farming on a DEX, where farming-like rewards are distributed for those who “add value” to the token community via referrals (instead of providing liquidity). This mechanism creates the same incentives as with yield farming and has the two key characteristics:
+
+
+* it provides incentive to join the referral farm first and early in order to earn higher share of daily rewards
+* rewards are continuously distributed among those who join the farm therefore incentivising buy and hold behavior and giving extra utility to holders over time (ideal for token believers)
+
+These incentives provide a way for projects or larger investors to engage the community to help them “spread the word” about the token while growing the holders by giving them additional utility with referral farming rewards. We expect that projects will be the ones who will create referral farms to use this reward mechanism to incentivise people to "add value" via referrals over a specific time period.
+
+
+## The Farming Effect
+The first participant gets the highest yield/commission, which will then go down with more value being contributed. This creates the urgency to to start promoting/recommending a token of a newly created referral farm ASAP, as the rewards will be higher if you are an early adopter of the project.
+
+In addition to the incentive to promote/buy early before the others join, buyers will want to keep their "position" as long as the rewards are active.
+
+## Referral Farm Types
+
+Currently, there are two Referral Farm types supported by Attrace protocol: 
+
+### Single Referral Token Farm
+_The Single Referral Token Farm is suitable for crypto or NFT projects/protocols to sponsor referrals of their own token._
+
+- Consists of a single referredToken and single rewardToken 
+- A referredToken is a token for which the referrals are sponsored (“buy and hold” via referral link earns rewards) 
+- A referredToken can be any token, either a crypto/fungible token or NFT, on a blockchain supported by the Attrace protocol (e.g. ERC20, ERC721, ERC1155). At the moment only ERC20 tokens are supported as referredTokens
+- A rewardToken is a token which is deposited in a referral farm as a reward for the successful referrals 
+0 A rewardToken can be any crypto/fungible token on a blockchain supported by the Attrace protocol (e.g. ERC20). At the moment only ERC20 tokens are supported as rewardTokens 
+- A referredToken and rewardToken can also be the same when the same crypto/fungible token is chosen for both when creating the farm
 
 
 ### Farming flow
@@ -27,28 +59,8 @@ The flow below explains in 5 steps how a farm is setup between the players
 1. Harvest Rewards
 
 
-## The farming effect: FOMO
-The first participant gets the highest yield/commission, which will then go down with more value being contributed. This creates the urgency to to start promoting a newly created farm ASAP, as the rewards will be higher if you are an early adopter of the project. 
 
-The Attrace team believes this will have a large impact on Promoter adoption of the Attrace protocol as it has been a proven model for DEXs; it simply has never been done before for referral payouts. 
 
-Currently, there are two Referral Farm types supported.
-
-### Sponsored Referral Farm
-Sponsored referral farms are farms created by projects in which they the daily reward is setup in the native promoted token. In other words, the promoters earn farming-like returns in the Project native crypto. 
-
-As an example, imagine $MASK creates a sponsored farn with 1000 $MASK daily rewards. 
-- A promoter creates a link of this farm, and shares it on its Twitter.
-- One of its Twitter followers, follows the link, signs it. With this signature, a so called 'Proof of Recommendation' is stored within the Attrace Oracles
-- Next 2000 $MASK is purchased by this Twitter follower on a supported DEX.
-- 24 hours later, rewards are calculated. The daily reward of 1000 $MASK is devided between promoter and the buyer. 
-
-Note that, when more promoters and referred buyers join this farm, the daily rewards will be devided between these players. In order words, early adopters of a new farm will have the highest yield.
-
-### Attrace Referral Farm
-Promoters earn farming-like returns in $ATTR for promoting any crypto or NFT project; this will also trigger community growth. This can be done on top of the Sponsored Referral Farm. 
-
-As an example, Attrace could support the launch of a new token (and in future NFT collection). With every position increase, or NFT buy, an additional reward can be configured in the ATTR token (or potentially other tokens that would like that setup such support).
 
 ## Roles and Actors
 
