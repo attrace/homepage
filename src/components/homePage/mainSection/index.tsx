@@ -1,7 +1,8 @@
 import clsx from "clsx";
-import React, { ForwardedRef } from "react";
+import React from "react";
 
 import truncateString from "../../../utils/truncateString";
+import getAppUrl from "../../../utils/getAppUrl";
 
 import Button from "../../button";
 
@@ -13,7 +14,8 @@ interface Props {
   handleClick: () => void
 }
 
-const MainSection:React.FC<Props> = ({ handleClick }) => {
+const MainSection: React.FC<Props> = ({ handleClick }) => {
+
   return (
     <div className={clsx("container", styles.wrapper)}>
       <div className={styles.actionBlock}>
@@ -26,7 +28,9 @@ const MainSection:React.FC<Props> = ({ handleClick }) => {
           crypto or NFT and earn rewards from referral farms.{" "}
         </p>
         <div className={styles.actions}>
-          <Button>Enter App</Button>
+          <a href={getAppUrl()}>
+            <Button>Enter App</Button>
+          </a>
           <Button variant="secondary" onClick={handleClick}>
             Learn More
             <ArrowDownIcon />

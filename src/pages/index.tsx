@@ -59,7 +59,7 @@ const Home: React.FC = () => {
                 Referral farming incentivises referrals for the purchase of crypto tokens or NFTs by rewarding both promoter and buyer.<br /><br />
                 Use Attrace link when recommending any crypto or NFT project and earn farming rewards!
               </div>
-              <div className={styles.actions}>
+              <div className={clsx(styles.actions, styles.oracleActions)}>
                 <Button>
                   Referral Farming
                   <ArrowRightIcon />

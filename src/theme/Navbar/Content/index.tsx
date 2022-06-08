@@ -16,6 +16,7 @@ import {
 import NavbarMobileSidebarToggle from '@theme/Navbar/MobileSidebar/Toggle';
 
 import Button from "../../../components/button";
+import getAppUrl from "../../../utils/getAppUrl";
 
 import styles from './styles.module.css';
 
@@ -58,10 +59,10 @@ export default function NavbarContent({ isContained }) {
       }
       right={
         <>
-          <a href="#" target="_blank" className={styles.enterAppBtn}>
+          <a href={getAppUrl()} target="_blank" className={styles.enterAppBtn}>
             <Button variant="secondary" className={isContained && styles.btnByScroll}>Enter App</Button>
           </a>
-          <a href="#" target="_blank" className={styles.enterAppBtnMobile}>
+          <a href={getAppUrl()} target="_blank" className={styles.enterAppBtnMobile}>
             <Button variant="primary">Enter App</Button>
           </a>
           <div className={styles.menuBtnMobile}>
