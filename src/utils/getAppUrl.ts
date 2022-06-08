@@ -3,9 +3,9 @@
  * @param path optional deeplink
  * @returns the path
  */
-function getAppUrl(path:string = '') {
+function getAppUrl(path: string = '') {
     const currentURL = window.location.origin;
-    return currentURL.replace('://','://app.')+path;
+    return currentURL.replace('://', '://app.').replace('homepage.', '') + path;
 }
 
 export default getAppUrl;
