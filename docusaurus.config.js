@@ -5,7 +5,7 @@
 const config = {
   title: "Attrace",
   tagline: "Referral Protocol for Web3 Assets",
-  url: "https://attrace.com/",
+  url: "https://attrace.com",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
