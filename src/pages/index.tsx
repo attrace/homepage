@@ -19,6 +19,7 @@ import Chart2Icon from "@site/static/img/icons/chart2.svg";
 import Chart3Icon from "@site/static/img/icons/chart3.svg";
 import ArrowRightIcon from "@site/static/img/icons/arrowRight.svg";
 import styles from "./index.module.css";
+import Head from '@docusaurus/Head';
 
 const Home: React.FC = () => {
   const { siteConfig } = useDocusaurusContext();
@@ -38,10 +39,14 @@ const Home: React.FC = () => {
     referralRef.current.scrollIntoView({ behavior: 'smooth' })
   }, [referralRef])
   return (
-    <Layout
-      title='Web3 Referral Protocol'
-      description="Unlock the value of ‘word of mouth’ marketing in web3. Recommend crypto or NFT and earn rewards from referral farms."
-    >
+    <Layout>
+      <Head>
+        <title>Attrace | Referral Protocol for Web3</title>
+        <meta charSet="utf-8" />
+        <meta property="og:title" content="Attrace | Referral Protocol for Web3" />
+        <meta property="og:description" content="Unlock the value of ‘word of mouth’ marketing in Web3. Recommend crypto or NFT and earn rewards from referral farms." />
+        <meta property="description" content="Unlock the value of ‘word of mouth’ marketing in Web3. Recommend crypto or NFT and earn rewards from referral farms." />
+      </Head>
       <main className="main-overflow">
         <MainSection handleClick={handleLearnmore} />
         <TokensAPR reff={referralRef} />
@@ -65,9 +70,9 @@ const Home: React.FC = () => {
                   <ArrowRightIcon />
                 </Button>
                 <a href="/about/category/referral-farming" >
-                <Button variant="secondary">
-                  Learn More
-                </Button>
+                  <Button variant="secondary">
+                    Learn More
+                  </Button>
                 </a>
               </div>
             </div>
