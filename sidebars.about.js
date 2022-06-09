@@ -16,6 +16,7 @@ module.exports = {
           'referral-farming/concept',
           'referral-farming/guides',
           'referral-farming/reward',
+          'referral-farming/faq',
         ]
       },      
       {
@@ -31,8 +32,6 @@ module.exports = {
         },
         items: [
           'oracles/concept',
-          'oracles/guides',
-          'oracles/reward',
         ]
       },     
       {
@@ -50,7 +49,6 @@ module.exports = {
         collapsed: false,
         items: [
           'reference/glossary',
-          'reference/faq',
         ]
       },       
       {
@@ -85,24 +83,3 @@ module.exports = {
 
     ]
   };
-
-//http://localhost:3000/about/#vision
-// About
-//   Vision
-// Referral Farming
-//   Concept
-//   Guides
-//   Reward
-// Referral Oracles
-//   Concept
-//   Guides
-//   Reward
-// Attrace Token
-//   Tokenomics
-// Reference
-//   FAQ
-//   Glossary
-// Project
-//   Roadmap
-//   Attrace Team
-// Legal
