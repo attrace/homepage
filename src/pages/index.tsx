@@ -83,7 +83,7 @@ const Home: React.FC = () => {
         </div>
         <div className={clsx("container", styles.earnSection)}>
           <div className={styles.graphBoxMobile}>
-            <img src="/img/blankgraph_mobile.png" width='100%' />
+            <img src="/img/oracle_homepage.png" width='100%' />
             <div className={styles.blast}>
               <div className={styles.title}>100M</div>
               <div className={styles.comment}>$ATTR staked</div>
@@ -95,7 +95,7 @@ const Home: React.FC = () => {
           </div>
           <div className={styles.farmingRow}>
             <div className={styles.oracleRowLeft}>
-              <img src="/img/blankgraph.png" />
+              <img src="/img/oracle_homepage.png" width='622px'  />
               <div className={styles.blast}>
                 <div className={styles.title}>100M</div>
                 <div className={styles.comment}>$ATTR staked</div>

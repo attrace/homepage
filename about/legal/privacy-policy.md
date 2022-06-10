@@ -1,6 +1,7 @@
 ---
 title: Privacy Policy
 sidebar_label: Privacy Policy
+description: "This Privacy Policy aims to keep you informed which personal and other kinds of data is received, why it is used and your rights in respect of that data"
 ---
 
 # 1. Personal Data

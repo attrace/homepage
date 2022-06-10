@@ -73,7 +73,7 @@ module.exports = {
           title: 'Attrace Legal',
           description:
             "Legal statements and privacy policies",
-          keywords: ['guides'],
+          keywords: ['legal'],
         },
         items: [
           'legal/code-of-conduct',

@@ -1,6 +1,7 @@
 ---
 title: FAQ
 sidebar_label: FAQ
+description: "Attrace frequently asked questions: How to choose wicht token to recommend, how are my rewards calculated"
 ---
 
 

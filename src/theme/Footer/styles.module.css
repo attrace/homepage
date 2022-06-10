@@ -100,7 +100,12 @@
 
 .wrapper a:hover {
   text-decoration: none;
-  color: var(--white);
+  color
+  : var(--white);
+}
+
+img.oracleImg {
+  width: 622px;
 }
 
 @media (max-width: 768px) {

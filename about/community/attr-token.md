@@ -1,6 +1,7 @@
 ---
 title: Attrace Token
 id: attr-token
+description: "$ATTR is a native token of Attrace Referral Network. It is a utility and governance token, which gives token holders a right to participate in the network, govern the network and earn token rewards by staking."
 ---
 
 import AreaChart from '@site/src/components/tokenCharts/areaChart';

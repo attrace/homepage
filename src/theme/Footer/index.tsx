@@ -104,14 +104,14 @@ const Footer: FC = () => (
             <a
               href="/about/category/referral-farming"
             >
-              Referral Oracles
+              Referral Farming
             </a>
           </div>
           <div className={styles.externalLink}>
             <a
               href="/about/category/oracles"
             >
-              Referral Farming
+              Referral Oracles
             </a>
           </div>
           <div className={styles.externalLink}>

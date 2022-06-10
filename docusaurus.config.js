@@ -47,12 +47,6 @@ const config = {
             position: "left",
           },
           {
-            to: "/guides",
-            activeBasePath: '/guides',
-            label: "Guides",
-            position: "left"
-          },
-          {
             to: "/updates",
             activeBasePath: 'updates',
             label: "Updates",
@@ -98,6 +92,10 @@ const config = {
         routeBasePath: "updates",
         include: ["*.md", "*.mdx"],
         editUrl: process.env.REACT_APP_GIT_URL,
+        feedOptions: {
+          title: 'Attrace | Latest product and economics updates',
+          description: 'Stay informed with the latests product, partnersships and economic updates',
+        },
       },
     ],
   ],

@@ -1,6 +1,7 @@
 ---
 title: Reward
 sidebar_label: Reward
+description: "Referral farming rewards are distributed to those who successfully recommend/promote a token (Refer to Farm) and those who buy the token via the referral link (Buy to Farm)."
 ---
 
 
@@ -38,9 +39,12 @@ Estimated **APR** (Annual Percentage Rate) is an indicator of current rewards on
 
 Applying the daily rewards formula as explained above:
 
-`100 $ABC daily rewards / (5.000 $ABC Alice + 5.000 $ATTR Alice community) x 365 =`
-
-`100 $ABC / 10.000 $ABC x 365 = 365% APR `
+**APR** 
+```
+= 100 $ABC daily rewards / (5.000 $ABC Alice + 5.000 $ATTR Alice community) x 365 
+= 100 $ABC / 10.000 $ABC x 365 
+= 365%  
+````
 
 
 

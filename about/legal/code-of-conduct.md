@@ -1,6 +1,7 @@
 ---
 title: Code of Conduct
 sidebar_label: Code of Conduct
+description: "This Code of Conduct, as may be amended, supplemented or revised from time to time, forms an integral part of the Attrace Terms and Conditions"
 ---
 
 This Code of Conduct, as may be amended, supplemented or revised from time to time, forms an integral part of the Attrace Terms and Conditions. All participants must comply with this Code of Conduct in full.
