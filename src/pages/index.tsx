@@ -96,10 +96,6 @@ const Home: React.FC = () => {
           <div className={styles.farmingRow}>
             <div className={styles.oracleRowLeft}>
               <img src="/img/oracle_homepage.png" width='622px'  />
-              <div className={styles.blast}>
-                <div className={styles.title}>100M</div>
-                <div className={styles.comment}>$ATTR staked</div>
-              </div>
             </div>
             <div className={styles.oracleRowRight}>
               <Badge />
@@ -108,10 +104,12 @@ const Home: React.FC = () => {
                 The referral protocol is secured by the $ATTR token. Help securing the network by delegating your stake to the oracles and earn rewards!
               </div>
               <div className={clsx(styles.actions, styles.actionsWrapper)}>
+              <a href="/about/category/oracles" >
                 <Button>
                   Oracle Staking
                   <ArrowRightIcon />
                 </Button>
+                </a>
                 <a href="/about/category/oracles" >
                   <Button variant="secondary">
                     Learn More
