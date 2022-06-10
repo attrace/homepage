@@ -1,5 +1,5 @@
 ---
-title: Overview Attrace Referral Farms
+title: Overview Referral Farms
 description: The Attrace protocol will introduce the concept of Referral Farms.
 authors:
   - nikola
