@@ -24,6 +24,8 @@
   --dark-grey-5: #1f1c29;
   --dark-grey-3: #1a1724;
 
+  --blue-link: #5392FF;
+
   --statscard-back: rgba(36, 33, 45, 0.8);
   --statscard-border: rgb(44,41,54);
   --statscard-boxshadow: #13101D;
@@ -87,7 +89,7 @@
   --ifm-font-color-base: var(--white);
   --ifm-color-primary: var(--white);
   --ifm-toc-link-color: var(--white-06);
-  --ifm-menu-color: var(--white-06);
+  --ifm-menu-color: var(--blue-link);
   --ifm-color-primary-dark: var(--purple);
   --ifm-code-background: rgb(51, 52, 55);
 }
@@ -231,6 +233,11 @@
 
 .markdown a {
   text-decoration: underline;
+  color: var(--blue-link);
+}
+
+.markdown a:hover {
+  color: var(--blue-link);
 }
 
 
