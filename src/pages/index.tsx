@@ -20,6 +20,7 @@ import Chart3Icon from "@site/static/img/icons/chart3.svg";
 import ArrowRightIcon from "@site/static/img/icons/arrowRight.svg";
 import styles from "./index.module.css";
 import Head from '@docusaurus/Head';
+import getAppUrl from "../utils/getAppUrl";
 
 const Home: React.FC = () => {
   const { siteConfig } = useDocusaurusContext();
@@ -65,10 +66,12 @@ const Home: React.FC = () => {
                 Use Attrace link when recommending any crypto or NFT project and earn farming rewards!
               </div>
               <div className={clsx(styles.actions, styles.actionsWrapper)}>
+              <a href={getAppUrl('/farms')} target="_blank">
                 <Button>
                   Referral Farming
                   <ArrowRightIcon />
                 </Button>
+                </a>
                 <a href="/about/category/referral-farming" >
                   <Button variant="secondary">
                     Learn More

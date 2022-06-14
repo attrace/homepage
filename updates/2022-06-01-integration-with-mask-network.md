@@ -1,5 +1,5 @@
 ---
-title: Attrace Integrates with Mask Network
+title: Integration with Mask 
 description: Attrace is excited to announce a strategic partnership with Mask Network. Mask Network is an open-sourced browser extension with tens of thousands of users.
 authors:
   - nikola
