@@ -19,11 +19,14 @@ _2022 - now_
 - [ ] Multi referred token farm
 - [ ] Attrace Referral Farm
 - [ ] NFT referral farms
-- [ ] SDK for UI integrations
+- [ ] SDK for UI integrations with partners
 - [ ] Refer to Farm for Airdrop
-- [ ] Identity fraud detection 
-- [ ] Referral farms on other EVM compatible chains 
+- [ ] Identity fraud detection
+- [ ] Promoter Profile and Reputation
+- [ ] Referral farms on other EVM chains (i.e. BSC, Polygon)
+- [ ] Cross chain referrals
 - [ ] Public Oracle Network
+- [ ] Staking with Oracles
 
 </div>
 
