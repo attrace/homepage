@@ -9,7 +9,7 @@ The planning of the development is driven by integrations and partnership opport
 
 The roadmap items listed below are milestones as envisioned by the Attrace Team to achieve this goal.
 
-## Attrace Referral Network
+## Attrace Protocol
 _2022 - now_  
 ### Future Deliverables
 
