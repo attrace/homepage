@@ -72,7 +72,7 @@ const Home: React.FC = () => {
                   <ArrowRightIcon />
                 </Button>
                 </a>
-                <a href="/about/category/referral-farming" >
+                <a href="/docs/category/referral-farming" >
                   <Button variant="secondary">
                     Learn More
                   </Button>
@@ -107,13 +107,13 @@ const Home: React.FC = () => {
                 The referral protocol is secured by the $ATTR token. Help securing the network by delegating your stake to the oracles and earn rewards!
               </div>
               <div className={clsx(styles.actions, styles.actionsWrapper)}>
-              <a href="/about/category/oracles" >
+              <a href="/docs/oracles" >
                 <Button>
                   Oracle Staking
                   <ArrowRightIcon />
                 </Button>
                 </a>
-                <a href="/about/category/oracles" >
+                <a href="/docs/oracles" >
                   <Button variant="secondary">
                     Learn More
                   </Button>

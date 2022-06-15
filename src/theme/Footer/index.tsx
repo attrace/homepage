@@ -78,14 +78,14 @@ const Footer: FC = () => (
           <h6>About</h6>
           <div className={styles.externalLink}>
             <a
-              href="/about/"
+              href="/about"
             >
               What is Attrace?
             </a>
           </div> 
           <div className={styles.externalLink}>
             <a
-              href="/about/reference/faq"
+              href="/docs/reference/faq"
             >
               FAQs
             </a>
@@ -102,21 +102,21 @@ const Footer: FC = () => (
           <h6>Guides & Docs</h6>
           <div className={styles.externalLink}>
             <a
-              href="/about/category/referral-farming"
+              href="/docs/category/referral-farming"
             >
               Referral Farming
             </a>
           </div>
           <div className={styles.externalLink}>
             <a
-              href="/about/category/oracles"
+              href="/docs/category/oracles"
             >
               Referral Oracles
             </a>
           </div>
           <div className={styles.externalLink}>
             <a
-              href="/about/community/tokenomics"
+              href="/docs/community/tokenomics"
             >
               Tokenomics
             </a>
@@ -129,10 +129,10 @@ const Footer: FC = () => (
         &copy; {new Date().getFullYear()} - Attrace Referral Network
       </div>
       <div>
-        <Link to="/about/legal/privacy-policy/" className={styles.privacyLink}>
+        <Link to="/docs/legal/privacy-policy/" className={styles.privacyLink}>
           Privacy Policy
         </Link>
-        <Link to="/about/legal/code-of-conduct/">Code of Conduct</Link>
+        <Link to="/docs/legal/code-of-conduct/">Code of Conduct</Link>
       </div>
     </div>
   </div>

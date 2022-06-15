@@ -21,7 +21,7 @@ Estimated Annual Percentage Rate is the current rate of return that those who jo
 Position is created for those who join the farm based on the value of tokens purchased via referral link. 
 Your farm position is equal to 1) the amount of tokens someone purchased via your referral link or 2) the amount of tokens you purchased via someone’s referral link
 
-Optionally you can read the [full concept of Referral Farming](/about/referral-farming).
+Optionally you can read the [full concept of Referral Farming](/docs/referral-farming).
 
 ## Create Farm
 Choose the token you would like to recommend or promote, create your unique referral link and share it with your friends, family or community. Join the referral farm and earn farming rewards based on the value purchased via your ref link. 
@@ -88,10 +88,10 @@ Always backup your wallet. If you lose your private key or seedphrase, all your 
 ### Connect your wallet to the app
 
 1. Press the connect button on the top right of the app menu bar
-<img src="/about/referral-farming/click-connect.png" width="400"/>
+<img src="/docs/referral-farming/click-connect.png" width="400"/>
 
 1. In the next dialog, select the wallet that you use
-<img src="/about/referral-farming/select-wallet.png" width="400"/>
+<img src="/docs/referral-farming/select-wallet.png" width="400"/>
 
 1. Depending on the wallet used, you know have to give permission in your wallet to connect. 
 
