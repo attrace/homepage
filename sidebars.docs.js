@@ -26,6 +26,7 @@ module.exports = {
         items: [
           'attrace-token/attr',
           'attrace-token/tokenomics',
+          'attrace-token/farm-attr',
         ]
       },            
       {
