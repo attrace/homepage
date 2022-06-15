@@ -1,5 +1,6 @@
 ---
 title: Oracles
+id: oracles
 sidebar_label: Oracles
 slug: '/oracles'
 description: "Attrace provides a cross-chain solution that does not require any (contract) integration. This is achieved by a network or oracles that is monitoring the onchain transactions. At the heart of Attrace is the Oracle. "
@@ -37,6 +38,9 @@ Security of the protocol depends on the Oracles which is tied to their responsib
 It will be required for people to already have ATTR stake to become eligble to run an Oracle. Nomination is the process of becoming an Oracle where it is required to acheive a minimum amount of stake. So one can have a sufficient amount of tokens to meet the minimum required to run a node (without needing any delegated stake), or can acheive that minimum by others delegating stake to that node (delegated stake = voting). Hope this explains for now
 
 ### Rewards 
+
+To view staking rewards please check [this section](/docs/referral-farming/reward).
+
 
 ## Roles and Actors
 

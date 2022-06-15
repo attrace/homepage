@@ -47,6 +47,12 @@ const config = {
             position: "left",
           },
           {
+            to: "/docs",
+            activeBasePath: "docs",
+            label: "Docs",
+            position: "left",
+          },
+          {
             to: "/updates",
             activeBasePath: 'updates',
             label: "Updates",
@@ -81,6 +87,18 @@ const config = {
         includeCurrentVersion: true,
         lastVersion: "current",
         sidebarPath: require.resolve("./sidebars.guides.js"),
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "docs",
+        path: "docs",
+        routeBasePath: "docs",
+        editUrl: process.env.REACT_APP_GIT_URL,
+        includeCurrentVersion: true,
+        lastVersion: "current",
+        sidebarPath: require.resolve("./sidebars.docs.js"),
       },
     ],
     [
