@@ -1,6 +1,6 @@
 ---
-title: About
-id: about
+title: Attrace Protocol
+id: attrace-protocol
 slug: '/'
 ---
 

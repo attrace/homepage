@@ -94,7 +94,7 @@ const Home: React.FC = () => {
           </div>
           <div className={styles.sectionTitle}>
             <span>Stake </span>
-            with Oracles
+            $ATTR with Oracles
           </div>
           <div className={styles.farmingRow}>
             <div className={styles.oracleRowLeft}>

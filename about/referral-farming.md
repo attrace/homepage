@@ -1,6 +1,6 @@
 ---
 title: Referral Farming
-sidebar_label: Concept
+sidebar_label: Referral Farming
 description: "Referral farming distributes rewards to those who “spread the word” about the tokens and those who buy and hold the tokens based on the recommendation"
 slug: '/referral-farming'
 ---

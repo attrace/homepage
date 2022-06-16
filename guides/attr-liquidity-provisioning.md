@@ -1,7 +1,6 @@
 ---
-title: Farm ATTR
-sidebar_label: Farm ATTR
-id: farm-attr
+title: $ATTR Liquidity Provisioning
+sidebar_label: $ATTR Liquidity Provisioning
 ---
 There is another way to receive reward while being a part of Attrace ecosystem, which is by a process called 'farming'.
 

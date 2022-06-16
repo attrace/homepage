@@ -1,6 +1,6 @@
 ---
-title: ATTR
-id: attr
+title: Attrace Token
+id: attrace-token
 description: "$ATTR is a native token of Attrace Referral Network. It is a utility and governance token, which gives token holders a right to participate in the network, govern the network and earn token rewards by staking."
 ---
 

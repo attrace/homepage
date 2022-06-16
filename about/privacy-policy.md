@@ -12,7 +12,7 @@ Personal data (also “Personally identifiable information”) includes individu
 
 The way you get in touch with Attrace stakeholders or technologies and services determine the scope of how personally identifiable information on you or other information is collected and processed. This Privacy Policy aims to keep you informed which personal and other kinds of data is received, why it is used and your rights in respect of that data. Data as a general term may include all kinds of information such as your name, your address or information on your device (e.g. your operating system or browser).
 
-## 2.1. When visiting the Attrace website www.attrace.com
+## 2.1. When visiting the Attrace website attrace.com
 
 The Attrace webservers temporarily log traffic data provided by the device you use to enter the Attrace website (including the host name (IP address) of the requesting computer), date, time and duration of your visit, data specifications of your browser and operating system as well as the name of your access provider, and the website you were referred from to the Attrace website (so called Referrer URL). This information is stored in a log file until it is automatically deleted in accordance with the retention policy. The collection and processing of this data is carried out for the purposes of facilitating the use of the Attrace website (connection set-up), understanding how visitors use it and to ensure the security and stability of the Attrace systems as well as the technical administration of the network infrastructure. Attrace does not record your name, address, telephone number or email address, unless voluntarily provided by you, e.g. as part of signing up with the Attrace ecosystem.
 
