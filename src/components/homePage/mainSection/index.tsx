@@ -21,7 +21,7 @@ const MainSection: React.FC<Props> = ({ handleClick }) => {
       <div className={styles.actionBlock}>
         <h1>
           <span>Referral Protocol</span><br />
-          for Web3 Assets
+          for Web3
         </h1>
         <p>
           Unlock the value of ‘word of mouth’ marketing in web3. Recommend
@@ -29,7 +29,7 @@ const MainSection: React.FC<Props> = ({ handleClick }) => {
         </p>
         <div className={clsx(styles.actions, styles.actionsWrapper)}>
           <a href={getAppUrl()}>
-            <Button>Enter App</Button>
+            <Button>Start Referring</Button>
           </a>
           <Button variant="secondary" onClick={handleClick}>
             Learn More

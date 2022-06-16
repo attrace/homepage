@@ -62,13 +62,13 @@ const Home: React.FC = () => {
           <div className={styles.farmingRow}>
             <div className={styles.farmingRowLeft}>
               <div className={styles.farmingText}>
-                Referral farming incentivises referrals for the purchase of crypto tokens or NFTs by rewarding both promoter and buyer.<br /><br />
-                Use Attrace link when recommending any crypto or NFT project and earn farming rewards!
+                Use referral link when recommending any crypto or NFT project and earn farming rewards!<br /><br />
+                You earn a share of daily farm rewards together with people you refer based on the value they buy via your referral link. 
               </div>
               <div className={clsx(styles.actions, styles.actionsWrapper)}>
               <a href={getAppUrl('/farms')} target="_blank">
                 <Button>
-                  Referral Farming
+                  Start Referring
                   <ArrowRightIcon />
                 </Button>
                 </a>
@@ -103,13 +103,13 @@ const Home: React.FC = () => {
             <div className={styles.oracleRowRight}>
               <Badge />
               <div className={styles.farmingText}>
-                Oracles capture the value of ‘word of mouth’ marketing in web3 and power referral farming by detecting and distributing rewards in a trustless manner.<br /><br />
-                The referral protocol is secured by the $ATTR token. Help securing the network by delegating your stake to the oracles and earn rewards!
+                Oracles capture the value of ‘word of mouth’ marketing in web3 and power referral farming by detecting and distributing rewards in a trustless manner.<br /><br /> 
+                The referral protocol is secured by the $ATTR token. Help securing the protocol by staking with the Oracles and earn rewards!
               </div>
               <div className={clsx(styles.actions, styles.actionsWrapper)}>
               <a href="/docs/oracles" >
                 <Button>
-                  Oracle Staking
+                  Stake $ATTR
                   <ArrowRightIcon />
                 </Button>
                 </a>
@@ -133,12 +133,12 @@ const Home: React.FC = () => {
               <div className={styles.icon}>
                 <Chart1Icon />
               </div>
-              <div className={styles.title}>Referral Farming</div>
+              <div className={styles.title}>Refer to Farm</div>
               <div className={styles.text}>
-                Share Attrace link when recommending any crypto or NFT project and earn farming rewards for every token bought via your link.
+                Share your referral link when recommending any crypto or NFT project and earn farming rewards for every token bought via your link. 
               </div>
-              <a>
-                Join Referral Farms <ArrowRightIcon className={styles.purpleIcon} />
+              <a href={getAppUrl('/farms')} >
+                Start referring <ArrowRightIcon className={styles.purpleIcon} />
               </a>
             </div>
             <div className={styles.rewardCard}>
@@ -146,7 +146,7 @@ const Home: React.FC = () => {
                 <Chart2Icon />
               </div>
               <div className={clsx(styles.filter, styles.filterColor2)} />
-              <div className={styles.title}>Oracle Staking</div>
+              <div className={styles.title}>Stake $ATTR</div>
               <div className={styles.text}>
                 Stake with the Oracles to secure the network and receive protocol and staking rewards in return.
               </div>
@@ -159,9 +159,9 @@ const Home: React.FC = () => {
                 <Chart3Icon />
               </div>
               <div className={clsx(styles.filter, styles.filterColor3)} />
-              <div className={styles.title}>Liquidity Mining</div>
+              <div className={styles.title}>Add $ATTR Liquidity</div>
               <div className={styles.text}>
-                Provide liquidity to ATTR/ETH liquidity pool on SushiSwap and earn $ATTR rewards in return for enabling the token exchange.
+                Provide liquidity to ATTR/ETH liquidity pool on SushiSwap and earn $ATTR rewards in return for enabling the token exchange.  
               </div>
               <a href='https://app.sushi.com/farm?chainId=1' target='_blank'>
                 Provide Liquidity <ArrowRightIcon className={styles.purpleIcon} />
