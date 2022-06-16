@@ -68,12 +68,12 @@ The farming flow involves three players:
 
 The flow below explains in 5 steps how a farm is setup between the players
 
-![](/docs/referral-farming/farm-overview.svg)
+![](/about/referral-farming/farm-overview.svg)
 
 1. Create Farm
 1. Refer to Farm
 1. Buy to Farm
-1. Observe & React Read more about the role and functionality in the [Oracles section](/docs/oracles).
+1. Observe & React Read more about the role and functionality in the [Oracles section](/about/oracles).
 1. Harvest Rewards
 
 

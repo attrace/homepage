@@ -85,7 +85,7 @@ const Footer: FC = () => (
           </div> 
           <div className={styles.externalLink}>
             <a
-              href="/docs/reference/faq"
+              href="/guides/faq"
             >
               FAQs
             </a>
@@ -102,21 +102,21 @@ const Footer: FC = () => (
           <h6>Guides & Docs</h6>
           <div className={styles.externalLink}>
             <a
-              href="/docs/category/referral-farming"
+              href="/about/referral-farming"
             >
               Referral Farming
             </a>
           </div>
           <div className={styles.externalLink}>
             <a
-              href="/docs/category/oracles"
+              href="/about/oracles"
             >
               Referral Oracles
             </a>
           </div>
           <div className={styles.externalLink}>
             <a
-              href="/docs/community/tokenomics"
+              href="/about/tokenomics"
             >
               Tokenomics
             </a>
@@ -129,10 +129,10 @@ const Footer: FC = () => (
         &copy; {new Date().getFullYear()} - Attrace Referral Network
       </div>
       <div>
-        <Link to="/docs/legal/privacy-policy/" className={styles.privacyLink}>
+        <Link to="/about/privacy-policy" className={styles.privacyLink}>
           Privacy Policy
         </Link>
-        <Link to="/docs/legal/code-of-conduct/">Code of Conduct</Link>
+        <Link to="/about/code-of-conduct">Code of Conduct</Link>
       </div>
     </div>
   </div>

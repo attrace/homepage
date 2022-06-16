@@ -22,10 +22,10 @@ Always backup your wallet. If you lose your private key or seedphrase, all your 
 ## Connect your wallet to the app
 
 1. Press the connect button on the top right of the app menu bar
-<img src="/docs/referral-farming/click-connect.png" width="400"/>
+<img src="/about/referral-farming/click-connect.png" width="400"/>
 
 1. In the next dialog, select the wallet that you use
-<img src="/docs/referral-farming/select-wallet.png" width="400"/>
+<img src="/about/referral-farming/select-wallet.png" width="400"/>
 
 1. Depending on the wallet used, you know have to give permission in your wallet to connect. 
 

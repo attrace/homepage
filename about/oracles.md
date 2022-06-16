@@ -39,7 +39,7 @@ It will be required for people to already have ATTR stake to become eligble to r
 
 ### Rewards 
 
-To view staking rewards please check [this section](/docs/referral-farming/reward).
+To view staking rewards please check [this section](/guides/referral-farming/rewards).
 
 
 ## Roles and Actors

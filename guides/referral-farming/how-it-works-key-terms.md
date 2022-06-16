@@ -18,4 +18,4 @@ Estimated Annual Percentage Rate is the current rate of return that those who jo
 Position is created for those who join the farm based on the value of tokens purchased via referral link. 
 Your farm position is equal to 1) the amount of tokens someone purchased via your referral link or 2) the amount of tokens you purchased via someone’s referral link
 
-Optionally you can read the [full concept of Referral Farming](/docs/referral-farming).
+Optionally you can read the [full concept of Referral Farming](/about/referral-farming).
