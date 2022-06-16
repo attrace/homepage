@@ -63,16 +63,16 @@ const Home: React.FC = () => {
             <div className={styles.farmingRowLeft}>
               <div className={styles.farmingText}>
                 Use referral link when recommending any crypto or NFT project and earn farming rewards!<br /><br />
-                You earn a share of daily farm rewards together with people you refer based on the value they buy via your referral link. 
+                You earn a share of daily farm rewards together with people you refer based on the value they buy via your referral link.
               </div>
               <div className={clsx(styles.actions, styles.actionsWrapper)}>
-              <a href={getAppUrl('/farms')} target="_blank">
-                <Button>
-                  Start Referring
-                  <ArrowRightIcon />
-                </Button>
+                <a href={getAppUrl('/farms')} target="_blank">
+                  <Button>
+                    Start Referring
+                    <ArrowRightIcon />
+                  </Button>
                 </a>
-                <a href="/about/category/referral-farming" >
+                <a href="/guides/referral-farming/how-it-works-key-terms" >
                   <Button variant="secondary">
                     Learn More
                   </Button>
@@ -98,22 +98,22 @@ const Home: React.FC = () => {
           </div>
           <div className={styles.farmingRow}>
             <div className={styles.oracleRowLeft}>
-              <img src="/img/oracle_homepage.png" width='622px'  />
+              <img src="/img/oracle_homepage.png" width='622px' />
             </div>
             <div className={styles.oracleRowRight}>
               <Badge />
               <div className={styles.farmingText}>
-                Oracles capture the value of ‘word of mouth’ marketing in web3 and power referral farming by detecting and distributing rewards in a trustless manner.<br /><br /> 
+                Oracles capture the value of ‘word of mouth’ marketing in web3 and power referral farming by detecting and distributing rewards in a trustless manner.<br /><br />
                 The referral protocol is secured by the $ATTR token. Help securing the protocol by staking with the Oracles and earn rewards!
               </div>
               <div className={clsx(styles.actions, styles.actionsWrapper)}>
-              <a href="/about/oracles" >
-                <Button>
-                  Stake $ATTR
-                  <ArrowRightIcon />
-                </Button>
+                <a href={getAppUrl('/staking')} >
+                  <Button>
+                    Stake $ATTR
+                    <ArrowRightIcon />
+                  </Button>
                 </a>
-                <a href="/about/oracles" >
+                <a href="/guides/attr-staking" >
                   <Button variant="secondary">
                     Learn More
                   </Button>
@@ -135,7 +135,7 @@ const Home: React.FC = () => {
               </div>
               <div className={styles.title}>Refer to Farm</div>
               <div className={styles.text}>
-                Share your referral link when recommending any crypto or NFT project and earn farming rewards for every token bought via your link. 
+                Share your referral link when recommending any crypto or NFT project and earn farming rewards for every token bought via your link.
               </div>
               <a href={getAppUrl('/farms')} >
                 Start referring <ArrowRightIcon className={styles.purpleIcon} />
@@ -150,7 +150,7 @@ const Home: React.FC = () => {
               <div className={styles.text}>
                 Stake with the Oracles to secure the network and receive protocol and staking rewards in return.
               </div>
-              <a>
+              <a href={getAppUrl('/staking')}>
                 Stake $ATTR <ArrowRightIcon className={styles.purpleIcon} />
               </a>
             </div>
@@ -161,9 +161,9 @@ const Home: React.FC = () => {
               <div className={clsx(styles.filter, styles.filterColor3)} />
               <div className={styles.title}>Add $ATTR Liquidity</div>
               <div className={styles.text}>
-                Provide liquidity to ATTR/ETH liquidity pool on SushiSwap and earn $ATTR rewards in return for enabling the token exchange.  
+                Provide liquidity to ATTR/ETH liquidity pool on SushiSwap and earn $ATTR rewards in return for enabling the token exchange.
               </div>
-              <a href='https://app.sushi.com/farm?chainId=1' target='_blank'>
+              <a href='/guides/attr-liquidity-provisioning'>
                 Provide Liquidity <ArrowRightIcon className={styles.purpleIcon} />
               </a>
             </div>

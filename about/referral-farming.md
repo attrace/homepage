@@ -5,13 +5,15 @@ description: "Referral farming distributes rewards to those who “spread the wo
 slug: '/referral-farming'
 ---
 
+Referral farming is represented in Attrace protocol as a reward contract which distributes yield farming-like rewards for successful referrals. Referral farm is a smart contract deployed on Ethereum mainnet that distributes rewards based on the input received from the Oracles. 
+
+## Concept
 Referral farming is a concept invented by the Attrace team which aims at providing proper incentives for successful referrals of tokens. Referral farming distributes rewards to those who “spread the word” about the tokens and those who buy and hold the tokens based on the recommendation. 
 
-## “Adding value” via referrals
+### “Adding value” via referrals
 When people buy tokens and hold them, whether they simply keep or stake the tokens or provide liquidity, we say that they “add value” to the token community, or more specifically to the existing token holders or anyone who benefits from token value/price increase (typically projects or large investors in projects).
 
-To properly account for the "value added" via referrals, Attrace Oracles track "position" of the amount of tokens bought and held (when purchase came via referral link). And because a person who bought the tokens was influenced/persuaded by a promoter/recommender, we consider that both of them "added value" to the token community. Therefore, to attribute a share of “added value” to both parties, the Oracles create two “positions” in the farm by splitting the purchased amount of tokens in half (e.g. purchased tokens = 100; promoter position = 50; buyer’s position = 50). Everyone who joins the farm, receives rewards based on their share of the total “position” in the referral farm.
-
+To properly account for the "value added" via referrals, Attrace Oracles track "position" of the amount of tokens bought and held (when purchase came via referral link). And because a person who bought the tokens was influenced/persuaded by a promoter/recommender, we consider that both of them "added value" to the token community. Therefore, to attribute a share of “added value” to both parties, the Oracles create two “positions” for both of them (e.g. purchased tokens = 100; buyer’s position = 100; promoter’s position = 100). Everyone who joins the farm, receives rewards based on their share of the total “position” in the referral farm. 
 ## How it works
 ​​Referral farming works in a similar way to farming on a DEX, where farming-like rewards are distributed for those who “add value” to the token community via referrals (instead of providing liquidity). This mechanism creates the same incentives as with yield farming and has the two key characteristics:
 
@@ -54,7 +56,7 @@ _ Multi Referral Token Farm is the most suitable for ecosystems hosting token ex
 Check our [Medium article](https://medium.com/attrace/overview-attrace-referral-farms-52b2f88f05af) for more examples.  
 
 :::note Attrace Referral Farm
-The Attrace Referral Farm, a protocol native referral farm, will be the first to utilize Multi Referral Token Farm
+The Attrace Referral Farm, a protocol native referral farm, will be the first to utilize Multi Referral Token Farm. The farm will consist of a number of referredTokens, chosen by the community, with rewards allocated as part of $ATTR distribution and the share of the collected protocol fees ([read more here](/about/tokenomics#attrace-referral-farm)). 
 :::note
 
 

@@ -24,7 +24,7 @@ Estimated **APR** (Annual Percentage Rate) is an indicator of current rewards on
 
 **Estimated APR**
 
-`(daily rewards / total farm “position”) x 365`
+`(daily rewards / total farm “position”) x 365 x 100`
 
 ### Example
 
@@ -41,8 +41,8 @@ Applying the daily rewards formula as explained above:
 
 **APR** 
 ```
-= 100 $ABC daily rewards / (5.000 $ABC Alice + 5.000 $ATTR Alice community) x 365 
-= 100 $ABC / 10.000 $ABC x 365 
+= 100 $ABC daily rewards / (5.000 $ABC Alice + 5.000 $ATTR Alice community) x 365 x 100
+= 100 $ABC / 10.000 $ABC x 365 x 100
 = 365%  
 ````
 
