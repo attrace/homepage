@@ -13,7 +13,7 @@ const config = {
   organizationName: "attrace", // Usually your GitHub org/user name.
   projectName: "attrace/homepage", // Usually your repo name.
   customFields: {
-    baseEditUrl: "https://github.com/attrace/homepage/edit/master/",
+    baseEditUrl: process.env.REACT_APP_GIT_URL,
     dappUrl: process.env.REACT_APP_DAPP_URL,
   },
   presets: [
@@ -71,7 +71,7 @@ const config = {
         id: "about",
         path: "about",
         routeBasePath: "about",
-        editUrl: process.env.REACT_APP_GIT_URL,
+        editUrl: 'https://github.com/attrace/homepage/edit/testnet/',
         includeCurrentVersion: true,
         lastVersion: "current",
         sidebarPath: require.resolve("./sidebars.about.js"),
@@ -83,7 +83,7 @@ const config = {
         id: "guides",
         path: "guides",
         routeBasePath: "guides",
-        editUrl: process.env.REACT_APP_GIT_URL,
+        editUrl: 'https://github.com/attrace/homepage/edit/testnet/',
         includeCurrentVersion: true,
         lastVersion: "current",
         sidebarPath: require.resolve("./sidebars.guides.js"),
@@ -97,16 +97,27 @@ const config = {
         showReadingTime: true,
         routeBasePath: "updates",
         include: ["*.md", "*.mdx"],
-        editUrl: process.env.REACT_APP_GIT_URL,
+        editUrl: 'https://github.com/attrace/homepage/edit/testnet/',
         feedOptions: {
           title: 'Attrace | Latest product and economics updates',
           description: 'Stay informed with the latests product, partnersships and economic updates',
         },
       },
     ],
+    [
+      '@docusaurus/plugin-client-redirects',
+      {
+        redirects: [
+          {
+            to: '/guides/referral-farming/how-it-works',
+            from: '/guides/referral-farming/how-it-works-key-terms',
+          },
+        ],
+      },
+    ],
   ],
   scripts: [
-    
+
     {
       src:
         '/js/loadtags.js',
@@ -119,5 +130,4 @@ const config = {
     },
   ],
 };
-
 module.exports = config;
