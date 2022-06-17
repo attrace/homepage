@@ -9,9 +9,9 @@ Referral farming rewards are distributed to those who successfully recommend/pro
 
 A “position” in the referral farm is created for an individual who recommended/promoted a token and the one who bought the token via the referral link (position = amount of tokens purchased). Both parties receive the same “position” in the farm, in the amount of the tokens bought, to equally account for their “added value” to the token community (effectively double “position” is created).   
 
-- **promoter position** = amount of tokens purchased via promoter’s referral link
+- **referer position** = amount of tokens purchased via referer's referral link
 - **buyer position** = amount of tokens purchased via referral link
-- **total position** = all promoter positions + all buyers positions
+- **total position** = all referer positions + all buyers positions
 
 The higher one’s share of the total position is, the bigger portion of the daily rewards they earn.   
 Individual’s “position” can increase when one buys more tokens, or decrease when one sells their tokens (buy and hold mechanism).   One will keep on earning daily rewards as long as there is a positive “position” (i.e. position > 0), or until the referral farm runs out of rewards (i.e. total referral rewards = 0). 
