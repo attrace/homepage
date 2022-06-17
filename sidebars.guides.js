@@ -12,7 +12,7 @@ module.exports = {
           keywords: ['referral','farming'],
         },        
         items: [
-          'referral-farming/how-it-works-key-terms',
+          'referral-farming/how-it-works',
           'referral-farming/create-farm',
           'referral-farming/refer-to-farm',
           'referral-farming/buy-to-farm',

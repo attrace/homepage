@@ -5,7 +5,7 @@ description: "Attrace tokenomics revolves around the three key aspects where $AT
 ---
 
 
-While Attrace is on its mission to unlock the value of "word-of-mouth" marketing in web3, $ATTR token and the community are the centerpieces essential in providing the protocol's security, trust  and the sustainable growth. Attrace tokenomics revolves around the three key aspects where $ATTR will play a crucial role: Oracle Staking, Referral Farming and Governance
+While Attrace is on its mission to unlock the value of "word-of-mouth" in web3, $ATTR token and the community are the centerpieces essential in providing the protocol's security, trust  and the sustainable growth. Attrace tokenomics revolves around the three key aspects where $ATTR will play a crucial role: Oracle Staking, Referral Farming and Governance
 
 ## Oracle Staking 
 

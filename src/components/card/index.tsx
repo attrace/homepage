@@ -30,7 +30,7 @@ const Card: FC<Props> = (props) => {
         </div>
         <div>
           <div className={styles.propname}>Daily Farm Rewards</div>
-          <div className={styles.apr}>🤑 wETH</div>
+          <div className={styles.apr}>💰 wETH</div>
         </div>
       </div>
     </div>

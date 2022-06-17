@@ -14,9 +14,9 @@ import MobileMarquee from "../components/homePage/marquee";
 import MaskLogo from "@site/static/img/partners/mask.svg";
 import DeribitLogo from "@site/static/img/partners/deribit.svg";
 import ImpossibleFinLogo from "@site/static/img/partners/impossibleFinance.svg";
-import Chart1Icon from "@site/static/img/icons/chart1.svg";
-import Chart2Icon from "@site/static/img/icons/chart2.svg";
-import Chart3Icon from "@site/static/img/icons/chart3.svg";
+import ReferIcon from "@site/static/img/icons/referIcon.svg";
+import StakeIcon from "@site/static/img/icons/stakeIcon.svg";
+import LiquidityIcon from "@site/static/img/icons/liquidityIcon.svg";
 import ArrowRightIcon from "@site/static/img/icons/arrowRight.svg";
 import styles from "./index.module.css";
 import Head from '@docusaurus/Head';
@@ -45,8 +45,8 @@ const Home: React.FC = () => {
         <title>Attrace | Referral Protocol for Web3</title>
         <meta charSet="utf-8" />
         <meta property="og:title" content="Attrace | Referral Protocol for Web3" />
-        <meta property="og:description" content="Unlock the value of ‘word of mouth’ marketing in Web3. Recommend crypto or NFT and earn rewards from referral farms." />
-        <meta property="description" content="Unlock the value of ‘word of mouth’ marketing in Web3. Recommend crypto or NFT and earn rewards from referral farms." />
+        <meta property="og:description" content="Unlock the value of ‘word of mouth’ in Web3. Recommend crypto or NFT and earn rewards from referral farms." />
+        <meta property="description" content="Unlock the value of ‘word of mouth’ in Web3. Recommend crypto or NFT and earn rewards from referral farms." />
       </Head>
       <main className="main-overflow">
         <MainSection handleClick={handleLearnmore} />
@@ -72,7 +72,7 @@ const Home: React.FC = () => {
                     <ArrowRightIcon />
                   </Button>
                 </a>
-                <a href="/guides/referral-farming/how-it-works-key-terms" >
+                <a href="/guides/referral-farming/how-it-works" >
                   <Button variant="secondary">
                     Learn More
                   </Button>
@@ -131,7 +131,7 @@ const Home: React.FC = () => {
             <div className={styles.rewardCard}>
               <div className={clsx(styles.filter, styles.filterColor1)} />
               <div className={styles.icon}>
-                <Chart1Icon />
+                <ReferIcon />
               </div>
               <div className={styles.title}>Refer to Farm</div>
               <div className={styles.text}>
@@ -143,7 +143,7 @@ const Home: React.FC = () => {
             </div>
             <div className={styles.rewardCard}>
               <div className={styles.icon}>
-                <Chart2Icon />
+                <StakeIcon />
               </div>
               <div className={clsx(styles.filter, styles.filterColor2)} />
               <div className={styles.title}>Stake $ATTR</div>
@@ -156,7 +156,7 @@ const Home: React.FC = () => {
             </div>
             <div className={clsx(styles.rewardCard, styles.rewardCard3)}>
               <div className={styles.icon}>
-                <Chart3Icon />
+                <LiquidityIcon />
               </div>
               <div className={clsx(styles.filter, styles.filterColor3)} />
               <div className={styles.title}>Add $ATTR Liquidity</div>

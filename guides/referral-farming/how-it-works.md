@@ -1,10 +1,7 @@
 ---
-title: How it works + Key Terms
-sidebar_label: How it works + Key Terms
+title: How it works
+sidebar_label: How it works
 ---
-
-## How it works
-
 Referral farming is a way for projects to incentivize purchase of their tokens via referrals by rewarding both referrers and buyers. 
 
 This is how it works: 
@@ -12,8 +9,8 @@ This is how it works:
 - As a referrer, you can explore the referral farms of different tokens in the app and create your unique referral link for the token you may like. 
 - Grab the link and share it with your community or friends and family
 - You and the buyers you refer will join the referral farm and start earning farming rewards when buyers purchase a token via referral link
-- You and the referred buyers earn a share of the daily farm rewards based on the value purchased via your referral links
-- The rewards are distributed daily and available for claims 
+- You and the referred buyers earn a share of the daily farm rewards based on the value purchased via your referral link
+- The rewards are distributed daily and available for claiming 
 
 <br/><br/>
 <div class="videowrapper">

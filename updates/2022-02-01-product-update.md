@@ -24,7 +24,7 @@ Given the direction that the Attrace Protocol is heading in terms of use case an
 _The Attrace core proposition has evolved towards unlocking the value of “Word-Of-Mouth” marketing in web3 by linking promotions with the on-chain user activity, which can be summarised as follows_
 
 * **Vision**: Connected “Word-Of-Mouth” ecosystem for web3 (cross-chain; cross web2/3)
-* **Goal**: Unlock the value of “Word-Of-Mouth” marketing in web3 by linking promotions with on-chain user activity
+* **Goal**: Unlock the value of “Word-Of-Mouth” in web3 by linking promotions with on-chain user activity
 * **Methodology**: Attrace Oracles observe and capture the value of user acquisition via link sharing for any asset and cross-chain in web3 (value of social graph in web3)
 
 ## Key product updates

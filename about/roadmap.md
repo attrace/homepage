@@ -5,7 +5,7 @@ id: roadmap
 
 The planning of the development is driven by integrations and partnership opportunities, within the boundaries of the long term vision:  
 
-*Unlock the value of **word of mouth** marketing with a Referral Protocol for web3 assets.*
+*Unlock the value of **word of mouth** with a Referral Protocol for web3 assets.*
 
 The roadmap items listed below are milestones as envisioned by the Attrace Team to achieve this goal.
 
