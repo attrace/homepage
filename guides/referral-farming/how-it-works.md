@@ -16,6 +16,7 @@ This is how it works:
 - Grab the link and share it with your communities, friends or family 
 - You and the buyers you refer will join the referral farm and start earning farming rewards when buyers purchase a token via your referral link
 - You and the referred buyers earn a share of the daily farm rewards based on the value purchased via your referral link
+- You and the referred buyers keep earning as long as the buyers hold the purchaased tokens
 - The rewards are distributed daily and available for claiming 
 
 :::tip
