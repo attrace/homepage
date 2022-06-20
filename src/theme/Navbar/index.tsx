@@ -16,7 +16,7 @@ export default function Navbar() {
   useEffect(() => {
     const handleScroll = () => {
       const currentOffset = window.pageYOffset;
-      currentOffset > 300 ? showContained(true) : showContained(false)
+      currentOffset > 100 ? showContained(true) : showContained(false)
     };
 
     window.addEventListener('scroll', handleScroll);
