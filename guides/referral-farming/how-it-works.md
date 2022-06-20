@@ -5,7 +5,6 @@ sidebar_label: How it works
 <div class="videowrapper">
 <iframe width="780" height="500" src="https://www.youtube.com/embed/AECkUgysPpY" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 </div>
----
 
 Referral farming is where a project incentivises purchase of its tokens via referrals, by rewarding both referrers and buyers. 
 This is how it works: 
