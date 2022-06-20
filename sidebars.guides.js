@@ -8,7 +8,7 @@ module.exports = {
           type: 'generated-index',
           title: 'Referral Farming',
           description:
-            "The concept of farming is that a project dedicates a daily budget to promote its tokenised asset. ",
+            "Farming is where a project dedicates a daily budget to promote its tokenised asset.",
           keywords: ['referral','farming'],
         },        
         items: [
