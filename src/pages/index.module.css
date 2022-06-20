@@ -13,9 +13,11 @@
   line-height: 54px;
   text-align: center;
   letter-spacing: -0.4px;
-  color: var(--white-09);
+  color: var(--white);
   margin: 0 auto 104px;
 }
+
+
 .sectionTitle span {
   background: var(--secondary-gradient);
   background-clip: text;

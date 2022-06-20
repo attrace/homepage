@@ -8,10 +8,11 @@ interface Props {
   posiClass: string
   name: string
   description: string
+  rewardToken: string
 }
 
 const Card: FC<Props> = (props) => {
-  const { posiClass, name, description } = props
+  const { posiClass, name, description, rewardToken} = props
   return (
     <div className={clsx(styles.statsCard, posiClass)}>
       <div className={styles.info}>
@@ -30,7 +31,7 @@ const Card: FC<Props> = (props) => {
         </div>
         <div>
           <div className={styles.propname}>Daily Farm Rewards</div>
-          <div className={styles.apr}>💰 wETH</div>
+          <div className={styles.apr}>💰 {rewardToken}</div>
         </div>
       </div>
     </div>

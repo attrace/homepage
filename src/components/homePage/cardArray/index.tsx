@@ -23,19 +23,25 @@ export default function CardArray(): JSX.Element {
       <div className={clsx(styles.filter, styles.filter3)} />
       <Card
         posiClass={cardClasses[0]}
-        name="RADAR" description="DappRadar"
+        name="RADAR" 
+        description="DappRadar"
+        rewardToken="RADAR"
       >
         <DappRadarIcon />
       </Card>
       <Card
         posiClass={cardClasses[1]}
-        name="Mask" description="Mask Network"
+        name="Mask" 
+        description="Mask Network"
+        rewardToken="MASK"
       >
         <MaskIcon />
       </Card>
       <Card
         posiClass={cardClasses[2]}
-        name="ATTR" description="Attrace Protocol"
+        name="ATTR" 
+        description="Attrace Protocol"
+        rewardToken="ATTR"
       >
         <img src='/img/farms/attrace.png' /> 
       </Card>

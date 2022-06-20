@@ -56,7 +56,7 @@ const Home: React.FC = () => {
         </div>
         <div className={clsx("container", styles.section, styles.farmingSection)}>
           <div className={styles.sectionTitle}>
-            Start
+            Join
             <span> Referral Farming</span>
           </div>
           <div className={styles.farmingRow}>
@@ -138,7 +138,7 @@ const Home: React.FC = () => {
                 Share your referral link when recommending any crypto or NFT project and earn farming rewards for every token bought via your link.
               </div>
               <a href={getAppUrl('/farms')} target="_blank">
-                Start referring <ArrowRightIcon className={styles.purpleIcon} />
+                Start Referring <ArrowRightIcon className={styles.purpleIcon} />
               </a>
             </div>
             <div className={styles.rewardCard}>
