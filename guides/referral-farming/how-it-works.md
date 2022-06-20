@@ -12,16 +12,16 @@ This is how it works:
 - You and the referred buyers earn a share of the daily farm rewards based on the value purchased via your referral link
 - The rewards are distributed daily and available for claiming 
 
-<br/><br/>
-<div class="videowrapper">
-<iframe width="780" height="500" src="https://www.youtube.com/embed/AECkUgysPpY" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-</div>
-
 :::tip
 - The earlier you refer buyers the higher the chance to earn a bigger share of the daily rewards
 - The more tokens people buy via you referral link the bigger the share of your daily rewards
 - The longer the buyers hold the tokens (Buy and Hold) the longer both of you will receive the rewards
 :::
+
+<br/><br/>
+<div class="videowrapper">
+<iframe width="780" height="500" src="https://www.youtube.com/embed/AECkUgysPpY" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+</div>
 
 ## Key Terms
 
