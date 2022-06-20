@@ -3,11 +3,11 @@ title: Roadmap
 id: roadmap
 ---
 
-The planning of the development is driven by integrations and partnership opportunities, within the boundaries of the long term vision:  
+The development roadmap is shaped by integration and partnership opportunities consistent with the Attrace mission:  
 
-*Unlock the value of **word of mouth** with a Referral Protocol for web3 assets.*
+*To unlock the value of **Word-of-Mouth** with a Referral Protocol for web3 assets.*
 
-The roadmap items listed below are milestones as envisioned by the Attrace Team to achieve this goal.
+Set out below are a number of key deliverables as currently envisioned by the Attrace team:
 
 ## Attrace Protocol
 _2022 - now_  
@@ -35,7 +35,7 @@ _2022 - now_
 
 
 :::note
-This page is being updated regularly by Attrace Team. Feel free to make suggestions by editing this page and push in branch.
+This page is being updated regularly by the Attrace team. Feel free to make suggestions by editing this page and push-in branch.
 :::note
 
 
