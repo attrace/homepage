@@ -6,7 +6,7 @@ sidebar_label: Refer to Farm
 Create a new referral farm and choose a token you would like people to promote/recommend and “add value” to via referrals. Provide the incentive by depositing the referral farming rewards and invite your and other communities to spread the word about your token and earn rewards. 
 
 The following are the exact steps you need to take: 
-1. Go to app.attrace.com/farms
+1. Go to [referral farms in the app](https://app.attrace.com/farms)
 1. Connect your wallet
 1. Create Farm
 1. Select a token for referrals (referred token)
