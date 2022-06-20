@@ -28,7 +28,7 @@ const MainSection: React.FC<Props> = ({ handleClick }) => {
           crypto or NFT and earn rewards from referral farms.{" "}
         </p>
         <div className={clsx(styles.actions, styles.actionsWrapper)}>
-          <a href={getAppUrl()}>
+          <a href={getAppUrl()} target="_blank">
             <Button>Start Referring</Button>
           </a>
           <Button variant="secondary" onClick={handleClick}>

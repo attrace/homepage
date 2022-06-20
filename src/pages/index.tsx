@@ -72,7 +72,7 @@ const Home: React.FC = () => {
                     <ArrowRightIcon />
                   </Button>
                 </a>
-                <a href="/guides/referral-farming/how-it-works" >
+                <a href="/guides/referral-farming/how-it-works" target="_blank">
                   <Button variant="secondary">
                     Learn More
                   </Button>
@@ -107,13 +107,13 @@ const Home: React.FC = () => {
                 The referral protocol is secured by the $ATTR token. Help securing the protocol by staking with the Oracles and earn rewards!
               </div>
               <div className={clsx(styles.actions, styles.actionsWrapper)}>
-                <a href={getAppUrl('/staking')} >
+                <a href={getAppUrl('/staking')} target="_blank">
                   <Button>
                     Stake $ATTR
                     <ArrowRightIcon />
                   </Button>
                 </a>
-                <a href="/guides/attr-staking" >
+                <a href="/guides/attr-staking" target="_blank">
                   <Button variant="secondary">
                     Learn More
                   </Button>
@@ -137,7 +137,7 @@ const Home: React.FC = () => {
               <div className={styles.text}>
                 Share your referral link when recommending any crypto or NFT project and earn farming rewards for every token bought via your link.
               </div>
-              <a href={getAppUrl('/farms')} >
+              <a href={getAppUrl('/farms')} target="_blank">
                 Start referring <ArrowRightIcon className={styles.purpleIcon} />
               </a>
             </div>
@@ -150,7 +150,7 @@ const Home: React.FC = () => {
               <div className={styles.text}>
                 Stake with the Oracles to secure the network and receive protocol and staking rewards in return.
               </div>
-              <a href={getAppUrl('/staking')}>
+              <a href={getAppUrl('/staking')} target="_blank">
                 Stake $ATTR <ArrowRightIcon className={styles.purpleIcon} />
               </a>
             </div>
@@ -163,7 +163,7 @@ const Home: React.FC = () => {
               <div className={styles.text}>
                 Provide liquidity to ATTR/ETH liquidity pool on SushiSwap and earn $ATTR rewards in return for enabling the token exchange.
               </div>
-              <a href='/guides/attr-liquidity-provisioning'>
+              <a href='/guides/attr-liquidity-provisioning' target="_blank">
                 Provide Liquidity <ArrowRightIcon className={styles.purpleIcon} />
               </a>
             </div>
