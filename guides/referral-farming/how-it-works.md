@@ -8,7 +8,8 @@ sidebar_label: How it works
 </div>
 
 
-Referral farming is where a project incentivises purchase of its tokens via referrals, by rewarding both referrers and buyers. 
+Referral farming is where a project incentivises purchase of its tokens via referral links. These referral links are rewarding both referrers and buyers. 
+
 This is how it works: 
 
 - As a referrer, you can explore the referral farms of different tokens in the app and create your unique referral link for any token you would like to recommend or promote  
