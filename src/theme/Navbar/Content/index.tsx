@@ -19,7 +19,8 @@ import Button from "../../../components/button";
 import getAppUrl from "../../../utils/getAppUrl";
 
 
-import Logo from "@site/static/img/attrace-logo.svg";import styles from './styles.module.css';
+// import Logo from "@site/static/img/attrace-logo.svg";
+import styles from './styles.module.css';
 
 function useNavbarItems() {
   return useThemeConfig().navbar.items;
@@ -53,8 +54,8 @@ export default function NavbarContent({ isContained }) {
   return (
     <NavbarContentLayout
       left={
-        <a href="/" ><Logo className={styles.logo} /></a>
-        // <a href="/" > <img className={styles.logo} src='/img/attrace-logo.png' /></a>
+        // <a href="/" ><Logo className={styles.logo} /></a>
+        <a href="/" > <img className={styles.logo} src='/img/attrace-logo.png' /></a>
       }
       center={
         <NavbarItems items={leftItems} />
