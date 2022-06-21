@@ -245,7 +245,18 @@
   margin-right: auto;
 }
 
-@media (min-width: 1351px) {
+@media (max-width: 1050px) {
+  .farmingRowLeft, .oracleRowRight .farmingText {
+    max-width: 350px;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 27px;  
+  }
+
+}
+
+
+@media (min-width: 800px) {
   .cardsMobile {
     display: none;
   }
@@ -257,7 +268,7 @@
   }
 }
 
-@media (max-width: 1350px) {
+@media (max-width: 850px) {
   .section, .earnSection {
     margin: 64px auto;
     padding: 0 16px;
@@ -343,7 +354,7 @@
   }
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 850px) {
   .cards {
     flex-flow: wrap;
     margin: 0 auto;
@@ -355,7 +366,7 @@
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 851px) {
   .partnersLogos {
     flex-direction: column;
     margin: 40px 0;
@@ -366,7 +377,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 850px) {
   .cards {
     max-width: 500px;
     justify-content: center;

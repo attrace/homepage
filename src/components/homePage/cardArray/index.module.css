@@ -34,7 +34,7 @@
   z-index: 3;
 }
 
-@media (max-width: 1350px) {
+@media (max-width: 1050px) {
   .cards {
     transform: translate(0, 0);
   }

@@ -39,13 +39,13 @@
 Hide color mode toggle in small viewports
 */
 
-@media (min-width: 997px) {
+@media (min-width: 769px) {
   .enterAppBtnMobile {
     display: none !important;
   }
 }
 
-@media (max-width: 996px) {
+@media (max-width: 768px) {
   .navBarContainerActive >nav:global(.navbar-sidebar--show) {
     backdrop-filter: unset !important;
   }

@@ -87,7 +87,7 @@
   color: var(--white-06);
   font-weight: 500;
 }
-@media (max-width: 1350px) {
+@media (max-width: 1050px) {
   .statsCard {
     padding: 28px 32px;
     width: 328px;

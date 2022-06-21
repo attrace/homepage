@@ -70,7 +70,7 @@
   font-size: 14px;
   line-height: 22px;
 }
-@media (max-width: 1350px) {
+@media (max-width: 850px) {
   .primary {
     justify-content: center;
   }
