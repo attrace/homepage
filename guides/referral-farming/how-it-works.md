@@ -25,6 +25,8 @@ This is how it works:
 - The longer the buyers hold the tokens (Buy and Hold) the longer both you and the buyers will receive the rewards
 :::
 
+You can also check the [example and rewards distribution](/guides/referral-farming/rewards#example).
+
 ## Key Terms
 
 Before you start, there are few key terms you should get to know: 
