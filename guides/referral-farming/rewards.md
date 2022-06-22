@@ -19,7 +19,7 @@ The higher your share of the total position, the bigger your slice of the daily 
 
 `(my position / total position) x daily rewards`
 
-Estimated **Referral Rate** and **APR** (Annual Percentage Rate) is an indicator of current rewards one can earn for the value of tokens purchased. Keep in mind that this is an estimated rate which can increase or decrease depending on the total amount of tokens purchased and held via referrals (total farm “position”).
+Estimated **Referral Rate** and **APR** (Annual Percentage Rate) is an indicator of current rewards one can earn for the value of tokens purchased. Keep in mind that this is an estimated rate which can increase or decrease depending on the total amount of tokens purchased and held via referrals (total farm “position”). Note that Referral Rate and APR are will always be the same as both referrers and buyers earn the same exact rate (only the naming is different).  
 
 **Estimated Referral Rate and Estimated APR formula**
 
