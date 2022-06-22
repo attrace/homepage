@@ -13,7 +13,7 @@ We strongly recommend that you share the token you value and believe in – it i
 There are two ways to earn farming rewards: 1) When someone buys the recommended token via your referral link; 2) when you buy the recommended token via someone else’s referral link.
 
 ### How are my rewards calculated? 
-You earn daily rewards based on the amount of tokens purchased via the referral link (either the link you shared with others, or the link shared with you). This amount represents your “position” in the referral farm. You earn a portion of the daily rewards based on your share in the total “farm position”. The higher your share of the total position, the bigger portion of the daily rewards you earn. Your own “position” can increase if you buy more tokens, or decrease if you sell your tokens (buy and hold mechanism).
+You earn daily rewards based on the amount of tokens purchased via the referral link (either the link you shared with others, or the link shared with you). This amount represents your “position” in the referral farm. You earn a portion of the daily rewards based on your share in the total “farm position”. The higher your share of the total position, the bigger portion of the daily rewards you earn. Your own “position” can increase if you buy more tokens, or decrease if you sell your tokens (buy and hold mechanism). You can check further the [rewards distribution and example](/guides/referral-farming/rewards).
 
 ### What if I buy a token via CEX? 
 At the moment only purchases of tokens via DEXs are supported and considered for successful referrals.  
