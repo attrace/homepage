@@ -11,7 +11,7 @@ A “position” in the referral farm is created for an individual who recommend
 
 - **referrer position** = amount of tokens purchased via referrer's referral link
 - **buyer position** = amount of tokens purchased via referral link
-- **total position** = all referrer positions + all buyers positions
+- **total position** = all referrers' positions + all buyers' positions
 
 The higher your share of the total position, the bigger your slice of the daily rewards. Your “position” can increase when you buy more tokens, or decrease when you sell your tokens (Buy-and-Hold mechanism). You will keep earning daily rewards as long as there is a positive “position” (i.e., position > 0), or until the referral farm runs out of rewards (i.e., total referral rewards = 0). 
 
