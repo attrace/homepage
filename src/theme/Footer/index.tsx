@@ -19,9 +19,9 @@ const Footer: FC = () => (
         <div className={styles.footerLogo}>
           <AttrFooterLogo className={styles.logo} />
           <div className={styles.logoText}>
-            <h4>Attrace Referral Network</h4>
+            <h4>Attrace</h4>
             <p>
-              The world&#39;s first &#39;Word of Mouth&#39; protocol for web3
+              Referral protocol for Web3
             </p>
           </div>
         </div>
@@ -48,60 +48,92 @@ const Footer: FC = () => (
           <h6>$ATTR available on</h6>
           <div className={styles.externalLink}>
             <Sushiswap />
-            <a href="/#" target="_blank">
+            <a
+              href="https://app.sushi.com/swap?inputCurrency=ETH&outputCurrency=0x44e2dec86b9f0e0266e9aa66e10323a2bd69cf9a"
+              target="_blank"
+            >
               Sushiswap
             </a>
           </div>
           <div className={styles.externalLink}>
             <Uniswap />
-            <a href="/#" target="_blank">
+            <a
+              href="https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0x44e2dec86b9f0e0266e9aa66e10323a2bd69cf9a&chain=rinkeby"
+              target="_blank"
+            >
               Uniswap
             </a>
           </div>
           <div className={styles.externalLink}>
             <img src={require("@site/static/img/icons/bittrex.png").default} />
-            <a href="/#" target="_blank">
+            <a
+              href="https://global.bittrex.com/Market/Index?MarketName=USDT-ATTR"
+              target="_blank"
+            >
               Bittrex
             </a>
           </div>
         </div>
         <div className={styles.links}>
-          <h6>project</h6>
-          <div className={styles.link}>
-            <a href="https://attrace.network/" target="_blank">
-              Referral Network
-            </a>
-          </div>
-          <div className={styles.link}>
+          <h6>About</h6>
+          <div className={styles.externalLink}>
             <a
-              href="https://attrace.network/community/attr-token/"
-              target="_blank"
+              href="/about/"
             >
-              ATTR Token
+              Attrace Protocol
             </a>
           </div>
-          <div className={styles.link}>
-            <a href="https://attrace.network/developers/" target="_blank">
-              Developers
+          <div className={styles.externalLink}>
+            <a
+              href="/about/referral-farming"
+            >
+              Referral Farming
             </a>
           </div>
+          <div className={styles.externalLink}>
+            <a
+              href="/about/oracles"
+            >
+              Oracles
+            </a>
+          </div>
+          <div className={styles.externalLink}>
+            <a
+              href="/about/tokenomics"
+            >
+              Tokenomics
+            </a>
+          </div>
+
         </div>
         <div className={styles.links}>
-          <h6>About</h6>
-          <div className={styles.link}>
-            <Link to="/blog">Blog</Link>
-          </div>
-          <div className={styles.link}>
-            <a href="https://attraceteam.com/" target="_blank">
-              Team
+          <h6>Guides</h6>
+          <div className={styles.externalLink}>
+            <a
+              href="/guides/referral-farming/how-it-works"
+            >
+              How it works
+            </a>
+          </div> 
+          <div className={styles.externalLink}>
+            <a
+              href="/guides/faq"
+            >
+              FAQ
             </a>
           </div>
-          <div className={styles.link}>
+          <div className={styles.externalLink}>
             <a
-              href="https://attrace.network/community/attr-token/#governance"
-              target="_blank"
+              href="/guides/glossary"
             >
-              Governance
+              Glosssary
+            </a>
+          </div>
+          <div className={styles.externalLink}>
+            <a
+              href="/updates"
+            >
+              Updates
             </a>
           </div>
         </div>
@@ -109,19 +141,13 @@ const Footer: FC = () => (
     </div>
     <div className={styles.lower}>
       <div className={styles.copylight}>
-        &copy; 2022 - Attrace Referral Network
+        &copy; {new Date().getFullYear()} - Attrace Referral Protocol
       </div>
       <div>
-        <a
-          href="https://attrace.network/privacy-policy/"
-          target="_blank"
-          className={styles.privacya}
-        >
+        <Link to="/about/privacy-policy" className={styles.privacyLink}>
           Privacy Policy
-        </a>
-        <a href="https://attrace.network/code-of-conduct/" target="_blank">
-          Code of Conduct
-        </a>
+        </Link>
+        <Link to="/about/code-of-conduct">Code of Conduct</Link>
       </div>
     </div>
   </div>

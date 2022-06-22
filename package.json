@@ -5,6 +5,8 @@
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
+    "build:testnet": "CI=false env-cmd -f .env.testnet docusaurus build",
+    "build:mainnet": "CI=false env-cmd -f .env.mainnet docusaurus build",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
@@ -15,17 +17,21 @@
     "typecheck": "tsc"
   },
   "dependencies": {
-    "@docusaurus/core": "2.0.0-beta.17",
-    "@docusaurus/preset-classic": "2.0.0-beta.17",
+    "@amcharts/amcharts5": "^5.1.9",
+    "@docusaurus/core": "^2.0.0-beta.21",
+    "@docusaurus/plugin-client-redirects": "^2.0.0-beta.21",
+    "@docusaurus/preset-classic": "^2.0.0-beta.21",
     "@mdx-js/react": "^1.6.22",
     "clsx": "^1.1.1",
+    "env-cmd": "^10.1.0",
     "prism-react-renderer": "^1.2.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-fast-marquee": "^1.3.2",
     "react-uuid": "^1.0.2"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "^2.0.0-beta.17",
+    "@docusaurus/module-type-aliases": "^2.0.0-beta.21",
     "@tsconfig/docusaurus": "^1.0.4",
     "typescript": "^4.6.2"
   },

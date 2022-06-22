@@ -2,49 +2,72 @@ import clsx from "clsx";
 import React from "react";
 
 import truncateString from "../../../utils/truncateString";
+import getAppUrl from "../../../utils/getAppUrl";
 
 import Button from "../../button";
 
+import ArrowDownIcon from "@site/static/img/icons/arrowDown.svg";
+import External from "@site/static/img/icons/external.svg";
 import styles from "./index.module.css";
 
-export default function MainSection(): JSX.Element {
+interface Props {
+  handleClick: () => void
+}
+
+const MainSection: React.FC<Props> = ({ handleClick }) => {
+
   return (
     <div className={clsx("container", styles.wrapper)}>
       <div className={styles.actionBlock}>
         <h1>
-          <span>Referral Protocol</span> for Web3
+          <span>Referral Protocol</span><br />
+          for Web3
         </h1>
-        <p>
-          Unlock the value of ‘word of mouth’ marketing in web3. Recommend
-          crypto or NFT and earn rewards from referral farms.{" "}
-        </p>
-        <div className={styles.actions}>
-          <a href="#" target="_blank">
-            <Button>Enter App</Button>
+        <div>
+          <p>Unlock the value of ‘word of mouth’ in web3.</p>
+          <p>Recommend crypto or NFT and earn rewards from referral farms.</p>
+        </div>
+        <div className={clsx(styles.actions, styles.actionsWrapper)}>
+          <a href={getAppUrl()} target="_blank">
+            <Button>Start Referring</Button>
           </a>
-          <a href="#" target="_blank">
-            <Button variant="secondary">Learn More</Button>
-          </a>
+          <Button variant="secondary" onClick={handleClick}>
+            Learn More
+            <ArrowDownIcon />
+          </Button>
         </div>
       </div>
       <div className={styles.referral}>
         <div className={clsx(styles.filter, styles.filter1)} />
         <div className={clsx(styles.filter, styles.filter2)} />
         <div className={clsx(styles.filter, styles.filter3)} />
-        <div className={styles.img}></div>
-        <div className={styles.data}>
-          <div className={styles.name}>Referral Genesis</div>
-          <div>
-            Created by{" "}
-            <a
-              href={`https://etherscan.io/address/0x26bc596D39c5D45C855901b6995e0842E37Ae57a`}
-              target="_blank"
-            >
-              {truncateString("0x26bc596D39c5D45C855901b6995e0842E37Ae57a")}
-            </a>
+        <div className={styles.img}>
+          <video src='/media/video.mp4' autoPlay muted loop />
+        </div>
+        <div className={styles.bottom}>
+          <div className={styles.data}>
+            <div className={styles.name}>Proof of recommendation</div>
+            <div className={styles.creator}>
+              Created by{" "}
+              <a
+                href={`https://etherscan.io/token/0x8d2e527675094dc1bb9ef878b6566f3b17240fd8`}
+                target="_blank"
+              >
+                {truncateString("0x8d2e527675094dc1bb9ef878b6566f3b17240fd8")}
+              </a>
+            </div>
           </div>
+          <a
+            className={styles.etherscanlink}
+            href={`https://etherscan.io/token/0x8d2e527675094dc1bb9ef878b6566f3b17240fd8`}
+            target="_blank"
+          >
+            <External />
+          </a>
         </div>
       </div>
     </div>
   );
 }
+
+export default MainSection;

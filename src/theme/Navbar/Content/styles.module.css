@@ -1,0 +1,55 @@
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+.navBarContainerActive >nav{
+  border-bottom: 1px solid #24212D;
+  background: var(--mobile-navbar-background);
+  backdrop-filter: blur(16px);
+}
+.logo {
+  margin-right: 20px;
+  width: 116px;
+  height: 40px;
+}
+.enterAppBtn {
+  display: block;
+  margin-left: auto;
+}
+.enterAppBtn:hover {
+  text-decoration: none;
+}
+.menuBtnMobile >button {
+  margin: 0;
+  margin-left: 24px;
+}
+.btnByScroll {
+  border: 0;
+}
+.btnByScroll::after {
+  background: var(--primary-btn);
+  opacity: 1;
+}
+.btnByScroll:hover::after {
+  background: var(--primary-btn-hover);
+}
+/*
+Hide color mode toggle in small viewports
+*/
+
+@media (min-width: 769px) {
+  .enterAppBtnMobile {
+    display: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .navBarContainerActive >nav:global(.navbar-sidebar--show) {
+    backdrop-filter: unset !important;
+  }
+  .colorModeToggle, .enterAppBtn {
+    display: none !important;
+  }
+}
