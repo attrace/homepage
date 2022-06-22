@@ -17,7 +17,7 @@ There are two ways to earn farming rewards: 1) When someone buys the recommended
 
 ### What is the Estimated Referral Rate and how do I use it? 
 
-This is the current annualised rate that as a **referrer** you earn for the amount of tokens purchased via your referral link. This is an estimated rate which changes daily depending on the total amount of tokens purchased via all referral links (total farm position). For example, the higher the total amount purchased (higher total farm position), the lower the referral rate you would earn and vice versa. Therefore, you may use this rate only as an estimate of your future earning. 
+This is the current annualised rate that as a **referrer** you earn for the amount of tokens purchased via your referral link. It is an estimated rate which changes daily depending on the total amount of tokens purchased via all referral links (total farm position). For example, the higher the total amount purchased (higher total farm position), the lower the referral rate you would earn and vice versa. Therefore, you may use this rate only as an estimate of your future earnings. 
 
 
 ### On which DEXs and blockchains can the tokens be bought via the referral link?
