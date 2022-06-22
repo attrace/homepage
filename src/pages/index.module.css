@@ -14,7 +14,7 @@
   text-align: center;
   letter-spacing: -0.4px;
   color: var(--white);
-  margin: 0 auto 104px;
+  margin: 0 auto 150px;
 }
 
 
@@ -26,8 +26,8 @@
 
 .farmingRow {
   display: flex;
+  align-items: stretch;
   justify-content: space-between;
-  align-items: center;
 }
 
 .farmingRowLeft {
@@ -115,9 +115,40 @@
   letter-spacing: 0.1px;
   color: var(--white-07);
 }
+
+.whyJoinList p {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--white-09);
+  padding-top: 10px;
+}
+
+.whyJoinList ul {
+  display: flex;
+  flex-flow: column;
+  gap: 14px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.whyJoinList li {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
 .actions {
   display: flex;
   gap: 20px;
+}
+
+.farmingRowRight {
+  display: flex;
+  flex: 1;
+  flex-flow: column nowrap;
+  justify-content: center;
 }
 
 /* reward section */
@@ -144,8 +175,8 @@
   position: relative;
   width: 412px;
   height: 318px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   background: var(--dark-grey-5);
   border: 1px solid var(--reward-card-border);
   backdrop-filter: blur(72px);
@@ -169,7 +200,7 @@
   font-weight: 300;
   font-size: 16px;
   line-height: 24px;
-  text-shadow: 0px 4px 4px var(--reward-card-text-shadow);
+  text-shadow: 0 4px 4px var(--reward-card-text-shadow);
 }
 .rewardCard .icon {
   display: flex;
@@ -230,6 +261,82 @@
   margin-bottom: 80px;
 }
 
+/*referralFarmSection*/
+.referralFarmSection {
+  position: relative;
+  margin: 220px auto 240px;
+}
+.referralFarmSectionContent {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 8px;
+  padding: 48px 0 56px;
+  border: 1px solid var(--reward-card-border);
+  background: var( --dark-grey-3);
+}
+
+.referralFarmSectionContent .backdropShadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.referralFarmSectionContent .backdropShadow div {
+  position: absolute;
+  height: 420px;
+  width: 420px;
+  filter: blur(260px);
+}
+
+.referralFarmSectionContent .backdropShadow div:nth-child(1) {
+  left: -12.54%;
+  right: 79.62%;
+  top: 56px;
+  background: #FF99A1;
+  opacity: 0.06;
+}
+.referralFarmSectionContent .backdropShadow div:nth-child(2) {
+  left: 56.9%;
+  right: 10.19%;
+  top: 186px;
+  background: #5FD2FA;
+  opacity: 0.06;
+}
+.referralFarmSectionContent .backdropShadow div:nth-child(2) {
+  left: 79.62%;
+  right: -12.54%;
+  top: -170px;
+  background: #DA99FF;
+  opacity: 0.1;
+}
+
+.referralFarmSection .bigTitle {
+  margin-bottom: 24px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 46px;
+
+  text-align: center;
+  letter-spacing: -0.2px;
+}
+
+.referralFarmSection .text {
+  margin-bottom: 32px;
+  max-width: 460px;
+  text-align: center;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.1px;
+}
+
+/*end referralFarmSection*/
+
 .filterColor1 { background: var(--earn-filter1); }
 .filterColor2 { background: var(--earn-filter2); }
 .filterColor3 { background: var(--earn-filter3); }
@@ -237,12 +344,11 @@
   fill: var(--purple);
 }
 .cardsMobile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 328px;
-  height: 187px;
-  margin-top: 96px;
-  margin-bottom: 84px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 96px auto 0 auto;
 }
 
 @media (max-width: 1050px) {
@@ -351,6 +457,21 @@
   }
   .partnersLogos .filter {
     background: var(--partner-filter-mobile);
+  }
+
+  .referralFarmSectionContent {
+    padding: 48px 16px 56px;
+  }
+
+  .referralFarmSection .bigTitle {
+    margin-bottom: 24px;
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  .referralFarmSection .text {
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 

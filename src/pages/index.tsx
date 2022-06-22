@@ -1,44 +1,39 @@
-import React, { useCallback, useEffect, useRef, useState } from "react";
+import React, { useCallback, useRef, useState } from "react";
 import Layout from "@theme/Layout";
 import clsx from "clsx";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
-import Marquee from "react-fast-marquee";
 
 import Button from "../components/button";
 import Badge from "../components/badge";
 import CardArray from "../components/homePage/cardArray";
 import MainSection from "../components/homePage/mainSection";
 import TokensAPR from "../components/homePage/tokensAPR";
-import MobileMarquee from "../components/homePage/marquee";
 
-import MaskLogo from "@site/static/img/partners/mask.svg";
-import DeribitLogo from "@site/static/img/partners/deribit.svg";
-import ImpossibleFinLogo from "@site/static/img/partners/impossibleFinance.svg";
+import Head from '@docusaurus/Head';
+import VideoPopup from "@site/src/components/videoPopup";
+import {PartnersSection} from "@site/src/components/homePage/partnersSection";
+
 import ReferIcon from "@site/static/img/icons/referIcon.svg";
 import StakeIcon from "@site/static/img/icons/stakeIcon.svg";
 import LiquidityIcon from "@site/static/img/icons/liquidityIcon.svg";
 import ArrowRightIcon from "@site/static/img/icons/arrowRight.svg";
-import styles from "./index.module.css";
-import Head from '@docusaurus/Head';
+
 import getAppUrl from "../utils/getAppUrl";
+
+import styles from "./index.module.css";
 
 const Home: React.FC = () => {
   const { siteConfig } = useDocusaurusContext();
-  const [playing, setPlaying] = useState(true);
-  const [delta] = useState(2000);
+  const [showVideoPopup, setShowVideoPopup] = useState(false);
   const referralRef = useRef(null);
-  useEffect(() => {
-    let index = 0
-    let timer = setInterval(() => {
-      index++
-      if (index % 2 === 1) setPlaying(true)
-      else setPlaying(false)
-    }, delta)
-    return () => clearInterval(timer)
-  }, [])
+
   const handleLearnmore = useCallback(() => {
     referralRef.current.scrollIntoView({ behavior: 'smooth' })
   }, [referralRef])
+
+  const handleWatchClick = () => setShowVideoPopup(true);
+  const handleCloseClick = () => setShowVideoPopup(false);
+
   return (
     <Layout>
       <Head>
@@ -48,12 +43,14 @@ const Home: React.FC = () => {
         <meta property="og:description" content="Unlock the value of ‘word of mouth’ in Web3. Recommend crypto or NFT and earn rewards from referral farms." />
         <meta property="description" content="Unlock the value of ‘word of mouth’ in Web3. Recommend crypto or NFT and earn rewards from referral farms." />
       </Head>
+      {showVideoPopup && <VideoPopup handleClose={handleCloseClick} /> }
       <main className="main-overflow">
         <MainSection handleClick={handleLearnmore} />
         <TokensAPR reff={referralRef} />
         <div className={styles.cardsMobile}>
-          <CardArray />
+          <CardArray handleWatchClick={handleWatchClick}/>
         </div>
+
         <div className={clsx("container", styles.section, styles.farmingSection)}>
           <div className={styles.sectionTitle}>
             Join
@@ -62,8 +59,24 @@ const Home: React.FC = () => {
           <div className={styles.farmingRow}>
             <div className={styles.farmingRowLeft}>
               <div className={styles.farmingText}>
-                Use referral link when recommending any crypto or NFT project and earn farming rewards!<br /><br />
-                You earn a share of daily farm rewards together with people you refer based on the value they buy via your referral link.
+                <p>Use referral links when recommending crypto or NFT projects and earn referral farming rewards!</p>
+                <div className={styles.whyJoinList}>
+                  <p>Why join referral farming?</p>
+                  <ul>
+                    <li>
+                      <img src='/img/icons/editBlackPoint.svg' alt="list-icon" />
+                      Earn rewards when people buy tokens
+                    </li>
+                    <li>
+                      <img src='/img/icons/generalLink.svg' alt="list-icon" />
+                      Earn based on real on-chain value added
+                    </li>
+                    <li>
+                      <img src='/img/icons/alarm.svg' alt="list-icon" />
+                      Earn higher referral rate when joining a farm early
+                    </li>
+                  </ul>
+                </div>
               </div>
               <div className={clsx(styles.actions, styles.actionsWrapper)}>
                 <a href={getAppUrl('/farms')} target="_blank">
@@ -80,10 +93,11 @@ const Home: React.FC = () => {
               </div>
             </div>
             <div className={styles.farmingRowRight}>
-              <CardArray />
+              <CardArray handleWatchClick={handleWatchClick} />
             </div>
           </div>
         </div>
+
         <div className={clsx("container", styles.earnSection)}>
           <div className={styles.graphBoxMobile}>
             <img src="/img/oracle_homepage.png" width='100%' />
@@ -103,7 +117,7 @@ const Home: React.FC = () => {
             <div className={styles.oracleRowRight}>
               <Badge />
               <div className={styles.farmingText}>
-                Oracles capture the value of ‘word of mouth’ marketing in web3 and power referral farming by detecting and distributing rewards in a trustless manner.<br /><br />
+                Oracles capture the value of ‘word of mouth’ marketing in web3 by connecting referral links with real on-chain activity, and distribute rewards in a trustless manner via referral farming.<br /><br />
                 The referral protocol is secured by the $ATTR token. Help securing the protocol by staking with the Oracles and earn rewards!
               </div>
               <div className={clsx(styles.actions, styles.actionsWrapper)}>
@@ -122,6 +136,7 @@ const Home: React.FC = () => {
             </div>
           </div>
         </div>
+
         <div className={clsx("container", styles.section, styles.earnSection)}>
           <h2 className={clsx(styles.sectionTitle, styles.bigTitle)}>
             <span>Earn rewards </span>
@@ -169,31 +184,28 @@ const Home: React.FC = () => {
             </div>
           </div>
         </div>
-        <div
-          className={clsx("container", styles.section, styles.partnersSection)}
-        >
-          <h2 className={clsx(styles.sectionTitle, styles.bigTitle)}>
-            <span>Partners </span>
-            Who Joined the Ecosystem
-          </h2>
-          <div className={styles.partnersLogos}>
-            <div className={styles.filter} />
-            <div className={styles.marqueeContainer}>
-              <Marquee speed={100} play={playing}>
-                <DeribitLogo />
-                <ImpossibleFinLogo />
-                <img
-                  src={require("@site/static/img/partners/dappradar2x.png").default} style={{ width: "222px" }}
-                />
-                <MaskLogo />
-                <img src={require("@site/static/img/partners/amasa2x.png").default} style={{ width: "101px" }}
-                />
-                <img
-                  src={require("@site/static/img/partners/despace2x.png").default} style={{ width: "107px" }}
-                />
-              </Marquee>
+
+        <PartnersSection />
+
+        <div className={clsx("container", styles.section, styles.referralFarmSection)}>
+          <div className={styles.referralFarmSectionContent}>
+          <div className={styles.backdropShadow}>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+            <h2 className={clsx(styles.sectionTitle, styles.bigTitle)}>
+              <span>Want to promote your token via referrals? </span>
+            </h2>
+
+            <div className={styles.text}>
+              Reward promoters based on the real on-chain value added to your token via referrals.
             </div>
-            <MobileMarquee />
+
+            <Button onClick={() => window.location.href = `${getAppUrl()}/farms?createFarm=true`} >
+              Create Referral Farm
+              <img src="/img/icons/arrowRight.svg"  alt='arrow-right'/>
+            </Button>
           </div>
         </div>
       </main>

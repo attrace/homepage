@@ -26,11 +26,11 @@ const Card: FC<Props> = (props) => {
       </div>
       <div className={styles.figure}>
         <div>
-          <div className={styles.propname}>Estimated APR</div>
+          <div className={styles.propname}>Referral Rate</div>
           <div className={styles.apr}>🔥%</div>
         </div>
         <div>
-          <div className={styles.propname}>Daily Farm Rewards</div>
+          <div className={styles.propname}>Total Daily Rewards</div>
           <div className={styles.apr}>💰 {rewardToken}</div>
         </div>
       </div>

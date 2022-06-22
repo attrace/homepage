@@ -23,6 +23,7 @@
   --dark-grey-7: #24212d;
   --dark-grey-5: #1f1c29;
   --dark-grey-3: #1a1724;
+  --modal-overlay: #0B0910;
 
   --blue-link: #5392FF;
 
@@ -32,6 +33,8 @@
 
   --index-color1: rgb(95, 210, 250, 0.1);
   --index-color2: rgb(254, 153, 164, 0.1);
+  --index-color3: rgb(195, 98, 254, 0.1);
+;
 
   
   /* color for badge */
@@ -182,8 +185,6 @@
   margin-right: -8px;
 }
 
-
-
 /* main-wrapper */
 .main-wrapper {
   background: var(--background);
@@ -191,9 +192,9 @@
   padding: 2px 0 20px 0;
 }
 
-.main-wrapper >div {
-  margin-top: 72px !important;
-}
+/*.main-wrapper >div {*/
+/*  margin-top: 72px !important;*/
+/*}*/
 
 .main-wrapper a:hover {
   text-decoration: none;
