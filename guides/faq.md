@@ -15,10 +15,13 @@ You earn a share of total daily rewards based on the amount of tokens purchased 
 ### How do I join a referral farm and start earning rewards? 
 There are two ways to earn farming rewards: 1) When someone buys the recommended token via your referral link; 2) when you buy the recommended token via someone else’s referral link.
 
-### What is the Estimated Referral Rate and how do I use it? 
+### What is the Referral Rate (estimate) and how do I use it? 
 
-This is the current annualised rate that as a **referrer** you earn for the amount of tokens purchased via your referral link. It is an estimated rate which changes daily depending on the total amount of tokens purchased via all referral links (total farm position). For example, the higher the total amount purchased (higher total farm position), the lower the referral rate you would earn and vice versa. Therefore, you may use this rate only as an estimate of your future earnings. 
+This is the current annualised rate that as a **referrer** you earn for the amount of tokens purchased via your referral link. It is an estimated rate which changes daily depending on the total amount of tokens purchased via all referral links (total farm position). For example, the higher the total amount purchased (higher total farm position), the lower the referral rate you would earn and vice versa. Therefore, you may use this rate only as an estimate of your future earnings.
 
+### What is the Estimated APR and how do I use it? 
+
+This is the current annualised rate that as a **buyer** you earn for the amount of tokens purchased via someone's referral link. It is an estimated rate which changes daily depending on the total amount of tokens purchased via all referral links (total farm position). For example, the higher the total amount purchased (higher total farm position), the lower the APR you would earn and vice versa. Therefore, you may use this rate only as an estimate of your future earnings.
 
 ### On which DEXs and blockchains can the tokens be bought via the referral link?
 At the moment, only purchases of tokens via **Uniswap** and **Sushiswap** on **Ethereum** are supported and considered as sucessful referrals. Purchase of tokens on another DEX will not entitle you for rewards.  
