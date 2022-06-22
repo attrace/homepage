@@ -1,6 +1,6 @@
 ---
-title: Buy to Farm
-sidebar_label: Buy to Farm
+title: Buy to Earn
+sidebar_label: Buy to Earn
 ---
 
 Follow the link shared with you and buy a recommended token to join a referral farm and start earning the farming rewards. You earn rewards based on your value purchased via the referral link.
