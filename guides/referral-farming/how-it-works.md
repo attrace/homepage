@@ -38,10 +38,10 @@ Rewards distributed daily to referrers and referred buyers who join the referral
 Total amount of reward tokens deposited in the referral farm that will be distributed to those who join the farm
 
 #### _Estimated Referral Rate_ 
-Referral Rate is an annualised rate that referrers who join the farm earn for the amount of tokens referred buyers purchase via their referral link. The same rate is also earned by referred buyers (only named Estimated APR).
+Estimated Referral Rate is the current annualised rate that referrers who joined the farm currently earn for the amount of tokens buyers purchased via their referral link. Since the referral rate changes daily (based on the total farm position), it is used as an estimate of future referral rate. The same rate is also earned by referred buyers (only named Estimated APR).
 
-#### _Estimated APR_ 
-Estimated Annual Percentage Rate is the current rate of return that buyers who join the farm can expect to earn on an annual basis for the amount of the tokens purchased via referral link 
+#### _Estimated Anual Percentage Rate_ 
+Estimated APR is the current rate of return that buyers who joined the farm currently earn for the amount of the tokens purchased via referral link. Since the referral rate changes daily (based on the total farm position), it is used as an estimate of future referral rate. The same rate is also earned by referrers (only named Estimated Referral Rate).
 
 #### _Farm position_ 
 Position is created for those who join the farm based on the value of tokens purchased via referral link, your farm position is equal to 1) the amount of tokens someone purchased via your referral link or 2) the amount of tokens you purchased via someone else’s referral link
