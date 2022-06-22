@@ -11,6 +11,8 @@ import MainSection from "../components/homePage/mainSection";
 import TokensAPR from "../components/homePage/tokensAPR";
 import MobileMarquee from "../components/homePage/marquee";
 
+import Head from '@docusaurus/Head';
+
 import MaskLogo from "@site/static/img/partners/mask.svg";
 import DeribitLogo from "@site/static/img/partners/deribit.svg";
 import ImpossibleFinLogo from "@site/static/img/partners/impossibleFinance.svg";
@@ -18,9 +20,10 @@ import ReferIcon from "@site/static/img/icons/referIcon.svg";
 import StakeIcon from "@site/static/img/icons/stakeIcon.svg";
 import LiquidityIcon from "@site/static/img/icons/liquidityIcon.svg";
 import ArrowRightIcon from "@site/static/img/icons/arrowRight.svg";
-import styles from "./index.module.css";
-import Head from '@docusaurus/Head';
+
 import getAppUrl from "../utils/getAppUrl";
+
+import styles from "./index.module.css";
 
 const Home: React.FC = () => {
   const { siteConfig } = useDocusaurusContext();
@@ -57,13 +60,29 @@ const Home: React.FC = () => {
         <div className={clsx("container", styles.section, styles.farmingSection)}>
           <div className={styles.sectionTitle}>
             Join
-            <span> Referral Farming</span>
+            <span>Referral Farming</span>
           </div>
           <div className={styles.farmingRow}>
             <div className={styles.farmingRowLeft}>
               <div className={styles.farmingText}>
-                Use referral link when recommending any crypto or NFT project and earn farming rewards!<br /><br />
-                You earn a share of daily farm rewards together with people you refer based on the value they buy via your referral link.
+                <p>Use referral links when recommending crypto or NFT projects and earn referral farming rewards!</p>
+                <div className={styles.whyJoinList}>
+                  <p>Why join referral farming?</p>
+                  <ul>
+                    <li>
+                      <img src='/img/icons/editBlackPoint.svg' alt="list-icon" />
+                      Earn rewards when people buy tokens
+                    </li>
+                    <li>
+                      <img src='/img/icons/generalLink.svg' alt="list-icon" />
+                      Earn based on real on-chain value added
+                    </li>
+                    <li>
+                      <img src='/img/icons/alarm.svg' alt="list-icon" />
+                      Earn higher referral rate when joining a farm early
+                    </li>
+                  </ul>
+                </div>
               </div>
               <div className={clsx(styles.actions, styles.actionsWrapper)}>
                 <a href={getAppUrl('/farms')} target="_blank">

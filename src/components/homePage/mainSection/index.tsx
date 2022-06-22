@@ -24,8 +24,8 @@ const MainSection: React.FC<Props> = ({ handleClick }) => {
           for Web3
         </h1>
         <p>
-          Unlock the value of ‘word of mouth’ marketing in web3. Recommend
-          crypto or NFT and earn rewards from referral farms.{" "}
+          <p>Unlock the value of ‘word of mouth’ in web3.</p>
+          <p>Recommend crypto or NFT and earn rewards from referral farms.</p>
         </p>
         <div className={clsx(styles.actions, styles.actionsWrapper)}>
           <a href={getAppUrl()} target="_blank">
