@@ -21,10 +21,16 @@ At the moment only purchases of tokens via Uniswap and Sushiswap are supported a
 ### What if I buy a token via CEX? 
 At the moment only purchases of tokens via DEXs are supported and considered for successful referrals.  
 
+### What is "ATTR (12m vest)" token?
+
+This token is used to reward users who join referral farms sponsored by Attrace protocol. This token has 12 months vesting rules and upon vesting can be redemed/swapped for the actual ATTR token. The vesting period starts from the moment that one claims the rewards in ATTR (12m vest) token (each month 1/12 of the claimed amount becomes vested and it can be swapped for ATTR token). 
+
 ### What is the protocol fee?
 The protocol fee of 5% is a service fee paid by those who create a referral farm. It is automatically deducted from referral farming rewards. The protocol fee is distributed to Oracles and users of Attrace Referral Farm (60% allocated to Oracles; 40% allocated to Attrace Referral Farm). 
 
 ### What is the difference between a referred token and reward token?   
 A Referred token is the token which is being promoted or recommended. People are incentivised to “spread the word” about that token with the rewards deposited in the referral farm. A Reward token is the token deposited for rewards. While the reward token can be the same as the referred token (especially in the case of fungible tokens - e.g., erc20), it can also be different (decision of those who create referral farm)  
+
+
 
 
