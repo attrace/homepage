@@ -19,7 +19,7 @@ const Footer: FC = () => (
         <div className={styles.footerLogo}>
           <AttrFooterLogo className={styles.logo} />
           <div className={styles.logoText}>
-            <h4>Attrace Referral Network</h4>
+            <h4>Attrace</h4>
             <p>
               Referral protocol for Web3
             </p>
