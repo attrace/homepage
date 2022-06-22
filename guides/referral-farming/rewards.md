@@ -1,11 +1,11 @@
 ---
 title: Rewards
 sidebar_label: Rewards
-description: "Referral farming rewards are distributed to those who successfully recommend/promote a token (Refer to Earn) and those who buy the token via the referral link (Buy to Farm)."
+description: "Referral farming rewards are distributed to those who successfully recommend/promote a token (Refer to Earn) and those who buy the token via the referral link (Buy to Earn)."
 ---
 
 
-Referral farming rewards are distributed to those who successfully recommend/promote a token (Refer to Earn) and those who buy the token via the referral link (Buy to Farm). The rewards are paid out daily to all the users who join the farm via daily farming rewards based on their share in the total farm “position” for that day. 
+Referral farming rewards are distributed to those who successfully recommend/promote a token (Refer to Earn) and those who buy the token via the referral link (Buy to Earn). The rewards are paid out daily to all the users who join the farm via daily farming rewards based on their share in the total farm “position” for that day. 
 
 A “position” in the referral farm is created for an individual who recommended/promoted a token and the one who bought the token via the referral link (position = amount of tokens purchased). Both parties receive the same “position” in the farm, in the amount of the tokens bought, to account equally for their “added value” to the token community (effectively, a double “position” is created).   
 
