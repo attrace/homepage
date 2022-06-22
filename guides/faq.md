@@ -16,7 +16,7 @@ You earn a share of total daily rewards based on the amount of tokens purchased 
 There are two ways to earn farming rewards: 1) When someone buys the recommended token via your referral link; 2) when you buy the recommended token via someone else’s referral link.
 
 ### On which DEXs can the tokens be bought via the referral link?
-At the moment only purchases of tokens via Uniswap and Sushiswap are supported and considered as sucessful referrals. Buying tokens on another DEX will not entitle you for rewards.  
+At the moment only purchases of tokens via Uniswap and Sushiswap are supported and considered as sucessful referrals. Purchase of tokens on another DEX will not entitle you for rewards.  
 
 ### What if I buy a token via CEX? 
 At the moment only purchases of tokens via DEXs are supported and considered for successful referrals.  
