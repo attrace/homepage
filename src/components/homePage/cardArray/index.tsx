@@ -5,20 +5,27 @@ import Card from "../../card";
 
 import MaskIcon from '/img/farms/mask.svg';
 import DappRadarIcon from '/img/farms/dappradar.svg';
-import AttraceIcon from '/img/farms/attrace.svg';
 
 import styles from "./index.module.css";
 import Button from "@site/src/components/button";
 
-export default function CardArray(): JSX.Element {
+interface ICardArray {
+  handleWatchClick: () => void;
+}
+
+export default function CardArray({ handleWatchClick }: ICardArray): JSX.Element {
   const [cardClasses, setCardClasses] = useState([styles.firstCard, styles.secondCard, styles.thirdCard])
+
+
   useEffect(() => {
     setTimeout(() => {
       setCardClasses(prev => [prev[1], prev[2], prev[0]])
     }, 3000)
   }, [cardClasses])
+
   return (
-    <div  className={styles.cardsWrapper}>
+    <>
+    <div className={styles.cardsWrapper}>
       <div className={styles.backdropShadow}>
         <div className={clsx(styles.filter, styles.filter1)} />
         <div className={clsx(styles.filter, styles.filter2)} />
@@ -50,10 +57,16 @@ export default function CardArray(): JSX.Element {
           <img src='/img/farms/attrace.png' />
         </Card>
       </div>
-      <Button variant="tertiary" sizes='large' className={styles.watchVideoBtn} onClick={() => console.log('here')}>
+      <Button
+        variant="tertiary"
+        sizes='large'
+        className={styles.watchVideoBtn}
+        onClick={handleWatchClick}
+      >
         <img src='/img/icons/play.svg' alt='play'/>
         Watch video on how it works
       </Button>
     </div>
+    </>
   );
 }

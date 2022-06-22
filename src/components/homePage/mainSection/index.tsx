@@ -23,10 +23,10 @@ const MainSection: React.FC<Props> = ({ handleClick }) => {
           <span>Referral Protocol</span><br />
           for Web3
         </h1>
-        <p>
+        <div>
           <p>Unlock the value of ‘word of mouth’ in web3.</p>
           <p>Recommend crypto or NFT and earn rewards from referral farms.</p>
-        </p>
+        </div>
         <div className={clsx(styles.actions, styles.actionsWrapper)}>
           <a href={getAppUrl()} target="_blank">
             <Button>Start Referring</Button>
