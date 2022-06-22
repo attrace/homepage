@@ -3,7 +3,7 @@ title: Glossary
 id: glossary
 description: "An alphabetical list of terms in related to Attrace Referral Farming with the definitions for those terms."
 ---
-### Buy to Farm 
+### Buy to Earn 
 Buy a token via a referral link to join referral farm and earn farming rewards per value of tokens purchased
 
 ### Buyer
