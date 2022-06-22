@@ -9,8 +9,8 @@ Referral farming rewards are distributed to those who successfully recommend/pro
 
 A “position” in the referral farm is created for an individual who recommended/promoted a token and the one who bought the token via the referral link (position = amount of tokens purchased). Both parties receive the same “position” in the farm, in the amount of the tokens bought, to account equally for their “added value” to the token community (effectively, a double “position” is created).   
 
-- **referrer position** = amount of tokens purchased via referrer's referral link
-- **buyer position** = amount of tokens purchased via referral link
+- **referrer position** = amount of tokens purchased via referrer's referral link (earns Estimated Referral Rate)
+- **buyer position** = amount of tokens purchased via referral link (earn Estimated APR)
 - **total position** = all referrers' positions + all buyers' positions
 
 The higher your share of the total position, the bigger your slice of the daily rewards. Your “position” can increase when you buy more tokens, or decrease when you sell your tokens (Buy-and-Hold mechanism). You will keep earning daily rewards as long as there is a positive “position” (i.e., position > 0), or until the referral farm runs out of rewards (i.e., total referral rewards = 0). 
@@ -19,7 +19,7 @@ The higher your share of the total position, the bigger your slice of the daily 
 
 `(my position / total position) x daily rewards`
 
-Estimated **APR** (Annual Percentage Rate) is an indicator of current rewards one can earn for the value of tokens purchased. Keep in mind that this is an estimated rate which can increase or decrease depending on the total amount of tokens purchased and held via referrals (total farm “position”).
+Estimated **Referral Rate** and **APR** (Annual Percentage Rate) is an indicator of current rewards one can earn for the value of tokens purchased. Keep in mind that this is an estimated rate which can increase or decrease depending on the total amount of tokens purchased and held via referrals (total farm “position”).
 
 **Estimated Referral Rate and Estimated APR formula**
 
