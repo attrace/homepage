@@ -23,7 +23,7 @@ At the moment only purchases of tokens via DEXs are supported and considered for
 
 ### What is "ATTR (12m vest)" token?
 
-This token is used to reward users who join referral farms sponsored by Attrace protocol. This token has 12 months vesting rules and upon vesting can be redemed/swapped for the actual ATTR token. The vesting period starts from the moment that one claims the rewards in ATTR (12m vest) token (each month 1/12 of the claimed amount becomes vested and it can be swapped for ATTR token). 
+This token is used to reward users who join referral farms sponsored by Attrace protocol. This token has 12 months vesting rules and upon vesting can be redemed/swapped for the actual ATTR token. The vesting period starts from the moment that one claims the rewards in this token. Each month 1/12 of the claimed amount becomes vested and it can be swapped for ATTR token. 
 
 ### What is the protocol fee?
 The protocol fee of 5% is a service fee paid by those who create a referral farm. It is automatically deducted from referral farming rewards. The protocol fee is distributed to Oracles and users of Attrace Referral Farm (60% allocated to Oracles; 40% allocated to Attrace Referral Farm). 
