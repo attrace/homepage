@@ -192,9 +192,9 @@
   padding: 2px 0 20px 0;
 }
 
-/*.main-wrapper >div {*/
-/*  margin-top: 72px !important;*/
-/*}*/
+.main-wrapper >div {
+  margin-top: 72px !important;
+}
 
 .main-wrapper a:hover {
   text-decoration: none;

@@ -12,10 +12,10 @@ export const Modal: FC = ({ children }) => {
   }, [])
 
   return (
-    <div className={styles.modalCurtain} >
+    <section className={styles.modalCurtain} >
       <div className={styles.modal}>
         {children}
       </div>
-    </div>
+    </section>
   );
 };
