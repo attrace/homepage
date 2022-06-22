@@ -31,14 +31,17 @@ You can check further the [example and rewards distribution](/guides/referral-fa
 
 Before you start, there are few key terms you should get to know: 
 
-#### _Daily Farm Rewards_
-Rewards distributed daily to the addresses of those who join the referral farms. Rewards are distributed to addresses based on the share of the total “farm position” 
+#### _Total Daily Rewards_
+Rewards distributed daily to referrers and referred buyers who join the referral farms. Rewards are distributed daily to each participant based their share of the total “farm position” 
 
 #### _Total Farm Rewards_
 Total amount of reward tokens deposited in the referral farm that will be distributed to those who join the farm
 
+#### _Estimated Referral Rate_ 
+Referral Rate is an annualised rate that referrers who join the farm earn for the amount of tokens referred buyers purchase via their referral link. The same rate is also earned by referred buyers (only named Estimated APR).
+
 #### _Estimated APR_ 
-Estimated Annual Percentage Rate is the current rate of return that those who join the farm can expect to earn on an annual basis for the amount of the tokens purchased via referral link 
+Estimated Annual Percentage Rate is the current rate of return that buyers who join the farm can expect to earn on an annual basis for the amount of the tokens purchased via referral link 
 
 #### _Farm position_ 
 Position is created for those who join the farm based on the value of tokens purchased via referral link, your farm position is equal to 1) the amount of tokens someone purchased via your referral link or 2) the amount of tokens you purchased via someone else’s referral link
