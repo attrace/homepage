@@ -21,7 +21,7 @@ The higher your share of the total position, the bigger your slice of the daily 
 
 Estimated **APR** (Annual Percentage Rate) is an indicator of current rewards one can earn for the value of tokens purchased. Keep in mind that this is an estimated rate which can increase or decrease depending on the total amount of tokens purchased and held via referrals (total farm “position”).
 
-**Estimated APR**
+**Estimated Referral Rate and Estimated APR formula**
 
 `(daily rewards / total farm “position”) x 365 x 100`
 
@@ -34,11 +34,11 @@ Estimated **APR** (Annual Percentage Rate) is an indicator of current rewards on
 - Alice owns ½ of the total farm “position” and receives 50 $ABC each day, while 50 $ABC is distributed among Alice’s community that bought $ABC via her referral link (each community member earns per their own “position’)
 - Alice and her community stop earning rewards when their position is sold or when the total rewards budget becomes empty (would empty in 50 days since the total rewards deposited were 5.000 $ABC)
 
-#### APR calculation 
+#### Referral Rate and APR calculation 
 
 Applying the daily rewards formula as explained above:
 
-**APR** 
+**Referral Rate and APR** 
 ```
 = 100 $ABC daily rewards / (5.000 $ABC Alice + 5.000 $ATTR Alice community) x 365 x 100
 = 100 $ABC / 10.000 $ABC x 365 x 100
