@@ -14,7 +14,7 @@ module.exports = {
         items: [
           'referral-farming/how-it-works',
           'referral-farming/create-farm',
-          'referral-farming/refer-to-farm',
+          'referral-farming/refer-to-earn',
           'referral-farming/buy-to-farm',
           'referral-farming/rewards',
         ]

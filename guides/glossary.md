@@ -18,7 +18,7 @@ Claiming rewards earned from referral farms.
 ### Proof of recommendation
 Proof that one individual recommended a token to another individual 
 
-### Refer to Farm 
+### Refer to Earn 
 Join referral farm and earn farming rewards based on the value acquired via your referral link
 
 ### Referral farm position

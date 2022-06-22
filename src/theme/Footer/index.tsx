@@ -21,7 +21,7 @@ const Footer: FC = () => (
           <div className={styles.logoText}>
             <h4>Attrace Referral Network</h4>
             <p>
-              Referral protocol for Web3 assets
+              Referral protocol for Web3
             </p>
           </div>
         </div>
@@ -78,28 +78,11 @@ const Footer: FC = () => (
           <h6>About</h6>
           <div className={styles.externalLink}>
             <a
-              href="/about"
+              href="/about/"
             >
-              What is Attrace?
-            </a>
-          </div> 
-          <div className={styles.externalLink}>
-            <a
-              href="/guides/faq"
-            >
-              FAQs
+              Attrace Protocol
             </a>
           </div>
-          <div className={styles.externalLink}>
-            <a
-              href="/updates"
-            >
-              Blog
-            </a>
-          </div>
-        </div>
-        <div className={styles.links}>
-          <h6>Guides & Docs</h6>
           <div className={styles.externalLink}>
             <a
               href="/about/referral-farming"
@@ -111,7 +94,7 @@ const Footer: FC = () => (
             <a
               href="/about/oracles"
             >
-              Referral Oracles
+              Oracles
             </a>
           </div>
           <div className={styles.externalLink}>
@@ -121,12 +104,44 @@ const Footer: FC = () => (
               Tokenomics
             </a>
           </div>
+
+        </div>
+        <div className={styles.links}>
+          <h6>Guides</h6>
+          <div className={styles.externalLink}>
+            <a
+              href="/guides/referral-farming/how-it-works"
+            >
+              How it works
+            </a>
+          </div> 
+          <div className={styles.externalLink}>
+            <a
+              href="/guides/faq"
+            >
+              FAQ
+            </a>
+          </div>
+          <div className={styles.externalLink}>
+            <a
+              href="/guides/glossary"
+            >
+              Glosssary
+            </a>
+          </div>
+          <div className={styles.externalLink}>
+            <a
+              href="/updates"
+            >
+              Updates
+            </a>
+          </div>
         </div>
       </div>
     </div>
     <div className={styles.lower}>
       <div className={styles.copylight}>
-        &copy; {new Date().getFullYear()} - Attrace Referral Network
+        &copy; {new Date().getFullYear()} - Attrace Referral Protocol
       </div>
       <div>
         <Link to="/about/privacy-policy" className={styles.privacyLink}>

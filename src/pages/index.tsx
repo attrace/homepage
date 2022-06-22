@@ -133,7 +133,7 @@ const Home: React.FC = () => {
               <div className={styles.icon}>
                 <ReferIcon />
               </div>
-              <div className={styles.title}>Refer to Farm</div>
+              <div className={styles.title}>Refer to Earn</div>
               <div className={styles.text}>
                 Share your referral link when recommending any crypto or NFT project and earn farming rewards for every token bought via your link.
               </div>

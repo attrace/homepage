@@ -1,6 +1,6 @@
 ---
-title: Refer to Farm
-sidebar_label: Refer to Farm
+title: Refer to Earn
+sidebar_label: Refer to Earn
 ---
 
 Create a new referral farm to drive value towards your token. Choose the token you would like people to promote or recommend and set up the referrals. Provide the incentive by depositing the referral farming rewards, and invite your and other communities to spread the word about the token. The promoters and buyers will earn the rewards once tokens are being purchased. 

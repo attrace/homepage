@@ -1,11 +1,11 @@
 ---
 title: Rewards
 sidebar_label: Rewards
-description: "Referral farming rewards are distributed to those who successfully recommend/promote a token (Refer to Farm) and those who buy the token via the referral link (Buy to Farm)."
+description: "Referral farming rewards are distributed to those who successfully recommend/promote a token (Refer to Earn) and those who buy the token via the referral link (Buy to Farm)."
 ---
 
 
-Referral farming rewards are distributed to those who successfully recommend/promote a token (Refer to Farm) and those who buy the token via the referral link (Buy to Farm). The rewards are paid out daily to all the users who join the farm via daily farming rewards based on their share in the total farm “position” for that day. 
+Referral farming rewards are distributed to those who successfully recommend/promote a token (Refer to Earn) and those who buy the token via the referral link (Buy to Farm). The rewards are paid out daily to all the users who join the farm via daily farming rewards based on their share in the total farm “position” for that day. 
 
 A “position” in the referral farm is created for an individual who recommended/promoted a token and the one who bought the token via the referral link (position = amount of tokens purchased). Both parties receive the same “position” in the farm, in the amount of the tokens bought, to account equally for their “added value” to the token community (effectively, a double “position” is created).   
 
@@ -28,7 +28,7 @@ Estimated **APR** (Annual Percentage Rate) is an indicator of current rewards on
 ### Example
 
 - Referral farm with $ABC referred token rewards 100 $ABC daily for successful referrals (total rewards deposited = 5.000 $ABC)
-- Alice believes in $ABC, decides to Refer to Farm and creates her referral link and shares with her community
+- Alice believes in $ABC, decides to Refer to Earn and creates her referral link and shares with her community
 - A few members of her community buy 10K $ABC in total  
 - Alice and her community join the referral farm with position of 10K $ABC (10k $ABC Alice + 10k $ABC her community => total position in the farm = 20K $ABC)
 - Alice owns ½ of the total farm “position” and receives 50 $ABC each day, while 50 $ABC is distributed among Alice’s community that bought $ABC via her referral link (each community member earns per their own “position’)
