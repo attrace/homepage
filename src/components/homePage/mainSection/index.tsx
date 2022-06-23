@@ -49,21 +49,9 @@ const MainSection: React.FC<Props> = ({ handleClick }) => {
             <div className={styles.name}>Proof of recommendation</div>
             <div className={styles.creator}>
               Created by{" "}
-              <a
-                href={`https://etherscan.io/token/0x8d2e527675094dc1bb9ef878b6566f3b17240fd8`}
-                target="_blank"
-              >
                 {truncateString("0x8d2e527675094dc1bb9ef878b6566f3b17240fd8")}
-              </a>
             </div>
           </div>
-          <a
-            className={styles.etherscanlink}
-            href={`https://etherscan.io/token/0x8d2e527675094dc1bb9ef878b6566f3b17240fd8`}
-            target="_blank"
-          >
-            <External />
-          </a>
         </div>
       </div>
     </div>
