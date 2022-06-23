@@ -37,9 +37,9 @@ const Home: React.FC = () => {
   return (
     <Layout>
       <Head>
-        <title>Attrace | Referral Protocol for Web3</title>
+        <title>Attrace | Referral Protocol for web3</title>
         <meta charSet="utf-8" />
-        <meta property="og:title" content="Attrace | Referral Protocol for Web3" />
+        <meta property="og:title" content="Attrace | Referral Protocol for web3" />
         <meta property="og:description" content="Unlock the value of ‘word of mouth’ in Web3. Recommend crypto or NFT and earn rewards from referral farms." />
         <meta property="description" content="Unlock the value of ‘word of mouth’ in Web3. Recommend crypto or NFT and earn rewards from referral farms." />
       </Head>
@@ -101,10 +101,6 @@ const Home: React.FC = () => {
         <div className={clsx("container", styles.earnSection)}>
           <div className={styles.graphBoxMobile}>
             <img src="/img/oracle_homepage.png" width='100%' />
-            <div className={styles.blast}>
-              <div className={styles.title}>100M</div>
-              <div className={styles.comment}>$ATTR staked</div>
-            </div>
           </div>
           <div className={styles.sectionTitle}>
             <span>Stake </span>
