@@ -1,0 +1,12 @@
+[[redirects]]
+  from = "https://market.attrace.com"
+  to = "https://market.attrace.com"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://market.attrace.com/*"
+  to = "https://market.attrace.com/:splat"
+  status = 301
+  force = true
+
