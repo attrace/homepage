@@ -1,12 +1,99 @@
 [[redirects]]
-  from = "https://market.attrace.com"
-  to = "https://market.attrace.com"
+  from = "https://attrace.network/solution/referral-network/"
+  to = "https://attrace.com/about/referral-farming/"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://market.attrace.com/*"
-  to = "https://market.attrace.com/:splat"
+  from = "https://attrace.network/solution/foundation/"
+  to = "https://attrace.com/about/"
   status = 301
   force = true
 
+[[redirects]]
+  from = "https://attrace.network/solution/referral-conversion-token/"
+  to = "https://attrace.com/about/referral-farming/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://attrace.network/solution/verifier-nodes/"
+  to = "https://attrace.com/about/oracles"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://attrace.network/ecosystem/"
+  to = "https://attrace.com/about/tokenomics"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://attrace.network/community/attr-token/"
+  to = "https://attrace.com/about/attrace-token"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://attrace.network/community/mission/"
+  to = "https://attrace.com/about/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://attrace.network/community/mission/"
+  to = "https://attrace.com/about/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://attrace.network"
+  to = "https://attrace.com"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://attrace.network/*"
+  to = "https://attrace.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/solution/referral-network/"
+  to = "/about/referral-farming/"
+  status = 301
+
+[[redirects]]
+  from = "/solution/foundation/"
+  to = "/about/"
+  status = 301
+
+[[redirects]]
+  from = "/solution/referral-conversion-token/"
+  to = "/about/referral-farming/"
+  status = 301
+
+[[redirects]]
+  from = "/solution/verifier-nodes/"
+  to = "/about/oracles"
+  status = 301
+
+[[redirects]]
+  from = "/ecosystem/"
+  to = "/about/tokenomics"
+  status = 301
+
+[[redirects]]
+  from = "/community/attr-token/"
+  to = "/about/attrace-token"
+  status = 301
+
+[[redirects]]
+  from = "/community/mission/"
+  to = "/about/"
+  status = 301
+
+[[redirects]]
+  from = "/community/mission/"
+  to = "/about/"
+  status = 301
