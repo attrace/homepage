@@ -97,3 +97,63 @@
   from = "/community/mission/"
   to = "/about/"
   status = 301
+
+[[redirects]]
+  from = "https://attrace.net"
+  to = "https://attrace.com"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://attrace.net/*"
+  to = "https://attrace.com/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://attr.link"
+  to = "https://attrace.com"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://attr.link/*"
+  to = "https://attrace.com/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://attrace.org"
+  to = "https://attrace.com"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://attrace.org/*"
+  to = "https://attrace.com/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://attrace.express"
+  to = "https://attrace.com"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://attrace.express/*"
+  to = "https://attrace.com/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://affpay.io"
+  to = "https://attrace.com"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://affpay.io/*"
+  to = "https://attrace.com/"
+  status = 301
+  force = true
