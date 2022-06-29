@@ -77,6 +77,30 @@
   force = true
 
 [[redirects]]
+  from = "https://docs.attrace.com"
+  to = "https://attrace.com"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://docs.attrace.com/*"
+  to = "https://attrace.com"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://docs.classic.attrace.com"
+  to = "https://attrace.com"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://docs.classic.attrace.com/*"
+  to = "https://attrace.com"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "https://attrace.network/*"
   to = "https://attrace.com/:splat"
   status = 301
