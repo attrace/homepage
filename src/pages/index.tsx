@@ -198,7 +198,7 @@ const Home: React.FC = () => {
               Reward promoters based on the real on-chain value added to your token via referrals.
             </div>
 
-            <Button onClick={() => window.location.href = `${getAppUrl()}/farms?createFarm=true`} >
+            <Button onClick={() => window.location.href = `${getAppUrl()}/my-farms?createFarm=true`} >
               Create Referral Farm
               <img src="/img/icons/arrowRight.svg"  alt='arrow-right'/>
             </Button>
