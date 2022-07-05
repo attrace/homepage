@@ -6,15 +6,13 @@ import getAppUrl from "../../../utils/getAppUrl";
 
 import Button from "../../button";
 
-import ArrowDownIcon from "@site/static/img/icons/arrowDown.svg";
-import External from "@site/static/img/icons/external.svg";
 import styles from "./index.module.css";
 
 interface Props {
-  handleClick: () => void
+  handleWatchVideoClick: () => void;
 }
 
-const MainSection: React.FC<Props> = ({ handleClick }) => {
+const MainSection: React.FC<Props> = ({ handleWatchVideoClick }) => {
 
   return (
     <div className={clsx("container", styles.wrapper)}>
@@ -31,9 +29,9 @@ const MainSection: React.FC<Props> = ({ handleClick }) => {
           <a href={getAppUrl()} target="_blank">
             <Button>Start Referring</Button>
           </a>
-          <Button variant="secondary" onClick={handleClick}>
-            Learn More
-            <ArrowDownIcon />
+          <Button variant="secondary" onClick={handleWatchVideoClick}>
+            <img src='/img/icons/play.svg' alt='play'/>
+            Watch video
           </Button>
         </div>
       </div>

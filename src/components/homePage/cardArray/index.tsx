@@ -7,13 +7,9 @@ import MaskIcon from '/img/farms/mask.svg';
 import DappRadarIcon from '/img/farms/dappradar.svg';
 
 import styles from "./index.module.css";
-import Button from "@site/src/components/button";
 
-interface ICardArray {
-  handleWatchClick: () => void;
-}
 
-export default function CardArray({ handleWatchClick }: ICardArray): JSX.Element {
+export default function CardArray(): JSX.Element {
   const [cardClasses, setCardClasses] = useState([styles.firstCard, styles.secondCard, styles.thirdCard])
 
 
@@ -57,15 +53,6 @@ export default function CardArray({ handleWatchClick }: ICardArray): JSX.Element
           <img src='/img/farms/attrace.png' />
         </Card>
       </div>
-      <Button
-        variant="tertiary"
-        sizes='large'
-        className={styles.watchVideoBtn}
-        onClick={handleWatchClick}
-      >
-        <img src='/img/icons/play.svg' alt='play'/>
-        Watch video on how it works
-      </Button>
     </div>
     </>
   );
