@@ -19,7 +19,7 @@
 }
 
 .actionBlock h1 span {
-  background: var(--secondary-gradient);
+  background: var(--secondary-gradient-text);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
