@@ -27,11 +27,7 @@ const Home: React.FC = () => {
   const [showVideoPopup, setShowVideoPopup] = useState(false);
   const referralRef = useRef(null);
 
-  const handleLearnmore = useCallback(() => {
-    referralRef.current.scrollIntoView({ behavior: 'smooth' })
-  }, [referralRef])
-
-  const handleWatchClick = () => setShowVideoPopup(true);
+  const handleWatchVideoClick = () => setShowVideoPopup(true);
   const handleCloseClick = () => setShowVideoPopup(false);
 
   return (
@@ -45,10 +41,10 @@ const Home: React.FC = () => {
       </Head>
       {showVideoPopup && <VideoPopup handleClose={handleCloseClick} /> }
       <main className="main-overflow">
-        <MainSection handleClick={handleLearnmore} />
+        <MainSection handleWatchVideoClick={handleWatchVideoClick}/>
         <TokensAPR reff={referralRef} />
         <div className={styles.cardsMobile}>
-          <CardArray handleWatchClick={handleWatchClick}/>
+          <CardArray />
         </div>
 
         <div className={clsx("container", styles.section, styles.farmingSection)}>
@@ -93,7 +89,7 @@ const Home: React.FC = () => {
               </div>
             </div>
             <div className={styles.farmingRowRight}>
-              <CardArray handleWatchClick={handleWatchClick} />
+              <CardArray />
             </div>
           </div>
         </div>
@@ -198,7 +194,7 @@ const Home: React.FC = () => {
               Reward promoters based on the real on-chain value added to your token via referrals.
             </div>
 
-            <Button onClick={() => window.location.href = `${getAppUrl()}/farms?createFarm=true`} >
+            <Button onClick={() => window.location.href = `${getAppUrl()}/my-farms?createFarm=true`} >
               Create Referral Farm
               <img src="/img/icons/arrowRight.svg"  alt='arrow-right'/>
             </Button>

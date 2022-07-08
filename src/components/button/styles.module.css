@@ -19,7 +19,7 @@
   z-index: 1;
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 6px;
 }
 .primary::after {
   position: absolute;
@@ -45,6 +45,7 @@
     var(--primary-gradient) border-box;
   border: 1px solid transparent;
   color: var(--white-09);
+  padding: 7px 20px;
 }
 .secondary::after {
   background: var(--secondary-btn-hover);
