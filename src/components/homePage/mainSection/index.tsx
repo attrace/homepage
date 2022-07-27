@@ -32,10 +32,6 @@ const MainSection: React.FC<Props> = ({ handleWatchVideoClick }) => {
           <a href={getAppUrl('/my-farms?createFarm=true')} target="_blank">
             <Button variant="secondary">Set up Referral</Button>
           </a>
-          {/* <Button variant="secondary" onClick={handleWatchVideoClick}>
-            <img src='/img/icons/play.svg' alt='play'/>
-            Watch video
-          </Button> */}
         </div>
       </div>
       <div className={styles.referral}>
