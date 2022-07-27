@@ -63,7 +63,7 @@ export default function CardArray({ handleWatchClick }: ICardArray): JSX.Element
         className={styles.watchVideoBtn}
         onClick={handleWatchClick}
       >
-        <img src='/img/icons/play.svg' alt='play'/>
+        <img src='/img/icons/playPurple.svg' alt='play'/>
         Watch video on how it works
       </Button>
     </div>
