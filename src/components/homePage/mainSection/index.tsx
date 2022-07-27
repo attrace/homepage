@@ -23,19 +23,19 @@ const MainSection: React.FC<Props> = ({ handleWatchVideoClick }) => {
         </h1>
         <div>
           <p>Unlock the value of ‘word of mouth’ in web3.</p>
-          <p>Referrals for assets on Uniswap and Sushiswap already live.</p>
+          <p>Referrals live for tokens on Uniswap and Sushiswap.</p>
         </div>
         <div className={clsx(styles.actions, styles.actionsWrapper)}>
           <a href={getAppUrl()} target="_blank">
             <Button>Start Referring</Button>
           </a>
           <a href={getAppUrl('/my-farms?createFarm=true')} target="_blank">
-            <Button>Set up project</Button>
+            <Button variant="secondary">Set up Referral</Button>
           </a>
-          <Button variant="secondary" onClick={handleWatchVideoClick}>
+          {/* <Button variant="secondary" onClick={handleWatchVideoClick}>
             <img src='/img/icons/play.svg' alt='play'/>
             Watch video
-          </Button>
+          </Button> */}
         </div>
       </div>
       <div className={styles.referral}>
