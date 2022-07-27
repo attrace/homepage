@@ -45,7 +45,7 @@ const Home: React.FC = () => {
         <MainSection handleWatchVideoClick={handleWatchVideoClick}/>
         <TokensAPR reff={referralRef} />
         <div className={styles.cardsMobile}>
-          <CardArray />
+          <CardArray handleWatchClick={handleWatchVideoClick} />
         </div>
 
         <div className={clsx("container", styles.section, styles.farmingSection)}>
@@ -90,7 +90,7 @@ const Home: React.FC = () => {
               </div>
             </div>
             <div className={styles.farmingRowRight}>
-              <CardArray />
+              <CardArray handleWatchClick={handleWatchVideoClick} />
             </div>
           </div>
         </div>
