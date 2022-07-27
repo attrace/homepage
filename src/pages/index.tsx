@@ -36,15 +36,16 @@ const Home: React.FC = () => {
         <title>Attrace | Referral Protocol for web3</title>
         <meta charSet="utf-8" />
         <meta property="og:title" content="Attrace | Referral Protocol for web3" />
-        <meta property="og:description" content="Unlock the value of ‘word of mouth’ in web3. Recommend crypto or NFT and earn rewards from referral farms." />
+        <meta property="og:description" content="Unlock the value of ‘word of mouth’ in web3. Recommend crypto or NFT and earn rewards from referral farms." />        
         <meta property="description" content="Unlock the value of ‘word of mouth’ in web3. Recommend crypto or NFT and earn rewards from referral farms." />
+        <meta property="og:image" content="https://attrace.com/img/og-image.png" />
       </Head>
       {showVideoPopup && <VideoPopup handleClose={handleCloseClick} /> }
       <main className="main-overflow">
         <MainSection handleWatchVideoClick={handleWatchVideoClick}/>
         <TokensAPR reff={referralRef} />
         <div className={styles.cardsMobile}>
-          <CardArray />
+          <CardArray handleWatchClick={handleWatchVideoClick} />
         </div>
 
         <div className={clsx("container", styles.section, styles.farmingSection)}>
@@ -89,7 +90,7 @@ const Home: React.FC = () => {
               </div>
             </div>
             <div className={styles.farmingRowRight}>
-              <CardArray />
+              <CardArray handleWatchClick={handleWatchVideoClick} />
             </div>
           </div>
         </div>
