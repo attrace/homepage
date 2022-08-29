@@ -46,7 +46,7 @@ Looking forward, Attrace aims to be a first mover in all these verticals on all 
 :::
 The decision on which use case or which network to facilitate first is subject solely to market demand, which will be decided on a monthly basis. 
 
-# Deliveries after the launch on 25ht of June
+# Deliveries after the launch of June 25th
 
 ### Attrace launched a “Buy to Earn” feature in the Attrace app 
 
