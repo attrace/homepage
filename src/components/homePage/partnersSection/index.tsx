@@ -32,10 +32,11 @@ export const PartnersSection: FC = () => {
         who joined the Ecosystem
       </h2>
       <div className={styles.partnersLogos}>
-        <div className={styles.filter} />
         <div className={styles.marqueeContainer}>
           <Marquee speed={100} play={playing}>
-            <DeribitLogo />
+            <a href="https://deribit.com/">
+              <DeribitLogo />
+            </a>
             <ImpossibleFinLogo />
             <img
               src={require("@site/static/img/partners/dappradar2x.png").default}
