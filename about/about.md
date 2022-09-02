@@ -23,7 +23,7 @@ Attrace is a trustless Referral Protocol for web3 that empowers “word-of-mouth
 ## Vision and Mission
 
 
-The Attrac team believes that “word-of-mouth” marketing drives significant value towards web3 projects and ecosystems. Further, it helps the space grow by fuelling mainstream adoption. Often, those who are active in the space, spread the word about the projects and tokens they believe in, or even recommend them to their communities, friends or family. 
+The Attrace team believes that “word-of-mouth” marketing drives significant value towards web3 projects and ecosystems. Further, it helps the space grow by fuelling mainstream adoption. Often, those who are active in the space, spread the word about the projects and tokens they believe in, or even recommend them to their communities, friends or family. 
 
 Web3 brings opportunities to channel value directly to those who contribute to the projects and to creators by “spreading the word” about them. Up to now, there has been no way to properly measure that contribution, the added value, and the reputation of the actors. 
 
