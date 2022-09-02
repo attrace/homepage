@@ -251,7 +251,7 @@
   position: absolute;
   top: 0; left: 0;
   width: 100%; height: 100%;
-  background: var(--partner-filter);
+  /* background: var(--partner-filter); */
   z-index: 2;
 }
 .marqueeContainer >div >div:not(:first-of-type) {
@@ -369,9 +369,6 @@
   .graphBoxMobile {
     display: none;
   }
-  .partnersLogos >div:last-of-type {
-    display: none !important; 
-  }
 }
 
 @media (max-width: 850px) {
@@ -456,7 +453,7 @@
     margin-bottom: 80px;
   }
   .partnersLogos .filter {
-    background: var(--partner-filter-mobile);
+    /* background: var(--partner-filter-mobile); */
   }
 
   .referralFarmSectionContent {
@@ -492,6 +489,12 @@
     flex-direction: column;
     margin: 40px 0;
   }
+
+  .partnerLogoWrapper {
+    display: block;
+    height: 80px;
+  }
+
   .partnersLogos svg:last-child,
   .partnersLogos img:last-child {
     margin-bottom: 0;
