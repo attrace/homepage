@@ -369,9 +369,6 @@
   .graphBoxMobile {
     display: none;
   }
-  .partnersLogos >div:last-of-type {
-    display: none !important; 
-  }
 }
 
 @media (max-width: 850px) {

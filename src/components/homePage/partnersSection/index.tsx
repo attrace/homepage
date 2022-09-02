@@ -31,19 +31,19 @@ export const PartnersSection: FC = () => {
       </h2>
       <div className={styles.partnersLogos}>
         <div className={styles.partnerLogoWrapper}>
-          <DeribitLogo />
+          <a href="https://deribit.com/"  target="_blank">
+            <DeribitLogo />
+          </a>
         </div>
         <div className={styles.partnerLogoWrapper}>
           <ImpossibleFinLogo />
         </div>
-        <a href="https://deribit.com/">
-          <div className={styles.partnerLogoWrapper}>
-            <img
-              src={require('@site/static/img/partners/dappradar2x.png').default}
-              style={{ width: '222px' }}
-            />
-          </div>
-        </a>
+        <div className={styles.partnerLogoWrapper}>
+          <img
+            src={require('@site/static/img/partners/dappradar2x.png').default}
+            style={{ width: '222px' }}
+          />
+        </div>
         <div className={styles.partnerLogoWrapper}>
           <MaskLogo />
         </div>
@@ -54,10 +54,13 @@ export const PartnersSection: FC = () => {
           />
         </div>
         <div className={styles.partnerLogoWrapper}>
-          <img
-            src={require('@site/static/img/partners/despace2x.png').default}
-            style={{ width: '107px' }}
-          />
+          <a href="https://casinostats.com/" target="_blank">
+            <img
+              src={require('@site/static/img/partners/cstats2x.png').default}
+              style={{ width: '60px' }}
+              alt="Online Casino Ratings - Casinostats.com"
+            />
+          </a>
         </div>
       </div>
     </div>
