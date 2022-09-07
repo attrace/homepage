@@ -1,6 +1,6 @@
 ---
 title: Staking migration  
-description: Attrace is excited to announce a strategic partnership with Mask Network. Mask Network is an open-sourced browser extension with tens of thousands of users.
+description: The Attrace team is pleased to announce the release of the updated and improved version of the staking contract, Staking Contract v2.
 authors:
   - nikola
   - roeland
