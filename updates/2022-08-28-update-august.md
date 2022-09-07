@@ -1,6 +1,6 @@
 ---
 title: Update August 2022  
-description: Attrace is excited to announce a strategic partnership with Mask Network. Mask Network is an open-sourced browser extension with tens of thousands of users.
+description: The MVP of the protocol is now live on the Ethereum network, with referral links for fungible assets sold on decentralised exchanges (DEX) like Uniswap and Sushiswap. For the first time, projects with assets sold via a DEX can offer promoters a performance-based marketing solution.
 authors:
   - nikola
   - erwin
