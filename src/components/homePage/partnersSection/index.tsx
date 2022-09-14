@@ -54,11 +54,11 @@ export const PartnersSection: FC = () => {
           />
         </div>
         <div className={styles.partnerLogoWrapper}>
-          <a href="https://casinostats.com/" target="_blank">
+          <a href="https://casinostats.com/nl-be" target="_blank">
             <img
               src={require('@site/static/img/partners/cstats2x.png').default}
               style={{ width: '60px' }}
-              alt="Online Casino Ratings - Casinostats.com"
+              alt="De beste online casino's van Belgie - Casinostats.com"
             />
           </a>
         </div>
