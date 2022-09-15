@@ -147,6 +147,19 @@
   status = 301
 
 [[redirects]]
+  from = "https://www.attrace.network"
+  to = "https://attrace.com"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.attrace.network/*"
+  to = "https://attrace.com/"
+  status = 301
+  force = true
+
+
+[[redirects]]
   from = "https://attrace.net"
   to = "https://attrace.com"
   status = 301
