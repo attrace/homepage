@@ -33,6 +33,7 @@ In general, there are currently 3 main investment verticals in crypto:
 * Crypto currencies and meme coins;
 * DeFi; 
 * NFT and NFT related (games, music, socials).
+
 There are many thousands of projects in all these verticals.
 
 As a referral marketing protocol for web3, Attrace does not really fit in any of those verticals as it is accommodating all of them. 
@@ -46,7 +47,7 @@ So, investing in Attrace means investing in a new vertical to bring diversificat
 
 So what is the potential value of this “new vertical”?
  
-Quick answer, we believe Attrace can hit $100 ARR.
+Quick answer, we believe Attrace can hit $100 million ARR.
  
 Our view: 
 1. In 5 years, online marketing is estimated to be [worth $750 Billion PA](https://finance.yahoo.com/news/global-medical-animation-market-reach-110000940.html)
