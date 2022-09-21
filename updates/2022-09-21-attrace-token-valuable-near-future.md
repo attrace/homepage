@@ -47,7 +47,7 @@ So, investing in Attrace means investing in a new vertical to bring diversificat
 
 So what is the potential value of this “new vertical”?
  
-Quick answer, we believe Attrace can hit $100 million ARR.
+Quick answer, we believe Attrace can hit $100 Million ARR.
  
 Our view: 
 1. In 5 years, online marketing is estimated to be [worth $750 Billion PA](https://finance.yahoo.com/news/global-medical-animation-market-reach-110000940.html)
