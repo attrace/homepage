@@ -1,5 +1,5 @@
 ---
-title: Sushi closing
+title: ATTR Sushi farm closing
 description: Since two day ago, the farming rewards have continued to be paid out to those who provide liquidity to the ATTR/ETH pool on Sushiswap and stake their LP tokens.
 authors:
   - nikola
