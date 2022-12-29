@@ -18,7 +18,7 @@ const VideoPopup: FC<IVideoPopup>= memo(({ handleClose }) => {
   return (
     <Modal>
       <div ref={videoPopupRef} className={styles.videoPopup}>
-        <video src='/media/attrace-protocol.mp4' autoPlay controls />
+        <video src='/media/attrace_promo_final.mp4' autoPlay controls />
         <button onClick={handleClose}>
           <img src='/img/icons/close.svg' alt='close' />
         </button>
