@@ -44,22 +44,23 @@ The protocol fee of 5% is a service fee paid by those who create a referral farm
 A Referred token is the token which is being promoted or recommended. People are incentivised to “spread the word” about that token with the rewards deposited in the referral farm. A Reward token is the token deposited for rewards. While the reward token can be the same as the referred token (especially in the case of fungible tokens - e.g., erc20), it can also be different (decision of those who create referral farm)  
 
 ### Cam I redirect Attrace referral links?
-Attrace referral links are large strings of characters. They contain a lot of information, e.g. about the public wallet address connected to the referrals. 
+Various times Attrace received questions about the possibility to arrange custom links, domain / custom style instead of the Attrace string of characters (which among other info contains public wallet addresses of promoters).
 
-Various times Attrace received questions about the possibility to arrange custom links, domain / custom style instead of a string of characters.
+Of course, it is possible to redirect from any link or use URL shorteners like bit.ly etc. 
 
-Our answer to that is: Yes of course, it is possible to redirect from any link, or use URL shorteners like bit.ly etc. 
-However, this is not provided by Attrace, because redirecting links means: 
+However, this is not provided by Attrace as this is not very web3. Thing is, redirecting links means: 
 - tracking users 
 - centralized storage
 
-Both are fundamental for referral links in web2... 
+Both are fundamental for referral links in web2. 
 
 Both create fundamental problems with referral links in web2, 
 
-(trust, transparency and data privacy) problems that have been refraining performance based marketing from reaching its full potential in web2. 
+trust, transparency and data privacy problems that have been refraining performance based marketing from reaching its full potential in web2. 
 
-So yes, you can redirect Attrace links should the situation so require, you would still be connecting web2 outreach with web3 assets and services. 
+So yes, you can redirect Attrace links should the situation so require, 
 
-However, you would not be operating in a fully trustless and transparent environment anymore.
+you would still be connecting web2 outreach with web3 assets and services, 
+
+however, you would not be operating in a fully trustless and transparent environment anymore…
 
