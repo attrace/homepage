@@ -3,7 +3,7 @@ title: Create Farm
 sidebar_label: Create Farm
 ---
 
-Choose the token you would like to recommend or promote, create your unique referral link and share it with your communities, friends or family. Join the referral farm and earn farming rewards based on the value purchased via your referral link. 
+Create a new referral farm to drive value towards your token. Choose the token you would like people to promote or recommend and set up the referrals. Provide the incentive by depositing the referral farming rewards, and invite your and other communities to spread the word about the token. The promoters and buyers will earn the rewards once tokens are being purchased.
 1. Go to referral farms in the app
 2. Connect your wallet
 3. Create Farm
