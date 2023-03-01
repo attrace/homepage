@@ -3,15 +3,15 @@ title: Create Farm
 sidebar_label: Create Farm
 ---
 
-Choose the token you would like to recommend or promote, create your unique referral link and share it with your communities, friends or family. Join the referral farm and earn farming rewards based on the value purchased via your referral link. 
-1. Go to [farm page in the app](https://app.attrace.com/farms)
-1. Connect your wallet
-1. Choose the token you would like to recommend or promote 
-1. Proceed with Refer to Earn step
-1. Sign the message with your wallet to register your address for rewards
-1. Get your unique referral link 
-1. Share it with your communities, friends or family
-1. Join the referral farm and start earning when someone buys via your referral link
-1. Claim your rewards
-1. Repeat with other tokens!
+Create a new referral farm to drive value towards your token. Choose the token you would like people to promote or recommend and set up the referrals. Provide the incentive by depositing the referral farming rewards, and invite your and other communities to spread the word about the token. The promoters and buyers will earn the rewards once tokens are being purchased.
+1. Go to referral farms in the app
+2. Connect your wallet
+3. Create Farm
+4. Select a token for referrals (referred token)
+5. Select target redirect link
+6. Specify the reward token and the amount of daily and total rewards
+7. Continue to deposit the rewards
+8. Grant permission to smart contract and confirm transaction with your wallet
+9. Invite your community to start promoting/recommending the token
+10. Manage rewards (deposit more, adjust, withdraw rewards)
 
