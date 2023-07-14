@@ -23,7 +23,19 @@ $ATTR is a native token of Attrace Referral Network. It is a utility and governa
 * SushiSwap: [0xb2aef5dbec896830b7391c3d7dee130ad36b8e9f](https://app.sushi.com/swap?inputCurrency=ETH&outputCurrency=0x44e2dec86b9f0e0266e9aa66e10323a2bd69cf9a)
 * DFYN (Polygon): [0x0335defc8a1977b99488e0b5f5c6bc3d44facdd4](https://info.dfyn.network/token/0x0335defc8a1977b99488e0b5f5c6bc3d44facdd4)
 
+### ATTR token usage and rights
+ATTR is used for Staking and Governance, therefore owners of ATTR can use the token to
+* Ensure security and guarantee trust by staking ATTR with Oracles
+* Earn protocol network fees and staking rewards in ATTR when staking
+* Receive $ATTR by joining Attrace Referral Farm
+* Govern the network through a voting process
 
+Principles
+* You understand and accept that while the project will make reasonable efforts to develop the ATTR-Protocol and the Attrace Project, it is possible that such development may fail and that ATTR Tokens may become useless and/or valueless for technical, commercial, regulatory or other reasons. You are also aware of the risk that, even if all or parts of the ATTR-Protocol are successfully developed and released in full or in parts, due to a lack of interest from Attrace stakeholders, the ATTR-Protocol could be fully or partially abandoned, remain commercially unsuccessful or shut down for lack of interest or other reasons. You therefore understand and accept that the Exchange carries significant financial, legal, regulatory, reputational and other risks
+* You furthermore understand and accept that the Exchanging towards an ATTR token is smart contract based and that by entering into the Exchange, you expressly agree to all of the terms and conditions set forth in Smart Contract System Code, consisting of software code, existing on the Ethereum blockchain at address https://github.com/attrace/contracts. To the extent this Agreement contradicts the code of the Smart Contract System, the code of the Smart Contract System prevails. You hereby confirm to have carefully reviewed the Smart Contract System Code, its functions and this Agreement and that you understand the risks and costs of the Exchange.
+* You understand that by performing an Exchange towards ATTR, no form of ownership, partnership, joint venture or any similar relationship between you, the Company Attrace or any other individuals or entities involved with the deployment of the ATTR-Protocol and the Smart Contract System is created. You also acknowledge that ATTR Tokens do not confer unto you any economic or control rights over the Company, the ATTR-Protocol or the Smart Contract System, except for the right to cast an advisory vote in respect of certain items.
+* You acknowledge that the Company has no obligation to buy back any ATTR Tokens from you, is not indebted to you, otherwise required to repay you in money or in kind, provide any services or to deliver any goods, products or property rights to you as a result of the Exchange towards ATTR.
+  
 ### Distribution
 
 The token is distributed across a number of segments to enable development, organic growth and promotion. 
