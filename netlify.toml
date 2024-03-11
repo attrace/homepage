@@ -278,3 +278,9 @@
   to = "https://attrace.com/"
   status = 301
   force = true
+
+[[redirects]]
+  from = "/blog/*"
+  to = "https://blog.attrace.com/:splat"
+  status = 200
+  force = true  
