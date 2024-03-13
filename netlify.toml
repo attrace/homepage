@@ -281,15 +281,15 @@
 
 [[redirects]]
   from = "/tags/*"
-  to = "https://blog.attrace.com/:splat"
+  to = "https://blog.attrace.com/tags/:splat"
   status = 200
   force = true  
 
 [[redirects]]
   from = "/author/*"
-  to = "https://blog.attrace.com/:splat"
+  to = "https://blog.attrace.com/author/:splat"
   status = 200
-  force = true    
+  force = true
 
 [[redirects]]
   from = "/marketing/*"
