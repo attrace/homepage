@@ -262,24 +262,6 @@
   force = true
 
 [[redirects]]
-  from = "https://affpay.io/*"
-  to = "https://attrace.com/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "https://www.affpay.io"
-  to = "https://attrace.com"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "https://www.affpay.io/*"
-  to = "https://attrace.com/"
-  status = 301
-  force = true
-
-[[redirects]]
   from = "/tags/*"
   to = "https://blog.attrace.com/tags/:splat"
   status = 200
@@ -293,25 +275,13 @@
 
 [[redirects]]
   from = "/marketing/*"
-  to = "https://blog.attrace.com/:splat"
+  to = "https://blog.attrace.com/category/marketing/:splat"
   status = 200
   force = true  
-
-[[redirects]]
-  from = "/marketing"
-  to = "https://blog.attrace.com/marketing"
-  status = 200
-  force = true
-
+  
 [[redirects]]
   from = "/test-category/*"
-  to = "https://blog.attrace.com/:splat"
-  status = 200
-  force = true
-
-[[redirects]]
-  from = "/test-category"
-  to = "https://blog.attrace.com/test-category"
+  to = "https://blog.attrace.com/category/test-category/:splat"
   status = 200
   force = true
 
@@ -319,4 +289,4 @@
   from = "/blog/*"
   to = "https://blog.attrace.com/:splat"
   status = 200
-  force = true  
+  force = true
