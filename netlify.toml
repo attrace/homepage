@@ -293,13 +293,13 @@
 
 [[redirects]]
   from = "/marketing/*"
-  to = "https://blog.attrace.com/:splat"
+  to = "https://blog.attrace.com/marketing/:splat"
   status = 200
   force = true  
   
 [[redirects]]
   from = "/test-category/*"
-  to = "https://blog.attrace.com/:splat"
+  to = "https://blog.attrace.com/test-category.:splat"
   status = 200
   force = true
 
