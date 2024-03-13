@@ -262,6 +262,12 @@
   force = true
 
 [[redirects]]
+  from = "/blog/*"
+  to = "https://blog.attrace.com/:splat"
+  status = 200
+  force = true
+  
+[[redirects]]
   from = "/tags/*"
   to = "https://blog.attrace.com/tags/:splat"
   status = 200
@@ -282,11 +288,5 @@
 [[redirects]]
   from = "/test-category/*"
   to = "https://blog.attrace.com/category/test-category/:splat"
-  status = 200
-  force = true
-
-[[redirects]]
-  from = "/blog/*"
-  to = "https://blog.attrace.com/:splat"
   status = 200
   force = true
