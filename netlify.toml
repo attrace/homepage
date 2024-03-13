@@ -301,4 +301,10 @@
   from = "/test-category/*"
   to = "https://blog.attrace.com/:splat"
   status = 200
-  force = true    
+  force = true
+
+[[redirects]]
+  from = "/blog/*"
+  to = "https://blog.attrace.com/:splat"
+  status = 200
+  force = true      
