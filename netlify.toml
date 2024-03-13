@@ -286,7 +286,7 @@
   force = true  
 
 [[redirects]]
-  from = "/authors/*"
+  from = "/author/*"
   to = "https://blog.attrace.com/:splat"
   status = 200
   force = true    
