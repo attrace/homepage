@@ -280,7 +280,25 @@
   force = true
 
 [[redirects]]
-  from = "/blog/*"
+  from = "/tags/*"
   to = "https://blog.attrace.com/:splat"
   status = 200
   force = true  
+
+[[redirects]]
+  from = "/authors/*"
+  to = "https://blog.attrace.com/:splat"
+  status = 200
+  force = true    
+
+[[redirects]]
+  from = "/marketing/*"
+  to = "https://blog.attrace.com/:splat"
+  status = 200
+  force = true  
+  
+[[redirects]]
+  from = "/test-category/*"
+  to = "https://blog.attrace.com/:splat"
+  status = 200
+  force = true    
