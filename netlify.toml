@@ -262,11 +262,11 @@
   force = true
 
 [[redirects]]
-  from = "/blog/*"
-  to = "https://blog.attrace.com/:splat"
+  from = "/blog"
+  to = "https://blog.attrace.com"
   status = 200
   force = true
-  
+
 [[redirects]]
   from = "/tags/*"
   to = "https://blog.attrace.com/tags/:splat"
