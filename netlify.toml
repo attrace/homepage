@@ -268,8 +268,8 @@
   force = true
   
 [[redirects]]
-  from = "/_next"
-  to = "https://blog.attrace.com/_next"
+  from = "/_next/*"
+  to = "https://blog.attrace.com/_next/*"
   status = 200
   force = true
 
