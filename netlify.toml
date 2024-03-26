@@ -274,19 +274,19 @@
   force = true  
 
 [[redirects]]
-  from = "/author/*"
-  to = "https://blog.attrace.com/author/:splat"
+  from = "/authors/*"
+  to = "https://blog.attrace.com/authors/:splat"
   status = 200
   force = true
 
 [[redirects]]
   from = "/marketing/*"
-  to = "https://blog.attrace.com/category/marketing/:splat"
+  to = "https://blog.attrace.com/marketing/:splat"
   status = 200
   force = true  
   
 [[redirects]]
   from = "/test-category/*"
-  to = "https://blog.attrace.com/category/test-category/:splat"
+  to = "https://blog.attrace.com/test-category/:splat"
   status = 200
   force = true
