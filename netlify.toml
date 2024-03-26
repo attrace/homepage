@@ -266,6 +266,12 @@
   to = "https://blog.attrace.com"
   status = 200
   force = true
+  
+[[redirects]]
+  from = "/blog/_next"
+  to = "https://blog.attrace.com/_next"
+  status = 200
+  force = true
 
 [[redirects]]
   from = "/tags/*"
