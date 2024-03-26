@@ -275,6 +275,13 @@
   status = 200
   force = true
 
+#blog nextjs images
+[[redirects]]
+  from = "/blog/img/*"
+  to = "https://blog.attrace.com/blog/img/:splat"
+  status = 200
+  force = true
+
 #blog tag page
 [[redirects]]
   from = "/tags/*"
