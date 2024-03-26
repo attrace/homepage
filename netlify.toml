@@ -269,7 +269,7 @@
   
 [[redirects]]
   from = "/_next/*"
-  to = "https://blog.attrace.com/_next/*"
+  to = "https://blog.attrace.com/_next/:splat"
   status = 200
   force = true
 
