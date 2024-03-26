@@ -291,10 +291,10 @@
 
 #blog marketing page
 [[redirects]]
-  from = "/marketing/*"
-  to = "https://blog.attrace.com/marketing/:splat"
+  from = "/marketing"
+  to = "https://blog.attrace.com/marketing"
   status = 200
-  force = true  
+  force = true
   
 #blog test-category page
 [[redirects]]
