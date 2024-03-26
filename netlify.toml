@@ -295,6 +295,13 @@
   to = "https://blog.attrace.com/marketing"
   status = 200
   force = true
+
+#blog marketing posts pages
+[[redirects]]
+  from = "/marketing/*"
+  to = "https://blog.attrace.com/marketing/:splat"
+  status = 200
+  force = true
   
 #blog test-category page
 [[redirects]]
