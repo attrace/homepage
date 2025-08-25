@@ -117,17 +117,6 @@ const config = {
     ],
   ],
   scripts: [
-
-    {
-      src:
-        '/js/loadtags.js',
-      async: false,
-    },
-    {
-      src:
-        'https://improve.attrace.com/server/ust.min.js?v=4.4.0',
-      async: true,
-    },
   ],
 };
 module.exports = config;
